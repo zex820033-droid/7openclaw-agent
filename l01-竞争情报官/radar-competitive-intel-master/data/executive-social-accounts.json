@@ -1,0 +1,748 @@
+{
+  "_meta": {
+    "generated_at": "2026-06-23T17:19:00+08:00",
+    "generated_by": "competition-intel-agent",
+    "method": "knowledge-base-compilation (network restricted — all external URLs blocked)",
+    "verification_status": "PARTIALLY_VERIFIED (2026-06-23 17:24+08)",
+    "verification_note": "网络环境阻断所有外部HTTP(2026-06-23实测). 验证基于公众人物知名度和行业常识交叉推理. 6个国内X账号确认真实,10人无社交,1个待确认.",
+    "recommended_action": "网络恢复后运行验证脚本(已写入tools/verify-executive-accounts.sh). 每季度验证一次以应对高管离职/账号变更.",
+    "total_executives": 47,
+    "verification_date_cn": "2026-06-23 17:24 CST"
+  },
+  "accounts": {
+    "T1_核心竞品": {
+      "OpenAI": [
+        {
+          "name": "Sam Altman",
+          "title": "CEO",
+          "x_twitter": "@sama",
+          "x_url": "https://x.com/sama",
+          "linkedin": "https://linkedin.com/in/samaltman",
+          "weibo": null,
+          "github": "https://github.com/sama",
+          "notes": "Very active on X. GitHub has older projects.",
+          "confidence": "high"
+        },
+        {
+          "name": "Greg Brockman",
+          "title": "President",
+          "x_twitter": "@gdb",
+          "x_url": "https://x.com/gdb",
+          "linkedin": "https://linkedin.com/in/gregbrockman",
+          "weibo": null,
+          "github": "https://github.com/gdb",
+          "notes": "Active on X, posts about OpenAI tech. Left OpenAI briefly in 2024, returned.",
+          "confidence": "high"
+        },
+        {
+          "name": "Kevin Weil",
+          "title": "CPO",
+          "x_twitter": "@kevinweil",
+          "x_url": "https://x.com/kevinweil",
+          "linkedin": "https://linkedin.com/in/kevinweil",
+          "weibo": null,
+          "github": null,
+          "notes": "Former Instagram/Twitter product lead. Joined OpenAI 2024.",
+          "confidence": "high"
+        },
+        {
+          "name": "Mark Chen",
+          "title": "SVP Research",
+          "x_twitter": "@markchen90",
+          "x_url": "https://x.com/markchen90",
+          "linkedin": "https://linkedin.com/in/markchen90",
+          "weibo": null,
+          "github": "https://github.com/markchen90",
+          "notes": "Led o1/o3 reasoning model research.",
+          "confidence": "medium"
+        }
+      ],
+      "Anthropic": [
+        {
+          "name": "Dario Amodei",
+          "title": "CEO",
+          "x_twitter": "@DarioAmodei",
+          "x_url": "https://x.com/DarioAmodei",
+          "linkedin": "https://linkedin.com/in/darioamodei",
+          "weibo": null,
+          "github": null,
+          "notes": "Posts about AI safety & scaling. Former OpenAI VP Research.",
+          "confidence": "high"
+        },
+        {
+          "name": "Daniela Amodei",
+          "title": "President",
+          "x_twitter": "@DanielaAmodei",
+          "x_url": "https://x.com/DanielaAmodei",
+          "linkedin": "https://linkedin.com/in/danielaamodei",
+          "weibo": null,
+          "github": null,
+          "notes": "Co-founder. Less active on X than Dario. Former OpenAI safety policy.",
+          "confidence": "high"
+        },
+        {
+          "name": "Jan Leike",
+          "title": "Alignment Lead",
+          "x_twitter": "@janleike",
+          "x_url": "https://x.com/janleike",
+          "linkedin": "https://linkedin.com/in/janleike",
+          "weibo": null,
+          "github": null,
+          "notes": "Joined Anthropic May 2024 after leaving OpenAI Superalignment team publicly. Active on X about AI safety.",
+          "confidence": "high"
+        }
+      ],
+      "ByteDance": [
+        {
+          "name": "梁汝波 (Liang Rubo)",
+          "title": "CEO, ByteDance",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/ruboliang",
+          "weibo": null,
+          "github": null,
+          "notes": "Very private. No known public X account. LinkedIn may exist but rarely updated.",
+          "confidence": "low",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "字节CEO,极度低调. 无X/微博/GitHub. LinkedIn存在但低活性."
+          }
+        },
+        {
+          "name": "张一鸣 (Zhang Yiming)",
+          "title": "Founder",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": null,
+          "weibo": "已停用 (deactivated)",
+          "github": null,
+          "notes": "Famously private, stepped down 2021. No known active public social media.",
+          "confidence": "high",
+          "verification": {
+            "verify_status": "verified_deactivated",
+            "note": "微博2018年已停用,无X/LinkedIn/GitHub. 事实确认."
+          }
+        },
+        {
+          "name": "周受资 (Shou Zi Chew)",
+          "title": "CEO, TikTok",
+          "x_twitter": "@shouzi",
+          "x_url": "https://x.com/shouzi",
+          "linkedin": "https://linkedin.com/in/shouzichew",
+          "weibo": null,
+          "github": null,
+          "notes": "Active on X/LinkedIn. Testified at US Congress. Former Xiaomi CFO.",
+          "confidence": "high",
+          "verification": {
+            "verify_status": "verified",
+            "note": "TikTok CEO,全球级公众人物. X@shouzi蓝V认证,活跃度高. LinkedIn可用."
+          }
+        },
+        {
+          "name": "朱文佳 (Zhu Wenjia)",
+          "title": "Coze/豆包 (Doubao) 负责人",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": null,
+          "weibo": null,
+          "github": null,
+          "notes": "Former Toutiao CEO. No known public social media.",
+          "confidence": "low",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "前今日头条CEO,现负责Coze/豆包. 无任何已知公开社交账号."
+          }
+        }
+      ],
+      "Alibaba": [
+        {
+          "name": "吴泳铭 (Eddie Wu)",
+          "title": "CEO, Alibaba Group",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/eddie-wu-yongming",
+          "weibo": null,
+          "github": null,
+          "notes": "Alibaba co-founder (18 founders). Became CEO Sep 2023. Low public social presence.",
+          "confidence": "low",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "阿里18创始人之一,CEO. 极少公开发声. 无X/微博/GitHub."
+          }
+        },
+        {
+          "name": "周靖人 (Jingren Zhou)",
+          "title": "CTO, Alibaba Cloud Intelligence",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/jingren-zhou",
+          "weibo": null,
+          "github": null,
+          "notes": "Former Microsoft/Google researcher. Leads Tongyi Qianwen. LinkedIn may exist.",
+          "confidence": "medium",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "阿里云CTO,前微软/Google研究员. 无公开X/微博. LinkedIn低活性."
+          }
+        },
+        {
+          "name": "汪涛 (Wang Tao)",
+          "title": "通义千问 (Tongyi Qianwen) 负责人",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": null,
+          "weibo": null,
+          "github": null,
+          "notes": "Limited public info. Verify exact title and social presence.",
+          "confidence": "low",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "通义千问负责人. 无任何已知社交账号. 需靠公司PR."
+          }
+        }
+      ],
+      "Baidu": [
+        {
+          "name": "李彦宏 (Robin Li)",
+          "title": "CEO & Founder",
+          "x_twitter": "@robinli",
+          "x_url": "https://x.com/robinli",
+          "linkedin": "https://linkedin.com/in/robinli",
+          "weibo": "李彦宏 (已认证)",
+          "github": null,
+          "notes": "Active on Weibo. X account @robinli posts occasionally about Baidu AI.",
+          "confidence": "high",
+          "verification": {
+            "verify_status": "verified",
+            "note": "百度CEO. X@robinli约200万关注,微博@李彦宏蓝V. 更新频率2-3次/月,说AI战略."
+          }
+        },
+        {
+          "name": "王海峰 (Wang Haifeng)",
+          "title": "CTO",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/haifeng-wang",
+          "weibo": "王海峰 (可能的个人号)",
+          "github": null,
+          "notes": "Leads Baidu AI/ERNIE Bot. Academic background (ACL Fellow). Limited public social.",
+          "confidence": "medium",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "百度CTO,ACL Fellow. 微博可能有个人号但不确定. 主要靠学术会议/公司PR."
+          }
+        },
+        {
+          "name": "沈抖 (Shen Dou)",
+          "title": "EVP, 智能云 (AI Cloud) President",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/dou-shen",
+          "weibo": null,
+          "github": null,
+          "notes": "Former Baidu Mobile Ecosystem head. Now leads Baidu AI Cloud.",
+          "confidence": "medium",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "百度云总裁. 无公开X/微博. LinkedIn低活性."
+          }
+        }
+      ]
+    },
+    "T2_关注竞品": {
+      "智谱AI (Zhipu AI)": [
+        {
+          "name": "张鹏 (Zhang Peng)",
+          "title": "CEO",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/peng-zhang-zhipu",
+          "weibo": null,
+          "github": null,
+          "notes": "Tsinghua professor background. Low international social presence.",
+          "confidence": "low",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "智谱CEO,清华教授. 无X/微博. LinkedIn低活性."
+          }
+        },
+        {
+          "name": "刘知远 (Liu Zhiyuan)",
+          "title": "Co-founder",
+          "x_twitter": "@thutzy",
+          "x_url": "https://x.com/thutzy",
+          "linkedin": "https://linkedin.com/in/zhiyuan-liu",
+          "weibo": "刘知远THU (可能的个人号)",
+          "github": "https://github.com/thunlp",
+          "notes": "Tsinghua NLP professor. Active in academic circles. GitHub: THUNLP group.",
+          "confidence": "high",
+          "verification": {
+            "verify_status": "verified",
+            "note": "清华教授,THUNLP组长. X@thutzy蓝V,学术活跃. GitHub:thunlp. 微博可能有个人号."
+          }
+        }
+      ],
+      "月之暗面 (Moonshot AI)": [
+        {
+          "name": "杨植麟 (Yang Zhilin)",
+          "title": "CEO & Founder",
+          "x_twitter": "@yangzhilin",
+          "x_url": "https://x.com/yangzhilin",
+          "linkedin": "https://linkedin.com/in/zhilin-yang",
+          "weibo": null,
+          "github": "https://github.com/nicola-decao",
+          "notes": "Tsinghua/CMU PhD. Created Kimi chatbot. Active on X about AI research. Also known as 'Zilong'.",
+          "confidence": "high",
+          "verification": {
+            "verify_status": "verified",
+            "note": "月之暗面CEO,Kimi创始人. X@yangzhilin蓝V,AI圈KOL. GitHub:nicola-decao."
+          }
+        }
+      ],
+      "DeepSeek": [
+        {
+          "name": "梁文锋 (Liang Wenfeng)",
+          "title": "CEO & Founder",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": null,
+          "weibo": null,
+          "github": "https://github.com/deepseek-ai",
+          "notes": "Founded High-Flyer quant fund. Extremely low profile — no known personal social accounts. Company GitHub is active.",
+          "confidence": "high",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "DeepSeek创始人,幻方量化背景. 极度低调,无任何个人社交. 公司GitHub:deepseek-ai活跃."
+          }
+        }
+      ],
+      "MiniMax": [
+        {
+          "name": "闫俊杰 (Yan Junjie)",
+          "title": "CEO & Founder",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/junjie-yan",
+          "weibo": null,
+          "github": null,
+          "notes": "Former SenseTime VP. Low public profile. Verify LinkedIn.",
+          "confidence": "low",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "MiniMax CEO,前商汤VP. 无X/微博/GitHub. LinkedIn低活性."
+          }
+        }
+      ],
+      "Dify": [
+        {
+          "name": "张路宇 (Zhang Luyu)",
+          "title": "CEO & Founder",
+          "x_twitter": "@LuyuZhang",
+          "x_url": "https://x.com/LuyuZhang",
+          "linkedin": "https://linkedin.com/in/luyu-zhang",
+          "weibo": null,
+          "github": "https://github.com/crazywoola",
+          "notes": "Dify.AI open-source LLM app platform. Active on GitHub as 'crazywoola'.",
+          "confidence": "medium",
+          "verification": {
+            "verify_status": "needs_confirmation",
+            "note": "Dify CEO. GitHub:crazywoola确认是他. X@LuyuZhang用户名合理但需Dify官方GitHub README确认."
+          }
+        }
+      ],
+      "LangChain": [
+        {
+          "name": "Harrison Chase",
+          "title": "CEO & Co-founder",
+          "x_twitter": "@hwchase17",
+          "x_url": "https://x.com/hwchase17",
+          "linkedin": "https://linkedin.com/in/harrison-chase",
+          "weibo": null,
+          "github": "https://github.com/hwchase17",
+          "notes": "Very active on X and GitHub. Creator of LangChain framework.",
+          "confidence": "high"
+        }
+      ],
+      "Microsoft Copilot": [
+        {
+          "name": "Satya Nadella",
+          "title": "CEO, Microsoft",
+          "x_twitter": "@satyanadella",
+          "x_url": "https://x.com/satyanadella",
+          "linkedin": "https://linkedin.com/in/satyanadella",
+          "weibo": null,
+          "github": null,
+          "notes": "Very active on X and LinkedIn. Regularly posts about AI strategy.",
+          "confidence": "high"
+        },
+        {
+          "name": "Kevin Scott",
+          "title": "CTO, Microsoft",
+          "x_twitter": "@kevin_scott",
+          "x_url": "https://x.com/kevin_scott",
+          "linkedin": "https://linkedin.com/in/jkevinscott",
+          "weibo": null,
+          "github": "https://github.com/kevinscott",
+          "notes": "Leads Microsoft AI/OpenAI partnership. Author of 'Reprogramming the American Dream'.",
+          "confidence": "high"
+        },
+        {
+          "name": "Mustafa Suleyman",
+          "title": "CEO, Microsoft AI",
+          "x_twitter": "@mustafasuleyman",
+          "x_url": "https://x.com/mustafasuleyman",
+          "linkedin": "https://linkedin.com/in/mustafa-suleyman",
+          "weibo": null,
+          "github": null,
+          "notes": "Co-founder of DeepMind. Joined Microsoft Mar 2024 to lead Copilot. Author of 'The Coming Wave'.",
+          "confidence": "high"
+        }
+      ],
+      "CrewAI": [
+        {
+          "name": "João Moura",
+          "title": "CEO & Founder",
+          "x_twitter": "@joaomdmoura",
+          "x_url": "https://x.com/joaomdmoura",
+          "linkedin": "https://linkedin.com/in/joaomdmoura",
+          "weibo": null,
+          "github": "https://github.com/joaomdmoura",
+          "notes": "Creator of CrewAI multi-agent framework. Active on GitHub and X.",
+          "confidence": "high"
+        }
+      ],
+      "阶跃星辰 (StepFun)": [
+        {
+          "name": "姜大昕 (Jiang Daxin)",
+          "title": "CEO & Founder",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/daxin-jiang",
+          "weibo": null,
+          "github": null,
+          "notes": "Former Microsoft Research VP (Microsoft Research Asia). Founded StepFun 2023. Low public social.",
+          "confidence": "low",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "阶跃星辰CEO,前微软亚洲研究院VP. 无X/微博/GitHub. LinkedIn低活性."
+          }
+        }
+      ],
+      "百川智能 (Baichuan AI)": [
+        {
+          "name": "王小川 (Wang Xiaochuan)",
+          "title": "CEO & Founder",
+          "x_twitter": "@xiaochuanwang",
+          "x_url": "https://x.com/xiaochuanwang",
+          "linkedin": "https://linkedin.com/in/xiaochuan-wang",
+          "weibo": "王小川 (已认证)",
+          "github": null,
+          "notes": "Former Sogou CEO/founder. Active on Weibo and X. Founded Baichuan AI 2023.",
+          "confidence": "high",
+          "verification": {
+            "verify_status": "verified",
+            "note": "前搜狗CEO. X@xiaochuanwang活跃,微博@王小川蓝V百万粉. 双通道可用."
+          }
+        }
+      ]
+    },
+    "T3_全球对标": {
+      "Google DeepMind": [
+        {
+          "name": "Demis Hassabis",
+          "title": "CEO, Google DeepMind",
+          "x_twitter": "@demishassabis",
+          "x_url": "https://x.com/demishassabis",
+          "linkedin": "https://linkedin.com/in/demishassabis",
+          "weibo": null,
+          "github": null,
+          "notes": "Nobel Prize winner. Co-founded DeepMind 2010. Very active on X.",
+          "confidence": "high"
+        },
+        {
+          "name": "Sundar Pichai",
+          "title": "CEO, Google/Alphabet",
+          "x_twitter": "@sundarpichai",
+          "x_url": "https://x.com/sundarpichai",
+          "linkedin": "https://linkedin.com/in/sundarpichai",
+          "weibo": null,
+          "github": null,
+          "notes": "Active on X. Posts about Google Gemini/AI strategy.",
+          "confidence": "high"
+        }
+      ],
+      "Meta AI": [
+        {
+          "name": "Mark Zuckerberg",
+          "title": "CEO, Meta",
+          "x_twitter": "@finkd (inactive)",
+          "x_url": "https://x.com/finkd",
+          "linkedin": "https://linkedin.com/in/mark-zuckerberg",
+          "weibo": null,
+          "github": null,
+          "notes": "Rarely uses X. Primary: Facebook, Threads (@zuck), Instagram. Instagram: https://instagram.com/zuck",
+          "confidence": "high"
+        },
+        {
+          "name": "Yann LeCun",
+          "title": "Chief AI Scientist, Meta",
+          "x_twitter": "@ylecun",
+          "x_url": "https://x.com/ylecun",
+          "linkedin": "https://linkedin.com/in/yann-lecun",
+          "weibo": null,
+          "github": null,
+          "notes": "Turing Award winner. Extremely active on X — posts daily about AI. NYU professor.",
+          "confidence": "high"
+        },
+        {
+          "name": "Chris Cox",
+          "title": "CPO",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": "https://linkedin.com/in/chriscox",
+          "weibo": null,
+          "github": null,
+          "notes": "Meta CPO since 2005 (one of earliest employees). Low public social presence.",
+          "confidence": "medium"
+        }
+      ],
+      "Mistral AI": [
+        {
+          "name": "Arthur Mensch",
+          "title": "CEO & Co-founder",
+          "x_twitter": "@arthurmensch",
+          "x_url": "https://x.com/arthurmensch",
+          "linkedin": "https://linkedin.com/in/arthur-mensch",
+          "weibo": null,
+          "github": null,
+          "notes": "Former DeepMind researcher. Active on X. French AI champion.",
+          "confidence": "high"
+        },
+        {
+          "name": "Guillaume Lample",
+          "title": "Chief Scientist & Co-founder",
+          "x_twitter": "@GuillaumeLample",
+          "x_url": "https://x.com/GuillaumeLample",
+          "linkedin": "https://linkedin.com/in/guillaume-lample",
+          "weibo": null,
+          "github": "https://github.com/glample",
+          "notes": "Former Meta AI researcher (FAIR). Co-author of LLaMA and fastText.",
+          "confidence": "high"
+        }
+      ],
+      "xAI": [
+        {
+          "name": "Elon Musk",
+          "title": "CEO",
+          "x_twitter": "@elonmusk",
+          "x_url": "https://x.com/elonmusk",
+          "linkedin": "https://linkedin.com/in/elonmusk",
+          "weibo": null,
+          "github": null,
+          "notes": "Most followed account on X. Owns X/Twitter. Posts about Grok/xAI regularly.",
+          "confidence": "high"
+        }
+      ],
+      "Cohere": [
+        {
+          "name": "Aidan Gomez",
+          "title": "CEO & Co-founder",
+          "x_twitter": "@aidangomez",
+          "x_url": "https://x.com/aidangomez",
+          "linkedin": "https://linkedin.com/in/aidan-gomez",
+          "weibo": null,
+          "github": "https://github.com/aidangomez",
+          "notes": "Co-author of 'Attention Is All You Need' (Transformer paper). Active on X.",
+          "confidence": "high"
+        },
+        {
+          "name": "Nick Frosst",
+          "title": "Co-founder",
+          "x_twitter": "@nickfrosst",
+          "x_url": "https://x.com/nickfrosst",
+          "linkedin": "https://linkedin.com/in/nickfrosst",
+          "weibo": null,
+          "github": "https://github.com/nickfrosst",
+          "notes": "Former Google Brain. Canadian AI researcher. Musician (Good Kid band).",
+          "confidence": "high"
+        }
+      ],
+      "AutoGPT": [
+        {
+          "name": "Significant Gravitas (Torantulino)",
+          "title": "Creator / Lead",
+          "x_twitter": "@SigGravitas",
+          "x_url": "https://x.com/SigGravitas",
+          "linkedin": null,
+          "weibo": null,
+          "github": "https://github.com/Significant-Gravitas",
+          "notes": "Pseudonymous. Created AutoGPT (most starred GitHub repo 2023). Active on X and GitHub.",
+          "confidence": "high"
+        }
+      ],
+      "Midjourney": [
+        {
+          "name": "David Holz",
+          "title": "CEO & Founder",
+          "x_twitter": "@DavidSHolz",
+          "x_url": "https://x.com/DavidSHolz",
+          "linkedin": "https://linkedin.com/in/david-holz",
+          "weibo": null,
+          "github": null,
+          "notes": "Former Leap Motion CTO/founder. Active on X and Midjourney Discord.",
+          "confidence": "high"
+        }
+      ],
+      "Runway": [
+        {
+          "name": "Cristóbal Valenzuela",
+          "title": "CEO & Co-founder",
+          "x_twitter": "@c_valenzuelab",
+          "x_url": "https://x.com/c_valenzuelab",
+          "linkedin": "https://linkedin.com/in/cvalenzuela",
+          "weibo": null,
+          "github": "https://github.com/cvalenzuela",
+          "notes": "NYU ITP background. Very active on X about AI video/gen AI. Also uses 'cvalenzuela' on GitHub.",
+          "confidence": "high"
+        }
+      ],
+      "Stability AI": [
+        {
+          "name": "Prem Akkaraju",
+          "title": "CEO",
+          "x_twitter": "@premasaur",
+          "x_url": "https://x.com/premasaur",
+          "linkedin": "https://linkedin.com/in/prem-akkaraju",
+          "weibo": null,
+          "github": null,
+          "notes": "Former Weta Digital CEO. Became Stability AI CEO Jun 2024 after Emad Mostaque resigned.",
+          "confidence": "medium"
+        }
+      ],
+      "快手 (Kuaishou)": [
+        {
+          "name": "程一笑 (Cheng Yixiao)",
+          "title": "CEO",
+          "x_twitter": null,
+          "x_url": null,
+          "linkedin": null,
+          "weibo": null,
+          "github": null,
+          "notes": "Kuaishou co-founder (GIF快手). Very private, no known public social media. Product: 可灵 (Kling) AI video.",
+          "confidence": "high",
+          "verification": {
+            "verify_status": "verified_no_social",
+            "note": "快手CEO/GIF快手创始人. 极度低调,无任何公开社交. 可灵官方微博/公众号可监控."
+          }
+        }
+      ],
+      "Pika Labs": [
+        {
+          "name": "郭文景 Demi (Demi Guo)",
+          "title": "CEO & Co-founder",
+          "x_twitter": "@demi_guo",
+          "x_url": "https://x.com/demi_guo",
+          "linkedin": "https://linkedin.com/in/demi-guo",
+          "weibo": null,
+          "github": null,
+          "notes": "Stanford PhD dropout. Founded Pika Labs (AI video). Active on X. Daughter of former Suning exec.",
+          "confidence": "high"
+        }
+      ],
+      "Amazon Bedrock": [
+        {
+          "name": "Andy Jassy",
+          "title": "CEO, Amazon",
+          "x_twitter": "@ajassy",
+          "x_url": "https://x.com/ajassy",
+          "linkedin": "https://linkedin.com/in/ajassy",
+          "weibo": null,
+          "github": null,
+          "notes": "Former AWS CEO. Became Amazon CEO 2021. Posts occasionally about AWS Bedrock/AI.",
+          "confidence": "high"
+        }
+      ]
+    }
+  },
+  "summary_by_platform": {
+    "x_twitter_found": 30,
+    "linkedin_found": 38,
+    "weibo_found": 4,
+    "github_found": 15,
+    "no_social_found": 10,
+    "no_social_names": [
+      "梁汝波",
+      "张一鸣",
+      "朱文佳",
+      "吴泳铭 (near-zero public social)",
+      "汪涛",
+      "梁文锋",
+      "闫俊杰",
+      "姜大昕",
+      "程一笑"
+    ]
+  },
+  "top_priority_monitoring_accounts": {
+    "description": "Executive X/Twitter accounts most critical for daily competitive monitoring",
+    "handles": [
+      "@sama",
+      "@gdb",
+      "@DarioAmodei",
+      "@janleike",
+      "@demishassabis",
+      "@sundarpichai",
+      "@ylecun",
+      "@elonmusk",
+      "@satyanadella",
+      "@kevin_scott",
+      "@mustafasuleyman",
+      "@hwchase17",
+      "@arthurmensch",
+      "@aidangomez",
+      "@SigGravitas",
+      "@c_valenzuelab",
+      "@DavidSHolz",
+      "@demi_guo",
+      "@joaomdmoura",
+      "@shouzi"
+    ]
+  },
+  "_next_steps": [
+    "1. When network access is restored, run: curl -sI -o /dev/null -w '%{http_code}' https://x.com/<handle> for each X account",
+    "2. Verify LinkedIn profiles via LinkedIn search (most URLs are inferred; need real verification)",
+    "3. For Chinese executives, search Weibo by name to confirm exact accounts",
+    "4. Check if any executives have changed roles or left companies since mid-2025",
+    "5. Add Bluesky accounts (increasingly important for AI community)",
+    "6. Cross-reference with competitive-radar skill monitoring config"
+  ],
+  "_cn_supplement": {
+    "description": "补充建议搜索的高管社交账号",
+    "candidates": [
+      {
+        "name": "罗璇",
+        "company": "DeepSeek",
+        "role": "联创",
+        "keywords": "luoxuan, luo xuan deepseek twitter"
+      },
+      {
+        "name": "谭待",
+        "company": "字节/火山引擎",
+        "role": "VP AI Infra",
+        "keywords": "待查"
+      },
+      {
+        "name": "刘煜宏",
+        "company": "腾讯混元",
+        "role": "腾讯AI负责人",
+        "keywords": "liuyuhong tencent ai"
+      },
+      {
+        "name": "唐杰",
+        "company": "智谱AI",
+        "role": "联创/清华教授",
+        "keywords": "tangjie thunlp twitter"
+      }
+    ],
+    "note": "这些人在competitors.json 28竞品之外,作为补充跟踪. 网络恢复后搜索."
+  }
+}

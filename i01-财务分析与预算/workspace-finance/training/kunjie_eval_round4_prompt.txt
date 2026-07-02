@@ -1,0 +1,32 @@
+请执行 Round 4 真实工作任务 Eval，本轮采用“外部评分制”。
+
+任务文件：
+/home/xiaoai/.openclaw/workspace-finance/training/kunjie_eval_round4_external_scored_tasks.jsonl
+
+说明文件：
+/home/xiaoai/.openclaw/workspace-finance/training/kunjie_eval_round4_external_scored_tasks_readme.md
+
+请把完整答卷保存到：
+/home/xiaoai/.openclaw/workspace-finance/training/kunjie_eval_round4_answers.md
+
+重要要求：
+1. 逐题读取任务文件，按顺序完成 8 题，不要跳题。
+2. 每题必须完整展示回答，不要只写摘要或“已完成”。
+3. 每题必须包含：数据来源与边界、实际读取/调用的文件或工具、处理/计算过程、异常与风险、复核建议/下一步动作、本题自评与不确定点。
+4. 每题后必须写清楚：
+   【本题调用/读取】
+   - 文件：
+   - 工具：
+   - 使用目的：
+5. 如果调用了 Skill，请明确写出 Skill 名称、触发原因、使用了其中哪些流程；如果只是使用 MEMORY/AGENTS/HEARTBEAT 中的规则，也要如实说明。
+6. 本轮你可以自评，但自评只作为参考，不能自行宣布最终满分通过，最终成绩由养虾人/外部评审判定。
+7. 最终总结必须说明：
+   - 本轮完整答卷保存路径；
+   - 本轮读取了哪些数据文件；
+   - 本轮调用了哪些工具/Skill/规则文件；
+   - 哪些题需要人工复核；
+   - 自评分数仅供参考；
+   - 建议沉淀到 MEMORY/AGENTS/HEARTBEAT/SKILL 的内容。
+8. 严禁：把 synthetic_training_seed_v1 当真实数据、缺字段估算正式结论、直接写 ERP/预算系统、直接对外发送报表、为了 Skill 而 Skill。
+
+现在开始执行，并把完整过程写入指定答卷文件。

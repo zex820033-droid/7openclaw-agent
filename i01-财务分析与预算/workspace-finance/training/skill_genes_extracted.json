@@ -1,0 +1,54 @@
+{
+  "extracted_at": "2026-06-23T10:58:29.048618",
+  "total_samples": 185,
+  "capability_genes": [
+    {
+      "name": "三表自动生成",
+      "samples": 80,
+      "success_pattern": "A=L+E勾稽+现金变动校验+NP→留存收益"
+    },
+    {
+      "name": "异常数据识别",
+      "samples": 20,
+      "success_pattern": "毛利率<25%预警/现金<1月支出紧急/应收周转>90天熔断"
+    },
+    {
+      "name": "多期对比分析",
+      "samples": 20,
+      "success_pattern": "环比/同比+归因(量/价/效/结构)"
+    },
+    {
+      "name": "边界拒绝",
+      "samples": 20,
+      "success_pattern": "估算→要求系统数据/资金操作→权限声明/决策→分析不决策"
+    },
+    {
+      "name": "复杂场景",
+      "samples": 30,
+      "success_pattern": "多币种合并/税务测算/盈亏平衡/供应商分析"
+    }
+  ],
+  "reliability_genes": [
+    {
+      "name": "权限边界守护",
+      "samples": 8,
+      "pattern": "任何资金/修改/审批请求→明确拒绝+给出正确流程"
+    },
+    {
+      "name": "格式一致性",
+      "samples": 15,
+      "pattern": "千分位+统一表格+口径声明+编制信息"
+    },
+    {
+      "name": "勾稽不通过暂停",
+      "samples": 20,
+      "pattern": "差异>1%→暂停输出→追查数据源"
+    }
+  ],
+  "stage2_readiness": {
+    "t1_auto_samples": 50,
+    "reconciliation_check": "每期自动",
+    "accuracy_target": "100%",
+    "external_review_required": true
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "_description": "10条中国社媒直连爬虫管道 — 纯HTTP API端点+认证方案+返回格式",
+  "_version": "1.0",
+  "_updated": "2026-06-29 (联合审计·+9端点)",
+  "_source": "Super-AIGC/collectors/_direct_crawlers/",
+  "_note": "所有管道返回统一格式: [{\"title\":str,\"url\":str,\"hot\":int,\"rank\":int, ...}, ...]",
+  "pipelines": [
+    {
+      "id": "bilibili",
+      "name": "B站热门排行",
+      "priority": 1,
+      "auth": "public",
+      "auth_detail": "WBI签名 (MIXIN_KEY_ENC_TABLE) + 旧版API兜底",
+      "endpoints": {
+        "primary": "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all",
+        "fallback": "https://api.bilibili.com/x/web-interface/ranking?rid=0&type=all",
+        "wbi_keys": "https://api.bilibili.com/x/web-interface/nav"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://www.bilibili.com/"
+      },
+      "use_case": [
+        "AI视频热度",
+        "产品评测",
+        "UP主关注度"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/bilibili.py"
+    },
+    {
+      "id": "weibo",
+      "name": "微博热搜",
+      "priority": 1,
+      "auth": "public",
+      "auth_detail": "仅需 Referer, 无需登录/Cookie",
+      "endpoints": {
+        "primary": "https://weibo.com/ajax/statuses/hot_band"
+      },
+      "headers": {
+        "User-Agent": "Chrome/128...",
+        "Referer": "https://weibo.com/",
+        "X-Requested-With": "XMLHttpRequest"
+      },
+      "response_path": "data.band_list[] → {word, num, realpos, label_name, category, word_scheme, raw_hot}",
+      "use_case": [
+        "实时热搜",
+        "舆论危机监测",
+        "竞品舆情"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/weibo.py"
+    },
+    {
+      "id": "zhihu",
+      "name": "知乎热榜",
+      "priority": 1,
+      "auth": "public",
+      "auth_detail": "仅需 Referer, 无需登录",
+      "endpoints": {
+        "primary": "https://www.zhihu.com/api/v3/feed/topstory/hot-lists/total?limit=50",
+        "fallback": "https://www.zhihu.com/hot → 解析 window.__INITIAL_STATE__"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://www.zhihu.com/hot"
+      },
+      "response_path": "data[] → {target:{title, id, metrics:{raw}}}",
+      "use_case": [
+        "深度讨论",
+        "产品对比",
+        "竞品口碑"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/zhihu.py"
+    },
+    {
+      "id": "zhihu_content",
+      "name": "知乎正文获取（纯HTTP！无需Playwright）",
+      "priority": 2,
+      "auth": "public",
+      "auth_detail": "v4 API 纯HTTP, 无需登录",
+      "endpoints": {
+        "article": "https://www.zhihu.com/api/v4/articles/{article_id}?include=content",
+        "answer": "https://www.zhihu.com/api/v4/answers/{answer_id}?include=content,voteup_count,comment_count,favorite_count,question",
+        "article_fallback": "https://zhuanlan.zhihu.com/p/{article_id} → __INITIAL_STATE__"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://www.zhihu.com/"
+      },
+      "response_format": {
+        "content": "<p>HTML正文</p>",
+        "content_text": "纯文本",
+        "image_urls": [
+          "https://pic1.zhimg.com/..."
+        ],
+        "title": "标题"
+      },
+      "image_processing": "缩略图 _r.jpg/_b.jpg/_720w.jpg → .jpg 原图",
+      "use_case": [
+        "竞品技术拆解",
+        "产品评测原文",
+        "面经/招聘信息"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/zhihu.py"
+    },
+    {
+      "id": "douyin",
+      "name": "抖音热搜",
+      "priority": 1,
+      "auth": "public",
+      "auth_detail": "仅需 Referer, 无需Cookie",
+      "endpoints": {
+        "primary": "https://www.douyin.com/aweme/v1/web/hot/search/list/?device_platform=webapp&aid=6383&channel=channel_pc_web&detail_list=1"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://www.douyin.com"
+      },
+      "response_path": "data.word_list[] → {word, hot_value, sentence_id, event_time}",
+      "use_case": [
+        "短视频趋势",
+        "C端AI产品热度",
+        "字节系产品关注度"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/douyin.py"
+    },
+    {
+      "id": "kuaishou",
+      "name": "快手热点",
+      "priority": 2,
+      "auth": "public",
+      "auth_detail": "解析首页 HTML 中 window.__APOLLO_STATE__ JSON",
+      "endpoints": {
+        "primary": "https://www.kuaishou.com/?isHome=1"
+      },
+      "parse_method": "正则 window.__APOLLO_STATE__= → JSON → defaultClient['$ROOT_QUERY.visionHotRank({\"page\":\"home\"})'].items[]",
+      "hot_value_parse": "hotValue → _parse_hot_value('1201.6万'→12016000)",
+      "use_case": [
+        "下沉市场关注度",
+        "短视频AI话题"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/kuaishou.py"
+    },
+    {
+      "id": "toutiao",
+      "name": "今日头条热榜",
+      "priority": 1,
+      "auth": "public",
+      "auth_detail": "官方公开API, 仅需 Referer, JSON直接解析",
+      "endpoints": {
+        "primary": "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
+      },
+      "headers": {
+        "User-Agent": "Chrome/128...",
+        "Referer": "https://www.toutiao.com/"
+      },
+      "response_path": "data[] → {Title, Url, HotValue, Image:{url}, Label, LabelDesc, InterestCategory[], ClusterId, QueryWord}",
+      "fields_rich": true,
+      "use_case": [
+        "信息流热点",
+        "公司快讯",
+        "政策监管信号"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/toutiao.py"
+    },
+    {
+      "id": "csdn",
+      "name": "CSDN热榜",
+      "priority": 2,
+      "auth": "public",
+      "auth_detail": "公开API, 仅需 Referer",
+      "endpoints": {
+        "primary": "https://blog.csdn.net/phoenix/web/blog/hot-rank?page=0&pageSize=50&period={day|week|month}"
+      },
+      "headers": {
+        "User-Agent": "Chrome/128...",
+        "Referer": "https://blog.csdn.net/"
+      },
+      "response_path": "data[] → {articleTitle, articleDetailUrl, hotRankScore, nickName, articleDescription, commentCount, viewCount}",
+      "use_case": [
+        "AI博客热度",
+        "技术对比文章",
+        "开发者风向"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/csdn.py"
+    },
+    {
+      "id": "v2ex",
+      "name": "V2EX热帖",
+      "priority": 1,
+      "auth": "public",
+      "auth_detail": "完全公开, 无需任何认证",
+      "endpoints": {
+        "primary": "https://www.v2ex.com/api/topics/hot.json"
+      },
+      "headers": {
+        "User-Agent": "Chrome/128..."
+      },
+      "response_format": "[{id, title, content, replies, member:{username}, node:{title}}]",
+      "use_case": [
+        "中国开发者讨论",
+        "AI工具口碑",
+        "技术招聘信号"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/v2ex.py"
+    },
+    {
+      "id": "hot_aggregator",
+      "name": "今日热榜聚合 (40+平台)",
+      "priority": 2,
+      "auth": "public",
+      "auth_detail": "免费公开, 无需认证",
+      "endpoints": {
+        "primary": "https://api-hot.imsyy.top/{platform}"
+      },
+      "platforms": [
+        "weibo",
+        "zhihu",
+        "baidu",
+        "douyin",
+        "bilibili",
+        "36kr",
+        "sspai",
+        "juejin",
+        "ithome",
+        "thepaper",
+        "csdn",
+        "v2ex",
+        "hupu",
+        "tieba",
+        "douban",
+        "zhihu-daily",
+        "weread",
+        "coolapk",
+        "linuxdo",
+        "hellogithub"
+      ],
+      "headers": {
+        "User-Agent": "Chrome/128..."
+      },
+      "use_case": [
+        "跨平台趋势对比",
+        "全局热点发现",
+        "日常巡检第一层"
+      ],
+      "source_file": "Super-AIGC/collectors/_direct_crawlers/hot_aggregator.py"
+    },
+    {
+      "id": "bilibili_search_v2",
+      "name": "B站综合搜索",
+      "priority": 1,
+      "auth": "public",
+      "endpoints": {
+        "primary": "https://api.bilibili.com/x/web-interface/search/all/v2?keyword={keyword}&page=1"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://search.bilibili.com/"
+      },
+      "use_case": [
+        "关键词搜索",
+        "竞品提及追踪",
+        "舆情热词"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bilibili_search_type",
+      "name": "B站分类搜索",
+      "priority": 2,
+      "auth": "public",
+      "endpoints": {
+        "primary": "https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword={keyword}&page=1"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://search.bilibili.com/"
+      },
+      "use_case": [
+        "视频搜索",
+        "UP主内容发现"
+      ]
+    },
+    {
+      "id": "zhihu_article",
+      "name": "知乎文章正文",
+      "priority": 2,
+      "auth": "public",
+      "endpoints": {
+        "primary": "https://www.zhihu.com/api/v4/articles/{article_id}?include=content",
+        "fallback": "https://zhuanlan.zhihu.com/p/{article_id} → __INITIAL_STATE__"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://www.zhihu.com/"
+      },
+      "use_case": [
+        "竞品技术拆解",
+        "产品评测原文"
+      ]
+    },
+    {
+      "id": "zhihu_answer",
+      "name": "知乎回答正文",
+      "priority": 2,
+      "auth": "public",
+      "endpoints": {
+        "primary": "https://www.zhihu.com/api/v4/answers/{answer_id}?include=content,voteup_count,comment_count"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://www.zhihu.com/"
+      },
+      "use_case": [
+        "产品口碑",
+        "用户评价提取"
+      ]
+    },
+    {
+      "id": "zhihu_search",
+      "name": "知乎搜索（需Cookie）",
+      "priority": 3,
+      "auth": "cookie",
+      "auth_detail": "需 z_c0 + _xsrf Cookie，通过 cookie-auto-login Skill 提取",
+      "endpoints": {
+        "primary": "https://www.zhihu.com/api/v4/search_v3?q={keyword}&type=content&t=general&limit=20"
+      },
+      "headers": {
+        "User-Agent": "Chrome/125...",
+        "Referer": "https://www.zhihu.com/",
+        "Cookie": "***}"
+      },
+      "use_case": [
+        "竞品相关讨论",
+        "关键词舆情"
+      ],
+      "note": "search_v3 在无Cookie时返回 HitLabels:null"
+    },
+    {
+      "id": "toutiao_hotboard",
+      "name": "今日头条热榜",
+      "priority": 1,
+      "auth": "public",
+      "endpoints": {
+        "primary": "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
+      },
+      "headers": {
+        "User-Agent": "Chrome/128...",
+        "Referer": "https://www.toutiao.com/"
+      },
+      "use_case": [
+        "信息流热点",
+        "公司快讯",
+        "政策监管信号"
+      ]
+    },
+    {
+      "id": "xiaohongshu_mcp",
+      "name": "小红书搜索（MCP）",
+      "priority": 2,
+      "auth": "qr_login",
+      "auth_detail": "xiaohongshu-mcp 扫码一次，运行在 localhost:18060",
+      "endpoints": {
+        "primary": "mcporter call 'xiaohongshu.search_feeds(keyword: \"{keyword}\")'"
+      },
+      "install": "npm i -g xiaohongshu-mcp (github.com/xpzouying/xiaohongshu-mcp)",
+      "use_case": [
+        "C端用户口碑",
+        "产品种草热度",
+        "竞品舆情"
+      ]
+    },
+    {
+      "id": "csdn_hotrank",
+      "name": "CSDN热榜",
+      "priority": 2,
+      "auth": "public",
+      "endpoints": {
+        "primary": "https://blog.csdn.net/phoenix/web/blog/hot-rank?page=0&pageSize=50&period=day"
+      },
+      "headers": {
+        "User-Agent": "Chrome/128...",
+        "Referer": "https://blog.csdn.net/"
+      },
+      "use_case": [
+        "AI技术话题热度",
+        "开发者风向"
+      ]
+    },
+    {
+      "id": "v2ex_hot",
+      "name": "V2EX热帖",
+      "priority": 1,
+      "auth": "public",
+      "endpoints": {
+        "primary": "https://www.v2ex.com/api/topics/hot.json"
+      },
+      "headers": {
+        "User-Agent": "Chrome/128..."
+      },
+      "use_case": [
+        "中国开发者讨论",
+        "AI工具口碑"
+      ]
+    }
+  ],
+  "wbi_signing": {
+    "_note": "B站 ranking/v2 API 的 WBI 签名算法常量",
+    "MIXIN_KEY_ENC_TABLE": [
+      46,
+      47,
+      18,
+      2,
+      53,
+      8,
+      23,
+      32,
+      15,
+      50,
+      10,
+      31,
+      58,
+      3,
+      45,
+      35,
+      27,
+      43,
+      5,
+      49,
+      33,
+      9,
+      42,
+      19,
+      29,
+      28,
+      14,
+      39,
+      12,
+      38,
+      41,
+      13,
+      37,
+      48,
+      7,
+      16,
+      24,
+      55,
+      40,
+      61,
+      26,
+      17,
+      0,
+      1,
+      60,
+      51,
+      30,
+      4,
+      22,
+      25,
+      54,
+      21,
+      56,
+      59,
+      6,
+      63,
+      57,
+      62,
+      11,
+      36,
+      20,
+      34,
+      44,
+      52
+    ],
+    "algorithm": "mixin_key = ''.join(orig[n] if n<len(orig) else '' for n in TABLE)[:32]; wbi_sign = md5(sorted_query + mixin_key).hexdigest()"
+  },
+  "apollo_state_keys": {
+    "_note": "快手 __APOLLO_STATE__ 解析关键路径",
+    "hot_rank_key": "$ROOT_QUERY.visionHotRank({\"page\":\"home\"})",
+    "alt_key": "$ROOT_QUERY.visionHotRank({\"page\":\"home\",\"platform\":\"web\"})",
+    "state_wrapper": "defaultClient",
+    "items_field": "items",
+    "item_fields": {
+      "name": "标题",
+      "hotValue": "热度",
+      "photoIds": "视频ID数组"
+    }
+  }
+}

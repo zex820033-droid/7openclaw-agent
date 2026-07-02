@@ -1,0 +1,317 @@
+{
+  "_description": "AutoCLI 已验证命令清单 — 竞争情报官 T1/T2/T5 数据采集管道",
+  "_version": "1.0",
+  "_updated": "2026-06-29 (联合审计·B站降级+xhs替换)",
+  "_binary": "~/.local/bin/autocli",
+  "_binary_version": "0.3.8",
+  "_note": "在无Chrome环境下仅 Public 模式命令可用；Browser 命令需 Chrome + Extension",
+  "public_verified": [
+    {
+      "platform": "hackernews",
+      "command": "top",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T1/T5 全球科技信号"
+    },
+    {
+      "platform": "hackernews",
+      "command": "new",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T1 最新发布"
+    },
+    {
+      "platform": "hackernews",
+      "command": "best",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T1 最佳内容"
+    },
+    {
+      "platform": "hackernews",
+      "command": "search",
+      "args": "\"<query>\" --limit 10 --format json",
+      "status": "verified",
+      "use_case": "T1/T2 竞品提及追踪",
+      "syntax_note": "位置参数，非 --query"
+    },
+    {
+      "platform": "hackernews",
+      "command": "show",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T1 Show HN 新产品发布"
+    },
+    {
+      "platform": "hackernews",
+      "command": "ask",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T2 Ask HN 行业讨论"
+    },
+    {
+      "platform": "devto",
+      "command": "top",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T1/T2 开发者社区热门"
+    },
+    {
+      "platform": "devto",
+      "command": "tag",
+      "args": "<tag> --limit 20 --format json",
+      "status": "verified",
+      "use_case": "T2 按标签检索",
+      "syntax_note": "位置参数，非 --tag"
+    },
+    {
+      "platform": "lobsters",
+      "command": "hot",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T1/T2 精英程序员社区"
+    },
+    {
+      "platform": "lobsters",
+      "command": "newest",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T1 最新"
+    },
+    {
+      "platform": "stackoverflow",
+      "command": "hot",
+      "args": "--limit 20 --format json",
+      "status": "verified",
+      "use_case": "T1 技术问答热度"
+    },
+    {
+      "platform": "stackoverflow",
+      "command": "search",
+      "args": "\"<query>\" --limit 10 --format json",
+      "status": "verified",
+      "use_case": "T6 技术栈调研",
+      "syntax_note": "位置参数"
+    },
+    {
+      "platform": "v2ex",
+      "command": "hot",
+      "args": "--limit 20 --format json",
+      "status": "flaky",
+      "use_case": "T2 中国开发者热点",
+      "note": "有时超时"
+    },
+    "bilibili"
+  ],
+  "browser_required": [
+    {
+      "platform": "bilibili",
+      "commands": [
+        "hot",
+        "search",
+        "ranking",
+        "download"
+      ],
+      "use_case": "T1 AI视频热度"
+    },
+    {
+      "platform": "zhihu",
+      "commands": [
+        "hot",
+        "search",
+        "question"
+      ],
+      "use_case": "T2 深度讨论"
+    },
+    {
+      "platform": "weibo",
+      "commands": [
+        "hot",
+        "search"
+      ],
+      "use_case": "T2 实时热搜"
+    },
+    {
+      "platform": "twitter",
+      "commands": [
+        "search",
+        "timeline",
+        "trending"
+      ],
+      "use_case": "T2 海外竞品动态"
+    },
+    {
+      "platform": "reddit",
+      "commands": [
+        "hot",
+        "search",
+        "subreddit"
+      ],
+      "use_case": "T2 技术社区"
+    },
+    {
+      "platform": "bbc",
+      "commands": [
+        "news"
+      ],
+      "use_case": "T2 国际政策"
+    },
+    {
+      "platform": "wikipedia",
+      "commands": [
+        "trending",
+        "search"
+      ],
+      "use_case": "T4 概念查证"
+    },
+    {
+      "platform": "arxiv",
+      "commands": [
+        "search",
+        "paper"
+      ],
+      "use_case": "T1 前沿论文"
+    },
+    {
+      "platform": "google",
+      "commands": [
+        "news",
+        "search"
+      ],
+      "use_case": "T2 竞品新闻聚合"
+    },
+    {
+      "platform": "bloomberg",
+      "commands": [
+        "tech",
+        "markets"
+      ],
+      "use_case": "T3 融资财经"
+    },
+    {
+      "platform": "boss",
+      "commands": [
+        "search"
+      ],
+      "use_case": "T2 竞品招聘信号"
+    },
+    {
+      "platform": "xiaohongshu",
+      "commands": [
+        "search",
+        "feed"
+      ],
+      "use_case": "T2 C端用户口碑"
+    },
+    {
+      "platform": "xueqiu",
+      "commands": [
+        "stock",
+        "watchlist"
+      ],
+      "use_case": "T3 中概股行情"
+    },
+    {
+      "platform": "youtube",
+      "commands": [
+        "search",
+        "transcript"
+      ],
+      "use_case": "T6 技术发布会"
+    },
+    {
+      "platform": "linkedin",
+      "commands": [
+        "search"
+      ],
+      "use_case": "T2 人才动向"
+    }
+  ],
+  "competitive_intel_queries": {
+    "_note": "常用竞品情报检索关键词",
+    "queries": [
+      {
+        "target": "OpenAI",
+        "queries": [
+          "OpenAI Agent",
+          "OpenAI Operator",
+          "GPT Agent",
+          "OpenAI DevDay"
+        ]
+      },
+      {
+        "target": "Anthropic",
+        "queries": [
+          "Claude Computer Use",
+          "Anthropic Claude",
+          "Claude MCP",
+          "Claude Agent"
+        ]
+      },
+      {
+        "target": "Google DeepMind",
+        "queries": [
+          "Gemini Agent",
+          "Google AI Agent",
+          "Vertex AI Agent"
+        ]
+      },
+      {
+        "target": "字节跳动",
+        "queries": [
+          "Coze Agent",
+          "豆包 AI",
+          "火山引擎 Agent",
+          "即梦 AI"
+        ]
+      },
+      {
+        "target": "阿里巴巴",
+        "queries": [
+          "通义千问",
+          "百炼 Agent",
+          "阿里 AI Agent"
+        ]
+      },
+      {
+        "target": "百度",
+        "queries": [
+          "文心一言",
+          "千帆 AppBuilder",
+          "百度 AI Agent"
+        ]
+      },
+      {
+        "target": "Dify",
+        "queries": [
+          "Dify Agent",
+          "Dify Workflow",
+          "Dify platform"
+        ]
+      },
+      {
+        "target": "LangChain",
+        "queries": [
+          "LangGraph Agent",
+          "LangChain Agent",
+          "LangSmith"
+        ]
+      },
+      {
+        "target": "Agent通用",
+        "queries": [
+          "AI Agent framework",
+          "multi-agent orchestration",
+          "autonomous agent",
+          "agent deployment"
+        ]
+      }
+    ],
+    "xiaohongshu": {
+      "backend": "xiaohongshu-mcp",
+      "endpoint": "localhost:18060",
+      "install": "npm i -g xiaohongshu-mcp",
+      "auth": "扫码一次，复用"
+    }
+  }
+}

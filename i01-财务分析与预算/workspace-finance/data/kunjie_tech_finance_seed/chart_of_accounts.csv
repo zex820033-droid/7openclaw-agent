@@ -1,0 +1,16 @@
+account_code,field_name,statement_class,account_name,source_module,measurement,statement
+1001,cash,资产,货币资金,ERP_GL,月末余额,BS
+1122,accounts_receivable,资产,应收账款,ERP_AR,月末余额,BS
+1405,inventory,资产,库存商品,ERP_INV,月末余额,BS
+1601,fixed_assets_net,资产,固定资产净额,ERP_FA,月末余额,BS
+2202,accounts_payable,负债,应付账款,ERP_AP,月末余额,BS
+2001,short_term_debt,负债,短期借款,ERP_GL,月末余额,BS
+2501,long_term_debt,负债,长期借款,ERP_GL,月末余额,BS
+4001,paid_in_capital,权益,实收资本,ERP_GL,月末余额,BS
+4103,retained_earnings,权益,留存收益,ERP_GL,月末余额,BS
+6001,revenue,损益,主营业务收入,ERP_REV,本月发生额,PL
+6401,cogs,损益,主营业务成本,ERP_COGS,本月发生额,PL
+6602,opex,损益,销售/管理/研发费用,ERP_OPEX,本月发生额,PL
+6603,depreciation_amortization,损益,折旧摊销,ERP_FA,本月发生额,PL
+6604,interest_expense,损益,利息支出,ERP_GL,本月发生额,PL
+6801,income_tax,损益,所得税费用,ERP_TAX,本月发生额,PL

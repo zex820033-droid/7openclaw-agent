@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "created": "2026-06-23T17:44+08:00",
+    "source": "GitHub Releases API",
+    "sop": "每日检查。检测到新版本→生成版本发布报告→推送"
+  },
+  "dify": {
+    "repo": "langgenius/dify",
+    "source_type": "github_releases",
+    "last_checked": "2026-06-29T18:30+08:00",
+    "current_version": "1.15.0",
+    "current_release_id": 344699591,
+    "current_published_at": "2026-06-25T13:16:14Z",
+    "previous_version": "1.14.2",
+    "previous_release_id": 324730496,
+    "last_report": "reports/version-release-dify-v1.15.0-2026-06-26.md",
+    "cycle_days": 37,
+    "notes": "🚨 v1.15.0 重大版本。difyctl CLI + CoT推理流 + HITL增强 + CVE修复。19环境变量增2删1改。含数据库迁移(必须跑backfill)。T7 2026-06-28 复检无变化。"
+  },
+  "langchain": {
+    "repo": "langchain-ai/langchain",
+    "source_type": "github_releases",
+    "last_checked": "2026-06-29T18:30+08:00",
+    "current_version": "langchain-core==1.4.8",
+    "current_release_id": 341607808,
+    "current_published_at": "2026-06-18T19:39:42Z",
+    "last_report": null,
+    "cycle_days": 10,
+    "notes": "无变化。v1.4.8 仍为最新。已发布10天，超历史窗口中位数（6天），下个版本随时可能出。T7 2026-06-28 复检无变化。"
+  },
+  "crewai": {
+    "repo": "crewAIInc/crewAI",
+    "source_type": "github_releases",
+    "last_checked": "2026-06-29T18:30+08:00",
+    "current_version": "1.15.1",
+    "current_release_id": 345638968,
+    "current_published_at": "2026-06-27T06:50:46Z",
+    "previous_version": "1.15.0",
+    "previous_release_id": 345034607,
+    "last_report": "reports/version-release-crewai-v1.15.1-2026-06-27.md",
+    "cycle_days": 1.4,
+    "notes": "🚨 v1.15.1 hotfix (1.4天距v1.15.0)。SSRF redirect bypass安全修复(S1)+ Git auto-init + 显式项目定义强制 + CLI部署闭环。CEO亲自发布。发布节奏从15天→1.4天，转入高频迭代。T7 2026-06-28 复检无变化。"
+  }
+}

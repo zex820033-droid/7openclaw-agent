@@ -1,0 +1,112 @@
+{
+  "version": "1.5",
+  "updated": "2026-06-29T07:46:00+08:00",
+  "window": {
+    "pr_cycle_30d_start": "2026-05-30T00:00:00Z",
+    "issues_4wk_start": "2026-06-01T00:00:00Z",
+    "releases_3mo_start": "2026-03-29T00:00:00Z"
+  },
+  "data_quality": {
+    "github_api": "ACCESSIBLE (-k flag for cert issue)",
+    "github_web": "ACCESSIBLE",
+    "open_source_data": "GitHub Search API + Releases API (merged PRs/closed issues 30d)",
+    "closed_source_proxy": "Cursor Changelog + GitHub Copilot RSS",
+    "confidence": "A级(开源) · B级(闭源代理)"
+  },
+  "competitors": {
+    "dify": {
+      "repo": "langgenius/dify",
+      "type": "open-source",
+      "data_source": "github_api",
+      "latest_release": "1.15.0",
+      "latest_release_date": "2026-06-25",
+      "days_since_release": 3,
+      "days_since_prev_release": 37,
+      "prev_release": "1.14.2 (May 19)",
+      "merged_prs_30d": 551,
+      "closed_issues_30d": 282,
+      "median_pr_cycle_hours": 2.9,
+      "key_activity": "v1.15.0稳定版3d稳态(无新潮)·PR速率回落5.8%(窗口滑动正常衰减)",
+      "signal": "S2维持 - 稳态运行"
+    },
+    "langchain": {
+      "repo": "langchain-ai/langchain",
+      "type": "open-source",
+      "data_source": "github_api",
+      "latest_release": "langchain-fireworks==1.4.3",
+      "latest_release_date": "2026-06-26",
+      "core_release": "langchain-core==1.4.8 (Jun 18)",
+      "days_since_release": 2,
+      "days_since_core_release": 10,
+      "merged_prs_30d": 271,
+      "closed_issues_30d": 236,
+      "median_pr_cycle_hours": 1.4,
+      "key_activity": "2d前fireworks 1.4.3发布·多包并行持续·core 10d无新(战略放缓)·anthropic 1.4.8同日发布",
+      "signal": "S2维持 - 多包并行节奏放缓向集成商"
+    },
+    "crewai": {
+      "repo": "crewAIInc/crewAI",
+      "type": "open-source",
+      "data_source": "github_api",
+      "latest_release": "1.15.1",
+      "latest_release_date": "2026-06-27",
+      "release_id_pending": true,
+      "is_stable": true,
+      "prev_releases": "1.15.1a1(Jun 26)·1.15.0 stable(Jun 25)·1.14.8a5(Jun 25)·v1.14.7 stable(Jun 11)",
+      "days_since_release": 1,
+      "days_since_prev_stable": 2,
+      "merged_prs_30d": 142,
+      "closed_issues_30d": 27,
+      "median_pr_cycle_hours": 0.5,
+      "key_activity": "🆕 v1.15.1 stable发布(1d)·紧跟v1.15.0(2d间隔)·0.5h极速PR cycle再降(0.7h→0.5h -28.6%)",
+      "signal": "S2↑强 - 半月更节奏+持续极速合并"
+    },
+    "cursor": {
+      "repo": "cursor.com (closed-source)",
+      "type": "closed-source",
+      "data_source": "cursor.com/changelog",
+      "confidence": "B",
+      "updates_30d": 7,
+      "release_cadence": "continuous",
+      "latest_update": "2026-06-25",
+      "latest_update_desc": "Customize页面(plugins/skills/MCPs/subagents/rules/commands/hooks统一管理)·Marketplace排行榜·Plugin画布(Hex/Atlassian)·团队市场(GitLab/BitBucket/Azure DevOps导入)",
+      "key_activity": "无新Changelog(3d Customize仍为最新)·平台化深化稳态",
+      "signal": "S2维持 - 平台化深化持续"
+    },
+    "github_copilot": {
+      "repo": "github.com/copilot (closed-source)",
+      "type": "closed-source",
+      "data_source": "github.blog RSS",
+      "confidence": "B",
+      "release_cadence": "weekly+continuous",
+      "latest_update": "2026-06-26T20:55:03Z",
+      "latest_update_desc": "Copilot Metrics API → 企业/组织报告新增 totals_by_ai_adoption_phase 维度(merge 绝对值+AI采纳阶段耦合)",
+      "key_activity": "🆕 Adoption Phase Metric (Jun 26 20:55 UTC · 2d) · 三日连击后续(CLI GA + Auto选模 + Code Review + Metric 阶段维度)",
+      "signal": "S2维持 - 持续打磨review+终端Agent+度量ROI"
+    }
+  },
+  "alerts": {
+    "p1": [
+      "CrewAI v1.15.1 stable发布(Jun 27)·紧跟v1.15.0仅2d·0.5h极速PR cycle再降28.6%—半月更节奏稳定(下一稳定版预计~Jul 9±2d)",
+      "Dify v1.15.0稳定版3d稳态(无新潮)·PR速率回落5.8%属窗口正常衰减—QA周期持续"
+    ],
+    "p2": [
+      "LangChain core 10d无新版—多包并行/核心缓(sub-package 2-3个/周)",
+      "Copilot三日连击后续·Adoption Phase Metric(Jun 26)—企业ROI故事深化,可能预示付费tier分级"
+    ],
+    "p3": [
+      "Cursor Customize平台(plugins/skills/MCPs)— 持续3d无新"
+    ]
+  },
+  "data_quality_notes": [
+    "✅ GitHub API 正常访问(用 -k 跳过本地CA问题)",
+    "🚨 CrewAI v1.15.1 stable NEW(Jun 27) — 紧跟 v1.15.0(2d间隔)",
+    "🆕 LangChain langchain-fireworks==1.4.3 (Jun 26) — 2d前",
+    "🆕 Copilot Adoption Phase Metric (Jun 26 20:55 UTC) — 2d前",
+    "📊 Dify v1.15.0 已稳态3d(无新)",
+    "📊 Cursor Customize 仍为最新(3d无新)",
+    "📊 开源Cycle Time采样规则：最近merged PRs 30条中位数(避开长尾冷PR)",
+    "📊 Throughput/Issues关闭使用GitHub Search API精确计数",
+    "⚠️ CrewAI 0.5h中位数提示内部自动化合并流程成熟(可能牺牲审查深度)"
+  ]
+}

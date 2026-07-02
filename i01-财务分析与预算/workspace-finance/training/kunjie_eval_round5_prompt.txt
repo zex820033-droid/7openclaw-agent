@@ -1,0 +1,53 @@
+请执行 Round 5 Eval：完整月度经营包训练（扩展版）。本轮继续采用“外部评分制”。
+
+任务文件：
+/home/xiaoai/.openclaw/workspace-finance/training/kunjie_eval_round5_monthly_ops_pack.jsonl
+
+说明文件：
+/home/xiaoai/.openclaw/workspace-finance/training/kunjie_eval_round5_monthly_ops_pack_readme.md
+
+请把完整答卷保存到：
+/home/xiaoai/.openclaw/workspace-finance/training/kunjie_eval_round5_monthly_ops_pack_answers.md
+
+本轮目标：
+完成一整套 2026-05 内部月度经营包。训练目标是“会干活”，Skill 是干活后复盘沉淀的副产物，不要为了 Skill 而 Skill。
+
+执行要求：
+1. 逐题读取任务文件，按顺序完成 20 个任务，不要跳题。
+2. 每题必须完整展示回答，不要只写摘要或“已完成”。
+3. 每题必须包含：
+   - 数据来源与边界；
+   - 读取/调用的文件、工具、Skill 或规则；
+   - 处理过程 / 计算过程；
+   - 结论、异常、风险；
+   - 复核建议 / 下一步动作；
+   - 本题自评与不确定点。
+4. 每题后必须写：
+   【本题调用/读取】
+   - 文件：
+   - 工具：
+   - Skill/规则：
+   - 使用目的：
+5. 现金流压力测试必须先做字段口径预验证：
+   - 判断 ending_cash_projection 是独立快照还是链式累计；
+   - 未确认前不得叠加压力假设并连续滚动；
+   - 原始数据、假设推演、敏感性分析必须分层展示。
+6. 本轮可以逐题自评，但自评只作为参考，不能自行宣布最终满分、最终通过或训练完成。最终成绩等待养虾人/外部评审。
+7. 最终复盘必须说明：
+   - 本轮完整答卷保存路径；
+   - 本轮读取了哪些数据文件；
+   - 本轮调用了哪些工具/Skill/规则文件；
+   - 哪些题需要人工复核；
+   - 自评分数仅供参考；
+   - 建议沉淀到 MEMORY/AGENTS/HEARTBEAT/SKILL 的内容；
+   - 是否需要新建 Skill，以及理由。
+8. 严禁：
+   - 把 synthetic_training_seed_v1 当真实公司数据；
+   - 缺字段估算正式结论；
+   - 未做三表勾稽直接出正式报告；
+   - 将独立快照现金流误当链式累计；
+   - 直接写入 ERP / 预算系统；
+   - 直接发送投资人/银行/税务/监管；
+   - 为了 Skill 而 Skill。
+
+现在开始执行，并把完整过程写入指定答卷文件。

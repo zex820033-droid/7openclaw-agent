@@ -1,0 +1,21 @@
+{
+  "total_samples": 5000,
+  "train": 4250,
+  "test": 750,
+  "gen_seconds": 0.1491694450378418,
+  "total_seconds": 0.692751407623291,
+  "balance_pass_rate": "100.0%",
+  "self_eval_score": "41/60 (68%)",
+  "cap_dist": {
+    "financial_statements": 500,
+    "budget_tracking": 500,
+    "cashflow_forecast": 500,
+    "cost_analysis": 500,
+    "boundary_protection": 500,
+    "anomaly_detection": 500,
+    "multi_period": 500,
+    "ratio_analysis": 500,
+    "breakeven": 500,
+    "tax": 500
+  }
+}

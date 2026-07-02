@@ -1,0 +1,25 @@
+{
+  "last_run": "2026-06-22T18:44:00+08:00",
+  "run_count": 1,
+  "repos": {
+    "palmier-io/palmier-pro": {
+      "stars": 6442,
+      "forks": 462,
+      "open_issues": 43,
+      "updated_at": "2026-06-22T10:43:19Z"
+    },
+    "calesthio/OpenMontage": {
+      "stars": 10263,
+      "forks": 1404,
+      "open_issues": 80,
+      "updated_at": "2026-06-22T10:42:21Z"
+    }
+  },
+  "snapshots": [
+    {
+      "file": "micro-brief-20260622-1844.md",
+      "time": "2026-06-22T18:44:00+08:00",
+      "run": 1
+    }
+  ]
+}

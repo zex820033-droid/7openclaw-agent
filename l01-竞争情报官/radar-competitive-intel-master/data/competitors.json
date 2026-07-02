@@ -1,0 +1,37 @@
+{
+  "_meta": {"name":"竞品数据库","version":"2.0.0","total":28,"updated":"2026-06-22T17:30+08:00","tiers":{"T1":"每日全维度","T2":"每日关键维度","T3":"每周战略扫描"},"categories":{"llm":"大模型","agent":"Agent平台","aigc":"AIGC平台","search":"AI搜索","code":"AI编程"}},
+  "T1_core": [
+    {"id":"openai","name":"OpenAI","cat":["llm","agent"],"domains":["openai.com","chatgpt.com","platform.openai.com"],"focus":["GPT-5.5","Operator","Assistants API","GPTs"],"pricing":["https://openai.com/pricing"],"blog":"https://openai.com/blog","social":{"x":["@OpenAI","@sama"]}},
+    {"id":"anthropic","name":"Anthropic","cat":["llm","agent"],"domains":["anthropic.com","claude.ai"],"focus":["Claude Opus 4.8","Computer Use","MCP协议","出口管制影响"],"pricing":["https://www.anthropic.com/pricing"],"blog":"https://www.anthropic.com/research","social":{"x":["@AnthropicAI"]}},
+    {"id":"bytedance","name":"字节跳动","cat":["llm","agent","aigc"],"domains":["bytedance.com","coze.cn","volcengine.com"],"focus":["Coze 3.0多人Agent","豆包付费化","即梦AIGC","火山引擎"],"pricing":["https://www.coze.cn/pricing"],"blog":"https://www.volcengine.com/blog","social":{"wechat":["扣子Coze","火山引擎"]}},
+    {"id":"alibaba","name":"阿里巴巴","cat":["llm","agent"],"domains":["aliyun.com","tongyi.aliyun.com","bailian.aliyun.com"],"focus":["通义千问","百炼Agent平台","钉钉AI"],"pricing":["https://bailian.aliyun.com/pricing"],"blog":"https://www.aliyun.com/blog"},
+    {"id":"baidu","name":"百度","cat":["llm","agent"],"domains":["baidu.com","yiyan.baidu.com","qianfan.baidu.com"],"focus":["文心一言","千帆AppBuilder","自动驾驶"],"pricing":["https://qianfan.baidubce.com/pricing"],"blog":"https://yiyan.baidu.com/blog"}
+  ],
+  "T2_watch": [
+    {"id":"google","name":"Google DeepMind","cat":["llm","agent"],"domains":["deepmind.google","gemini.google.com"],"focus":["Gemini","Vertex AI Agent"],"pricing":[],"blog":"https://deepmind.google/blog"},
+    {"id":"meta","name":"Meta AI","cat":["llm"],"domains":["ai.meta.com","llama.meta.com"],"focus":["LLaMA开源"],"pricing":[],"blog":"https://ai.meta.com/blog"},
+    {"id":"microsoft","name":"微软 Copilot","cat":["agent","llm"],"domains":["microsoft.com","copilotstudio.microsoft.com"],"focus":["Copilot Studio","AutoGen","6/30取消Claude Code许可"],"pricing":[],"blog":""},
+    {"id":"zhipu","name":"智谱AI","cat":["llm","agent"],"domains":["zhipuai.cn","bigmodel.cn"],"focus":["GLM-5.2 MIT开源","AutoGLM","明确支持OpenClaw"],"pricing":["https://open.bigmodel.cn/pricing"],"blog":""},
+    {"id":"deepseek","name":"DeepSeek","cat":["llm"],"domains":["deepseek.com"],"focus":["V4定价颠覆(1/6)","史诗级融资","V3.2历史数据公开"],"pricing":[],"blog":"https://deepseek.com/blog"},
+    {"id":"moonshot","name":"月之暗面","cat":["llm"],"domains":["moonshot.cn","kimi.moonshot.cn"],"focus":["Kimi产品","融资"],"pricing":[],"blog":""},
+    {"id":"minimax","name":"MiniMax","cat":["llm"],"domains":["minimax.io","hailuoai.com"],"focus":["M3发布+开源承诺","5-10%成本"],"pricing":[],"blog":""},
+    {"id":"dify","name":"Dify","cat":["agent"],"domains":["dify.ai"],"focus":["模板市场+Creator Center","MongoDB RAG","SOC2/ISO合规","Pre-A $30M"],"pricing":["https://dify.ai/pricing"],"blog":"https://dify.ai/blog"},
+    {"id":"langchain","name":"LangChain","cat":["agent"],"domains":["langchain.com"],"focus":["LangSmith Engine Beta","LangGraph","A2A+MCP原生","100M+月下载"],"pricing":["https://www.langchain.com/pricing"],"blog":"https://www.langchain.com/blog"},
+    {"id":"crewai","name":"CrewAI","cat":["agent"],"domains":["crewai.com"],"focus":["多Agent编排","企业版"],"pricing":["https://crewai.com/pricing"],"blog":""},
+    {"id":"autogpt","name":"AutoGPT","cat":["agent"],"domains":["agpt.co"],"focus":["自主Agent框架","Platform"],"pricing":[],"blog":""},
+    {"id":"perplexity","name":"Perplexity AI","cat":["search"],"domains":["perplexity.ai"],"focus":["AI原生搜索","引用透明","vs Google SGE/SearchGPT"],"pricing":[],"blog":"https://blog.perplexity.ai"}
+  ],
+  "T3_global": [
+    {"id":"mistral","name":"Mistral AI","cat":["llm","agent"],"domains":["mistral.ai"],"focus":["Le Chat","开源模型","欧洲市场"],"pricing":[],"blog":""},
+    {"id":"xai","name":"xAI","cat":["llm"],"domains":["x.ai"],"focus":["Grok","X平台集成"],"pricing":[],"blog":""},
+    {"id":"cohere","name":"Cohere","cat":["llm"],"domains":["cohere.com"],"focus":["企业AI","RAG","Command R+"],"pricing":[],"blog":""},
+    {"id":"midjourney","name":"Midjourney","cat":["aigc"],"domains":["midjourney.com"],"focus":["图像生成","社区模式"],"pricing":[],"blog":""},
+    {"id":"runway","name":"Runway","cat":["aigc"],"domains":["runwayml.com"],"focus":["Gen-4.5","视频生成"],"pricing":[],"blog":""},
+    {"id":"stability","name":"Stability AI","cat":["aigc"],"domains":["stability.ai"],"focus":["SD重组后状况","2024CEO离职"],"pricing":[],"blog":""},
+    {"id":"kling","name":"可灵(快手)","cat":["aigc"],"domains":["klingai.com"],"focus":["3.0+O1模型","视频生成"],"pricing":[],"blog":""},
+    {"id":"pika","name":"Pika Labs","cat":["aigc"],"domains":["pika.art"],"focus":["视频生成","产品创新"],"pricing":[],"blog":""},
+    {"id":"baichuan","name":"百川智能","cat":["llm"],"domains":["baichuan-ai.com"],"focus":["医疗AI","融资"],"pricing":[],"blog":""},
+    {"id":"stepfun","name":"阶跃星辰","cat":["llm"],"domains":["stepfun.com"],"focus":["模型能力","企业客户"],"pricing":[],"blog":""},
+    {"id":"amazon","name":"Amazon Bedrock","cat":["agent","llm"],"domains":["aws.amazon.com/bedrock"],"focus":["多模型Agent","AWS生态"],"pricing":[],"blog":""}
+  ]
+}

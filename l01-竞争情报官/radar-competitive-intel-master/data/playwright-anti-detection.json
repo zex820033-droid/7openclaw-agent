@@ -1,0 +1,109 @@
+{
+  "_description": "Playwright 反检测配置 — Chromium启动参数 + Stealth插件 + JS注入 + 登录检测",
+  "_version": "1.0",
+  "_updated": "2026-06-27",
+  "_source": "Super-AIGC/collectors/playwright_session.py + page_adapter.py",
+  "_chrome_path": "~/.agent-browser/browsers/chrome-*/chrome",
+
+  "chromium_args": [
+    "--disable-blink-features=AutomationControlled",
+    "--no-sandbox",
+    "--disable-dev-shm-usage",
+    "--disable-features=ChromeWhatsNewUI",
+    "--disable-sync",
+    "--disable-extensions",
+    "--disable-background-networking",
+    "--disable-background-timer-throttling",
+    "--disable-backgrounding-occluded-windows",
+    "--disable-breakpad",
+    "--disable-component-update",
+    "--disable-domain-reliability",
+    "--disable-features=TranslateUI",
+    "--disable-hang-monitor",
+    "--disable-ipc-flooding-protection",
+    "--disable-notifications",
+    "--disable-popup-blocking",
+    "--disable-prompt-on-repost",
+    "--disable-renderer-backgrounding",
+    "--force-color-profile=srgb",
+    "--metrics-recording-only",
+    "--no-default-browser-check",
+    "--no-first-run",
+    "--no-pings",
+    "--no-zygote",
+    "--no-proxy-server",
+    "--password-store=basic"
+  ],
+
+  "viewport": {"width": 1920, "height": 1080},
+
+  "default_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+
+  "stealth": {
+    "enabled": true,
+    "package": "playwright-stealth",
+    "method": "Stealth().apply_stealth_sync(page)"
+  },
+
+  "js_injection": {
+    "_note": "90行JS注入脚本，逐字段伪造真实Chrome环境指纹",
+    "_script_file": "data/playwright-anti-detection.js",
+    "targets": {
+      "navigator.webdriver": "→ undefined",
+      "chrome.runtime": "{id, connect, sendMessage} 伪造",
+      "chrome.webstore": "{install: fn} 伪造",
+      "chrome.app": "{isInstalled, InstallState, RunningState} 伪造",
+      "chrome.loadTimes": "{requestTime, startLoadTime, ...} 伪造",
+      "chrome.csi": "{onloadT, startE} 伪造",
+      "navigator.plugins": "[1,2,3,4,5] 固定数量",
+      "navigator.languages": "['zh-CN','zh','en']",
+      "navigator.hardwareConcurrency": "8",
+      "navigator.deviceMemory": "8",
+      "permissions.query": "notification → {state:'denied'} 拦截",
+      "WebGL renderer": "'ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Direct3D11 vs_5_0 ps_5_0)'",
+      "WebGL vendor": "'Google Inc. (NVIDIA)'"
+    }
+  },
+
+  "platform_login_detection": {
+    "bilibili": {
+      "method": "localStorage",
+      "script": "JSON.parse(localStorage.getItem('navInfo') || '{}').isLogin === true"
+    },
+    "kuaishou": {
+      "method": "多标志组合",
+      "flags": [
+        "body文本含'快去登录' → 未登录",
+        "URL含/passport/或/login → 未登录",
+        "页面含'上传作品'文本 → 已登录",
+        "含img[alt*='头像'] → 已登录",
+        "/profile/页面有h1用户名 → 已登录"
+      ],
+      "note": "不能仅靠登录按钮判断——快手登录后侧边栏仍显示'登录'按钮"
+    }
+  },
+
+  "rate_limiter": {
+    "base_delay": "3~6秒 (随机)",
+    "page_increment": "每10页+0.5秒",
+    "jitter": "±50% 随机",
+    "cooldown": "30~60秒 (API空响应/风控)",
+    "exponential_backoff": "2^n × 5秒 (连续失败 n≤5)",
+    "daily_limit": "每平台 ≤500 次请求"
+  },
+
+  "data_dirs": {
+    "_note": "持久化 Browser Context 存储路径",
+    "pattern": ".browser-data/{platform}/",
+    "platforms": {
+      "bilibili": ".browser-data/bilibili/",
+      "douyin": ".browser-data/douyin/",
+      "kuaishou": ".browser-data/kuaishou/",
+      "zhihu": ".browser-data/zhihu/",
+      "wechat": ".browser-data/wechat/"
+    }
+  }
+}

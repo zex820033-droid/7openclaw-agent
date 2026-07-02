@@ -1,0 +1,67 @@
+{
+  "description": "竞争情报官 n01 — 监控来源配置",
+  "version": "1.0",
+  "created": "2026-06-22",
+  "creator": "Agent训练 A18",
+  "sources": {
+    "官网与博客": {
+      "frequency": "每日",
+      "targets": [
+        {"name": "OpenAI Blog", "url": "https://openai.com/blog", "rss": true},
+        {"name": "Anthropic News", "url": "https://www.anthropic.com/news", "rss": false},
+        {"name": "Google AI Blog", "url": "https://blog.google/technology/ai/", "rss": true},
+        {"name": "Meta AI Blog", "url": "https://ai.meta.com/blog/", "rss": true},
+        {"name": "Microsoft AI Blog", "url": "https://blogs.microsoft.com/ai/", "rss": true},
+        {"name": "Coze Blog", "url": "https://www.coze.com/blog", "rss": false},
+        {"name": "Dify Blog", "url": "https://dify.ai/blog", "rss": true},
+        {"name": "Perplexity Blog", "url": "https://blog.perplexity.ai", "rss": false},
+        {"name": "智谱AI Blog", "url": "https://open.bigmodel.cn", "rss": false},
+        {"name": "DeepSeek Blog", "url": "https://deepseek.com/blog", "rss": false},
+        {"name": "阿里云AI Blog", "url": "https://www.aliyun.com/blog", "rss": false}
+      ]
+    },
+    "社交媒体": {
+      "frequency": "每6小时",
+      "targets": [
+        {"name": "X/Twitter — AI Leaders", "platform": "X", "accounts": ["@sama", "@DarioAmodei", "@demishassabis", "@ylecun", "@satyanadella"]},
+        {"name": "Reddit r/MachineLearning", "url": "https://reddit.com/r/MachineLearning", "rss": true},
+        {"name": "Hacker News", "url": "https://news.ycombinator.com", "rss": true, "filter": "AI,LLM,GPT,Claude"}
+      ]
+    },
+    "中文媒体与社区": {
+      "frequency": "每日",
+      "targets": [
+        {"name": "IT之家 AI频道", "url": "https://www.ithome.com", "note": "Coze 3.0/GPT等重大发布的A级来源"},
+        {"name": "知乎 AI话题", "url": "https://www.zhihu.com/topic/20025333", "note": "行业讨论+竞品评价"},
+        {"name": "微信搜索 AI日报", "url": "微信管道", "note": "每日AI资讯聚合, 06-21/06-22已验证可用"}
+      ]
+    },
+    "定价页": {
+      "frequency": "每日",
+      "targets": [
+        {"name": "OpenAI Pricing", "url": "https://openai.com/pricing"},
+        {"name": "Anthropic Pricing", "url": "https://www.anthropic.com/pricing"},
+        {"name": "Google AI Pricing", "url": "https://cloud.google.com/vertex-ai/pricing"},
+        {"name": "Cohere Pricing", "url": "https://cohere.com/pricing"},
+        {"name": "Perplexity Pro", "url": "https://www.perplexity.ai/pro"},
+        {"name": "阿里百炼定价", "url": "https://bailian.aliyun.com/pricing", "note": "定价数据未获取—需Playwright渲染"},
+        {"name": "百度千帆定价", "url": "https://qianfan.baidubce.com/pricing", "note": "定价数据未获取—需Playwright渲染"},
+        {"name": "DeepSeek API定价", "url": "https://platform.deepseek.com/api-docs/pricing", "note": "V4 1/6定价—需精确抓取"},
+        {"name": "智谱API定价", "url": "https://open.bigmodel.cn/pricing", "note": "GLM-5.2 MIT免费—API定价需确认"}
+      ]
+    },
+    "产品更新": {
+      "frequency": "每日",
+      "targets": [
+        {"name": "Product Hunt — AI launches", "url": "https://www.producthunt.com/topics/artificial-intelligence"},
+        {"name": "GitHub Trending — AI repos", "url": "https://github.com/trending?since=daily"},
+        {"name": "CrunchBase — AI funding", "url": "https://www.crunchbase.com/hub/artificial-intelligence-companies"}
+      ]
+    }
+  },
+  "monitoring_status": {
+    "active": true,
+    "cron_jobs": 5,
+    "last_full_scan": "2026-06-22T17:20:00+08:00"
+  }
+}

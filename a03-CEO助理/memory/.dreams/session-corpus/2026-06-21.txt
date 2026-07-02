@@ -1,0 +1,3 @@
+[a03/sessions/a03/2d5600c7-d016-40a7-a39e-6aa96bded1e0.jsonl#L6] Assistant: [assistant turn failed before producing content]
+[a03/sessions/a03/b5fede08-bae4-4409-80b0-90f8cd8a42e4.jsonl#L6] Assistant: [assistant turn failed before producing content]
+[a03/sessions/a03/ee8fba12-f7b1-43b9-b7b4-224a7feb3163.jsonl#L6] Assistant: [assistant turn failed before producing content]

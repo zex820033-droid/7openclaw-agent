@@ -1,0 +1,350 @@
+{
+  "_meta": {
+    "name": "SWOT Baseline — AI编程工具 × Agent平台 × 国产AI × AI搜索",
+    "version": "1.4.0",
+    "created": "2026-06-23T10:50+08:00",
+    "last_refresh": "2026-06-23T18:33+08:00",
+    "refresh_type": "cron-delta",
+    "delta_since_last": "v1.3.0(18:05)→v1.4.0(18:33): T2扫描新增6条S1/S2信号。Opus 4.8→W4/O5强化；Meta隐私+FiveEyes→O4强化；Nadella反垄断→O9新增；Kimi K2.7定价→O5强化；Anthropic递归自进化→T9新增；SpaceX算力$6.3B→T1强化",
+    "full_report": "reports/swot-monthly-2026-06.md",
+    "cron": "T4-SWOT-每日刷新 18:05 CST",
+    "source": "T1+T2+T5+T7+TaskE 2026-06-23全量扫描 (11份memory文件 + 9份T1/T2产出)",
+    "signal_count": {
+      "S1_sure": 32,
+      "S2_strong": 21,
+      "S3_weak": 10,
+      "N_noise": 1,
+      "total": 64
+    }
+  },
+  "S_strengths": [
+    {
+      "domain": "多Agent编队架构",
+      "description": "多Agent并行协作+跨Agent通信协议。Sakana Fugu Ultra验证了'Multi-Agent as a Model'的行业方向。",
+      "source": "内部架构 + Sakana Fugu Ultra (sakana.ai, Jun 2026)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "➡️不变"
+    },
+    {
+      "domain": "国产化合规壁垒",
+      "description": "国产大模型+Agent平台组合，满足中国企业数据合规和信创要求。EU AI Act执行+Five Eyes AI威胁警告+Meta隐私丑闻强化合规需求。",
+      "source": "flowpixai.com (Jun 10) + theverge.com (Jun 22) + 36氪 (May 22) + Business Insider (Jun 21)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️加强"
+    },
+    {
+      "domain": "Agent编队原生安全",
+      "description": "合规中枢+多Agent审计的天然安全性。OpenAI Daybreak安全产品线从侧面验证Agent安全是独立赛道。Meta隐私丑闻进一步放大企业Agent安全需求。",
+      "source": "内部架构 + OpenAI Daybreak (openai.com/news, Jun 22) + The Verge (Jun 21 Meta曝光)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️加强"
+    },
+    {
+      "domain": "完整链路覆盖",
+      "description": "从底层模型(通义/文心/GLM/Kimi K2)到Agent编排到AIGC全链路（vs Dify只做编排、vs LangChain偏框架）。Kimi K2.7 Code开放平台进一步丰富国产模型选择。",
+      "source": "产品分析 + Qwen3/GLM-5.2/ERNIE 5.1/Kimi K2.7",
+      "confidence": "B+",
+      "signal": "S2",
+      "delta": "⬆️加强"
+    },
+    {
+      "domain": "开源透明路线",
+      "description": "开源架构更易获得开发者信任。DeepSeek V4开源+500亿融资证明开源商业模型的可行性。Kimi K2.6/K2.7 Code以12倍定价优势进一步验证开放模型竞争力。",
+      "source": "社区反馈 + DeepSeek V4 (36氪 Jun 17-22) + Kimi K2 (lapaas.com voice)",
+      "confidence": "B+",
+      "signal": "S2",
+      "delta": "⬆️加强"
+    },
+    {
+      "domain": "中国开发者市场先发",
+      "description": "AI编程工具赛道中国无明确领导者。通义灵码全球影响力有限，腾讯CodeBuddy未见规模。Cursor聚焦欧美。",
+      "source": "T1扫描 + 36氪 (Jun 22)",
+      "confidence": "B+",
+      "signal": "S2",
+      "delta": "➡️不变"
+    },
+    {
+      "domain": "Agent互操作标准话语权",
+      "description": "Devin ACP + LangChain A2A/MCP — 标准正在形成，OpenClaw可参与定义。",
+      "source": "devin.ai (Jun 2) + langchain.com",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "➡️维持"
+    },
+    {
+      "domain": "Agent平台差异化清晰",
+      "description": "Codex定位单人/单任务Agent vs OpenClaw定位多Agent编队协作 → 差异化明确，不必正面竞争。TaskE分析验证。",
+      "source": "TaskE Codex-Maxxing分析 (Jun 23) + 内部架构",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "✅新增 (v1.3.0追加)"
+    }
+  ],
+  "W_weaknesses": [
+    {
+      "domain": "AI编程工具产品缺位",
+      "description": "Cursor($2B ARR+Gartner Leader+6月8篇博客)+Devin Desktop ACP+GitHub Copilot(5M+周活Codex)。OpenClaw在此赛道无产品对标。",
+      "source": "cursor.com/blog (Jun 2026) + devin.ai/blog (Jun 2026) + github.com",
+      "confidence": "A",
+      "signal": "S1",
+      "delta": "⬆️⬆️差距扩大"
+    },
+    {
+      "domain": "国际知名度与生态",
+      "description": "Cursor/Devin/LangChain国际数百万用户。OpenClaw主要在中国市场。",
+      "source": "GitHub Stars: Dify 60K+ / LangChain 100M+月下载",
+      "confidence": "A",
+      "signal": "S1",
+      "delta": "➡️不变"
+    },
+    {
+      "domain": "社区活跃度差距可量化",
+      "description": "Dify 60K+★ / LangChain 5-7天发布周期 / CrewAI 30K+★。OpenClaw社区数据未见公开。",
+      "source": "GitHub API",
+      "confidence": "A",
+      "signal": "S1",
+      "delta": "⬆️关注"
+    },
+    {
+      "domain": "模型基座依赖国产",
+      "description": "依赖国产大模型，推理/编码能力与Claude Opus 4.8/GPT-5.5仍有差距。DeepSeek V4缩小差距但未消除。Claude Opus 4.8(Jun 21)定位'long-running agentic work'直指Agent市场。",
+      "source": "基准测试 + anthropic.com (Opus 4.8 Jun 21) [A] + 36氪 (DeepSeek V4) [A-]",
+      "confidence": "B+",
+      "signal": "S2",
+      "delta": "⬇️缓解但新竞争压力(O4.8)"
+    },
+    {
+      "domain": "企业级部署与治理经验",
+      "description": "OpenAI Daybreak+Spend Controls / Dify SOC2/ISO / LangChain 5/10 Fortune 10 — 企业级工具链差距大。",
+      "source": "openai.com/news (Jun 2026) + dify.ai + langchain.com",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️差距扩大"
+    },
+    {
+      "domain": "无Agent成本管控工具",
+      "description": "OpenAI Daybreak+Spend Controls率先推出企业Agent费用治理。Codex Budget Dashboard降低企业采购门槛。OpenClaw无对应产品。",
+      "source": "openai.com (Jun 18,22) + code.visualstudio.com (Jun 17)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "➡️维持"
+    },
+    {
+      "domain": "开源发布节奏未量化",
+      "description": "LangChain 5-7天稳定发布 / Cursor 6月8篇博客。OpenClaw发布节奏未经外部追踪验证。",
+      "source": "GitHub API + T7扫描",
+      "confidence": "A",
+      "signal": "S1",
+      "delta": "➡️维持"
+    },
+    {
+      "domain": "中国IP情报获取受限",
+      "description": "openai.com Cloudflare封锁 / DeepSeek/Coze/火山引擎SPA空壳 / 虎嗅CAPTCHA → 40-50%竞品信息源受限。Playwright可穿透SPA但Cloudflare级封锁需代理。",
+      "source": "T1扫描实测 + memory/2026-06-23.md",
+      "confidence": "A",
+      "signal": "S1",
+      "delta": "➡️维持"
+    }
+  ],
+  "O_opportunities": [
+    {
+      "domain": "中国AI编程市场空白窗口",
+      "description": "Cursor被SpaceX收购后聚焦欧美+Devin受美国政策限制Claude Fable 5 → 中国市场无领导者。窗口期Q3-Q4 2026。",
+      "source": "36氪×10篇 (Jun 22) + devin.ai (Jun 9)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️窗口扩大"
+    },
+    {
+      "domain": "AI ROI反思浪潮",
+      "description": "Oracle裁员21,000人(13%)+Anthropic CEO'Token狂烧时代已过'+Nadella'AI垄断是问题'+Claude Code creator'既要ROI也要实验空间' → 提供透明ROI的平台获竞争优势。",
+      "source": "theverge.com (Jun 17,21,22) + SEC filing + TechCrunch + Business Insider",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️⬆️⬆️信号叠加(3大独立source)"
+    },
+    {
+      "domain": "Agent互操作标准形成期",
+      "description": "Devin ACP+LangChain A2A/MCP+Sakana Fugu — Agent互操作标准快速收敛。OpenClaw可参与标准定义。",
+      "source": "devin.ai (Jun 2) + langchain.com + sakana.ai",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️窗口清晰"
+    },
+    {
+      "domain": "AI安全/合规工具新赛道",
+      "description": "Five Eyes联合警告(Jun 22)+Meta AI隐私泄露(Jun 21)+EU AI Act全面执行 → 企业级AI安全/合规工具采购窗口猛烈打开。最高罚全球年营收7%。",
+      "source": "theverge.com (Jun 22) + Business Insider (Jun 21) + flowpixai.com (Jun 10) + 36氪 (May 22)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️⬆️信号叠加(Meta+FiveEyes)"
+    },
+    {
+      "domain": "DeepSeek V4+国产模型跃迁",
+      "description": "V4推理世界顶级+500亿融资+Codex兼容+Kimi K2.7 Code 12倍定价优势开放平台 → 国产模型基座差距以月为单位缩小。Opus 4.8虽强但国产替代窗口在扩大。",
+      "source": "36氪 (Jun 17-22) + anthropic.com (Jun 21) + lapaas.com voice (Kimi定价)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️加强"
+    },
+    {
+      "domain": "微信Agent'小微'14亿入口",
+      "description": "WeChat Agent化 — 对齐Agent支付/Agent交互标准。Agent平台接入WeChat生态=指数级用户触达。",
+      "source": "36氪 (Jun 22)",
+      "confidence": "B+",
+      "signal": "S2",
+      "delta": "➡️维持"
+    },
+    {
+      "domain": "Cursor/Devin闭源路线疲劳",
+      "description": "Cursor闭源+Devin闭源 → 开发者社区对开放Agent平台的需求积累。OpenClaw开源路线可差异化突围。",
+      "source": "社区反馈 + 推断",
+      "confidence": "B-/C",
+      "signal": "S3",
+      "delta": "➡️维持"
+    },
+    {
+      "domain": "Anthropic出口管制红利",
+      "description": "Fable 5/Mythos 5暂停→智谱暴涨47% → 国产模型替代需求爆发。国产Agent平台+国产模型组合价值凸显。",
+      "source": "36氪 (Jun 2026)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️加强(Kimi K2.7加入国产替代矩阵)"
+    },
+    {
+      "domain": "反AI垄断的政策窗口",
+      "description": "微软CEO Nadella(Jun 21)罕见发声'AI垄断是问题'。全球最大AI投资者之一对垄断表达担忧→监管机构可能推动更开放的AI竞争环境。多模型Agent生态将受益。",
+      "source": "The Verge (Jun 21) [A-]",
+      "confidence": "B+",
+      "signal": "S2",
+      "delta": "✅新增 (v1.4.0)"
+    }
+  ],
+  "T_threats": [
+    {
+      "domain": "Cursor+SpaceX垂直整合",
+      "description": "Gartner Leader+$2B ARR+Fortune 500渗透>70%+6月8篇博客+SpaceX/X/Colossus 2资源。SpaceX已签Anthropic/Google/Reflection($6.3B算力租赁至2029)。威胁加速度行业最大。",
+      "source": "cursor.com/blog (Jun 2026) + 36氪 (Jun 22) + The Verge (Jun 19, SpaceX算力$6.3B)",
+      "confidence": "A",
+      "signal": "S1",
+      "delta": "⬆️⬆️威胁升级(SpaceX算力新信号)"
+    },
+    {
+      "domain": "GitHub Copilot生态锁定",
+      "description": "Copilot深度集成GitHub平台+5M+周活Codex用户+VS Code 1.125企业治理。开发者入口争夺。",
+      "source": "github.com + code.visualstudio.com (Jun 17)",
+      "confidence": "A",
+      "signal": "S1",
+      "delta": "➡️维持"
+    },
+    {
+      "domain": "LangChain全栈Agent平台",
+      "description": "LangSmith+Fleet+Deep Agents+Loop Engineering新范式。从开发框架到部署运维全栈。100M+月下载+5/10 Fortune 10。",
+      "source": "langchain.com/blog (Jun 2026)",
+      "confidence": "A",
+      "signal": "S1",
+      "delta": "⬆️关注"
+    },
+    {
+      "domain": "Devin/ACP协议生态锁定",
+      "description": "ACP协议可运行任何Agent(Codex/Claude/OpenCode)。成为事实标准后不支持=被排除。",
+      "source": "devin.ai (Jun 2)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️⬆️威胁升级"
+    },
+    {
+      "domain": "Dify Agent Server演进",
+      "description": "v1.14.2新增Agent Server初始化 — 从编排平台向Agent运行时演进，与OpenClaw定位重叠。模板市场形成网络效应。$30M Pre-A轮融资强化执行力。",
+      "source": "github.com/langgenius/dify (v1.14.2, May 19) + dify.ai/blog + 36氪 (Dify $30M)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "⬆️关注(融资验证)"
+    },
+    {
+      "domain": "中国企业AI编程竞争",
+      "description": "智谱AI(市值1万亿HKD)+DeepSeek(500亿融资)+腾讯CodeBuddy → 国产AI编程竞赛加速。",
+      "source": "36氪 (Jun 22)",
+      "confidence": "A-",
+      "signal": "S1",
+      "delta": "➡️维持"
+    },
+    {
+      "domain": "AI劳动力替代加速引发反弹",
+      "description": "Oracle裁员21,000人+2026年196家科技公司裁119,800+人 → 可能引发反AI社会阻力或监管收紧。",
+      "source": "theverge.com + SEC filing + layoffs.fyi",
+      "confidence": "A-",
+      "signal": "S2",
+      "delta": "⬆️信号加强(Oracle确凿)"
+    },
+    {
+      "domain": "AI安全标准合规成本上升",
+      "description": "EU AI Act+中国生成式AI条例+美国20+州立法+Five Eyes联合警告 → 合规成本挤压缩小团队生存空间。",
+      "source": "flowpixai.com (Jun 10) + theverge.com (Jun 22) + 36氪 (May 22)",
+      "confidence": "B+",
+      "signal": "S2",
+      "delta": "⬆️加强(Five Eyes新信号)"
+    },
+    {
+      "domain": "Anthropic递归自进化加速",
+      "description": "AI内参报道Anthropic正通过'AI驱动AI'递归式自进化策略，将最新模型嵌入自身研发流程，构建研发效率指数级增长的'模型工厂'。结合Opus 4.8连续迭代+Google研究员跳槽，人才+技术+方法论三重飞轮。",
+      "source": "AI内参neican.ai (Jun 2026) [B,未独立验证] + anthropic.com (Opus 4.8) [A] + The Verge (人才流失 Jun 19) [A-]",
+      "confidence": "B",
+      "signal": "S2",
+      "delta": "✅新增 (v1.4.0)"
+    }
+  ],
+  "priority_actions": [
+    {
+      "priority": 1,
+      "action": "Cursor+SpaceX整合深度监控(强化)",
+      "reason": "Gartner Leader+$2B ARR+6月8篇博客+SpaceX Colossus 2算力($6.3B其他客户)→威胁加速度行业最大。SpaceX正成为AI算力中立提供商。",
+      "deadline": "持续",
+      "signal": "S1",
+      "quadrant": "T1"
+    },
+    {
+      "priority": 1,
+      "action": "ACP协议接入评估与决策",
+      "reason": "ACP正在成为Agent互操作事实标准，不支持=被排除",
+      "deadline": "2026-Q3",
+      "signal": "S1",
+      "quadrant": "T4/O3"
+    },
+    {
+      "priority": 2,
+      "action": "AI编程工具中国化战略制定",
+      "reason": "中国市场空白窗口扩大(Cursor欧美+Devin受限+国产模型跃迁+Kimi K2.7 12倍定价)",
+      "deadline": "2026-Q3",
+      "signal": "S1",
+      "quadrant": "O1/O5/O8"
+    },
+    {
+      "priority": 2,
+      "action": "AI安全/合规工具赛道评估(强化)",
+      "reason": "Five Eyes Jun 22警告+Meta Jun 21隐私丑闻+EU AI Act → 安全合规窗口猛烈打开。Meta事件证明企业级AI数据治理不是未来需要而是当下必须。",
+      "deadline": "2026-Q3",
+      "signal": "S1",
+      "quadrant": "O4/T8"
+    },
+    {
+      "priority": 3,
+      "action": "Dify Agent Server路线跟踪",
+      "reason": "Dify从编排→Agent运行时演进，$30M融资加速。与OpenClaw定位重叠。",
+      "deadline": "持续",
+      "signal": "S1",
+      "quadrant": "T5"
+    },
+    {
+      "priority": 3,
+      "action": "Nadella反垄断信号追踪",
+      "reason": "微软CEO(Jun 21)罕见发声AI垄断问题→可能影响全球AI监管走向。若推动多模型竞争有利于OpenClaw。",
+      "deadline": "持续",
+      "signal": "S2",
+      "quadrant": "O9"
+    }
+  ]
+}

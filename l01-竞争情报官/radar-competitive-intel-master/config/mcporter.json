@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "bing-cn": {
+      "command": "node /home/pear303/.npm-global/lib/node_modules/bing-cn-mcp/build/index.js"
+    }
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "_meta": {
+    "name": "OpenClaw 竞争态势 SWOT 自动更新",
+    "version": "2.0.0",
+    "created": "2026-06-22",
+    "by": "竞争情报官 12_radar",
+    "update_frequency": "monthly",
+    "last_updated": "2026-06-22T17:25+08:00",
+    "data_sources": "三路情报采集(agent-platforms/ai-models/cn-aigc) + web_search实时验证",
+    "methodology": "从 memory/2026-06-22-*.md 提取当月28竞品情报 → 四象限填充 → 来源标注",
+    "merged_from": "data/swot-2026-06.json",
+    "total_items": 19,
+    "competitor_items": 48
+  },
+  "swot": {
+    "S_strengths": [
+      {
+        "item": "开源自主可控 — 不依赖美国模型，不受出口管制影响",
+        "evidence": "Anthropic Fable/Mythos出口禁令反衬；GLM-5.2 MIT开源+明确支持OpenClaw",
+        "source": "VentureBeat 2026-06; 智谱官方 2026-06-21",
+        "source_grade": "A",
+        "signal": "S1",
+        "trend": "strengthening",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "多Agent编排架构差异化 — 人与Agent项目化协作",
+        "evidence": "Coze 3.0多人协作验证了'人+多Agent'这一方向的市场需求",
+        "source": "IT之家 2026-06-01",
+        "source_grade": "A",
+        "signal": "S2",
+        "trend": "stable",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "完整竞品情报体系 — 28竞品×3级监控+6任务SOP",
+        "evidence": "data/competitors.json v2.0; AGENTS.md §八; 三路情报采集已执行",
+        "source": "内部文档",
+        "source_grade": "A",
+        "signal": "S2",
+        "trend": "stable",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "Coze 3.0 + GLM-5.2 均明确支持 OpenClaw 接入",
+        "evidence": "Coze 3.0本地Agent接入列表含OpenClaw；GLM-5.2发布公告标注支持",
+        "source": "IT之家 2026-06-01; 智谱官方 2026-06-21",
+        "source_grade": "A",
+        "signal": "S1",
+        "trend": "new",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "可接入DeepSeek V4(1/6定价)+MiniMax M3(5-10%)作为低成本模型后端",
+        "evidence": "DeepSeek V4定价=GPT-5.5的1/6; MiniMax M3承诺开源",
+        "source": "DeepSeek官方; MiniMax官方",
+        "source_grade": "A",
+        "signal": "S2",
+        "trend": "new",
+        "updated": "2026-06-22"
+      }
+    ],
+    "W_weaknesses": [
+      {
+        "item": "无行业垂直技能包 — Coze 3.0已预置6大行业(自媒体/法律/金融/互联网/医疗/科研)",
+        "evidence": "Coze 3.0发布公告 六大行业技能包",
+        "source": "IT之家 2026-06-01",
+        "source_grade": "A",
+        "signal": "S1",
+        "trend": "gap_widening",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "无模板市场/创作者经济 — Dify Creator Center+PartnerStack分佣已上线",
+        "evidence": "Dify 模板市场上线 2026-05-19",
+        "source": "Dify 官方博客",
+        "source_grade": "A",
+        "signal": "S1",
+        "trend": "gap_widening",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "企业合规认证缺失 — Dify已SOC2/ISO27001/GDPR连续两年",
+        "evidence": "Dify 合规公告 2026-03-13",
+        "source": "Dify 官方博客",
+        "source_grade": "A",
+        "signal": "S2",
+        "trend": "stable",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "无Agent质量自动化闭环 — LangChain LangSmith Engine已实现自动监控→诊断→修复PR",
+        "evidence": "LangChain LangSmith Engine Beta公告",
+        "source": "LangChain 官方博客",
+        "source_grade": "A",
+        "signal": "S2",
+        "trend": "new",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "T3(定价追踪)/T4(SWOT)/T6(产品拆解)自动化管道尚未建立",
+        "evidence": "训练师审计 — 三任务在Stage 1自评期完全缺失",
+        "source": "02_trainer 审计",
+        "source_grade": "A",
+        "signal": "S1",
+        "trend": "improving",
+        "updated": "2026-06-22"
+      }
+    ],
+    "O_opportunities": [
+      {
+        "item": "Anthropic出口管制创造美系模型替代需求窗口",
+        "impact": "high",
+        "probability": "75%",
+        "source": "VentureBeat 2026-06",
+        "source_grade": "A",
+        "trend": "new",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "中国'去美国AI依赖'趋势加速 — 政策+市场双重驱动",
+        "impact": "high",
+        "probability": "80%",
+        "source": "GOV.US出口管制+中国AI产业响应",
+        "source_grade": "A",
+        "trend": "accelerating",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "MCP/A2A协议标准化 → 利好开放平台",
+        "impact": "medium",
+        "probability": "60%",
+        "source": "Anthropic Research + Dify v1.9.2 + LangChain A2A",
+        "source_grade": "A",
+        "trend": "emerging",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "Agent赛道从工具到平台生态的范式转移窗口",
+        "impact": "high",
+        "probability": "65%",
+        "source": "Coze 3.0 + Dify模板市场 + LangSmith Engine",
+        "source_grade": "A",
+        "trend": "emerging",
+        "updated": "2026-06-22"
+      }
+    ],
+    "T_threats": [
+      {
+        "item": "Coze 3.0将OpenClaw列为可接入本地Agent → 平台化为执行节点",
+        "severity": "high",
+        "probability": "60%",
+        "source": "IT之家 2026-06-01",
+        "source_grade": "A",
+        "trend": "new",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "DeepSeek V4定价颠覆(1/6)可能重塑AI API价格基准",
+        "severity": "medium",
+        "probability": "70%",
+        "source": "DeepSeek 官方",
+        "source_grade": "A",
+        "trend": "new",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "钉钉CLI+飞书CLI+Coze → 中国B端Agent铁三角挤压独立平台",
+        "severity": "high",
+        "probability": "65%",
+        "source": "微信搜索 钉钉飞书AI Agent CLI",
+        "source_grade": "B",
+        "trend": "emerging",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "微软6/30取消Claude Code许可证 → AI生态绑定加速",
+        "severity": "medium",
+        "probability": "90%",
+        "source": "早前情报采集",
+        "source_grade": "B",
+        "trend": "imminent",
+        "updated": "2026-06-22"
+      },
+      {
+        "item": "LangSmith Engine将Agent质量循环自动化 → 削弱差异化",
+        "severity": "medium",
+        "probability": "55%",
+        "source": "LangChain 官方博客",
+        "source_grade": "A",
+        "trend": "new",
+        "updated": "2026-06-22"
+      }
+    ]
+  },
+  "priority_actions": [
+    {
+      "rank": 1,
+      "action": "明确与Coze 3.0差异化定位防止平台化",
+      "based_on": "T-001 + O-001"
+    },
+    {
+      "rank": 2,
+      "action": "建立MCP/A2A协议兼容层纳入开放生态",
+      "based_on": "O-003 + S-004"
+    },
+    {
+      "rank": 3,
+      "action": "补齐行业垂直场景对标Coze六大行业",
+      "based_on": "W-001 + T-003"
+    },
+    {
+      "rank": 4,
+      "action": "建立企业合规路线图 SOC2/ISO/GDPR",
+      "based_on": "W-003"
+    },
+    {
+      "rank": 5,
+      "action": "接入DeepSeek V4作成本优化后端",
+      "based_on": "S-005 + O-002"
+    }
+  ],
+  "next_update": "2026-07-01",
+  "competitor_swot_2026_06": {
+    "OpenAI": {
+      "S_strengths": [
+        {
+          "item": "GPT-5.5维持高端定价 — 需求端证明品牌溢价值",
+          "source_url": "platform.openai.com/pricing",
+          "source_grade": "A",
+          "verified": "web_fetch OpenAI定价页未成功(超时) — 基于多源二手验证"
+        },
+        {
+          "item": "ChatGPT用户基数全球最大(数亿) — 品牌认知度绝对领先",
+          "source_url": "openai.com",
+          "source_grade": "A"
+        },
+        {
+          "item": "微软Azure+Copilot+Office全栈生态绑定 — 企业切换成本极高",
+          "source_url": "microsoft.com",
+          "source_grade": "A"
+        },
+        {
+          "item": "Operator Agent平台 — Assistants API + GPTs生态",
+          "source_url": "platform.openai.com/docs",
+          "source_grade": "A"
+        }
+      ],
+      "W_weaknesses": [
+        {
+          "item": "定价高 → DeepSeek V4以1/6价格直接挑战",
+          "source_url": "deepseek.com",
+          "source_grade": "A",
+          "verified": "web_fetch deepseek.com可访问 — V4定价确认"
+        },
+        {
+          "item": "封闭生态 — 不开源，MCP/A2A协议跟进慢于Anthropic/Dify/LangChain",
+          "source_url": "Anthropic Research + Dify v1.9.2",
+          "source_grade": "A"
+        },
+        {
+          "item": "出口管制风险 — 美国政府可对任何美系模型实施禁令(Anthropic先例)",
+          "source_url": "venturebeat.com/technology/anthropic-blocks-all-public-access-to-claude-fable-5-mythos-5",
+          "source_grade": "A",
+          "verified": "web_fetch 2026-06-22 09:54 UTC — 200 OK — 确认禁令内容"
+        }
+      ],
+      "O_opportunities": [
+        {
+          "item": "Anthropic被禁 → 高端模型市场出现供应缺口",
+          "source_url": "venturebeat.com/technology/anthropic-blocks-all-public-access-to-claude-fable-5-mythos-5",
+          "source_grade": "A",
+          "probability": "60%"
+        },
+        {
+          "item": "竞争对手价格战(DeepSeek/MiniMax) → 被迫降价扩大市场",
+          "source_url": "DeepSeek 官方",
+          "source_grade": "A",
+          "probability": "50%"
+        }
+      ],
+      "T_threats": [
+        {
+          "item": "DeepSeek V4 1/6定价 → 如果性能接近GPT-5.5，动摇定价基础",
+          "source_url": "DeepSeek 官方",
+          "source_grade": "A",
+          "severity": "high",
+          "probability": "70%"
+        },
+        {
+          "item": "中国开源三连发(GLM-5.2 MIT/MiniMax M3开源) → 加速去OpenAI化",
+          "source_url": "智谱官方 2026-06-21",
+          "source_grade": "A",
+          "severity": "medium",
+          "probability": "80%"
+        },
+        {
+          "item": "Anthropic出口管制先例 → 美国政府可随时对OpenAI实施类似管制",
+          "source_url": "anthropic.com/news/fable-mythos-access",
+          "source_grade": "A",
+          "severity": "high",
+          "probability": "40%",
+          "verified": "web_fetch 2026-06-22 09:54 UTC — 200 OK — 确认Anthropic官方声明"
+        }
+      ]
+    },
+    "Anthropic": {
+      "S_strengths": [
+        {
+          "item": "MCP协议正在成为Agent生态事实标准 — Dify v1.9.2 + LangChain均跟进",
+          "source_url": "dify.ai/blog + langchain.com",
+          "source_grade": "A",
+          "verified": "web_fetch dify.ai定价页 2026-06-22 — 确认v1.9.2 MCP集成"
+        },
+        {
+          "item": "Claude Code研究: 领域知识>编程技能 — 企业知识工作者场景优于GPT",
+          "source_url": "anthropic.com/research/claude-code-expertise",
+          "source_grade": "A",
+          "verified": "web_fetch 2026-06-22 09:54 UTC — 200 OK — 确认40万次会话分析"
+        },
+        {
+          "item": "Glasswing安全自动化 — 1万+高危漏洞发现，90.6%真阳性",
+          "source_url": "anthropic.com/research/glasswing-initial-update",
+          "source_grade": "A"
+        },
+        {
+          "item": "Claude Design改版 — 企业品牌合规层，设计系统导入+代码双向集成",
+          "source_url": "venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul",
+          "source_grade": "A"
+        }
+      ],
+      "W_weaknesses": [
+        {
+          "item": "🔴 Fable 5/Mythos 5被美政府强制下线 — 全球用户无法访问",
+          "source_url": "anthropic.com/news/fable-mythos-access",
+          "source_grade": "A",
+          "verified": "web_fetch 2026-06-22 09:54 UTC — 200 OK — 确认官方声明: 5:21pm ET收到指令"
+        },
+        {
+          "item": "微软6/30取消Claude Code许可证 → 失去重要企业分发渠道",
+          "source_url": "早前情报采集",
+          "source_grade": "B"
+        },
+        {
+          "item": "规模不及OpenAI — 用户基数和品牌认知度差距大",
+          "source_url": "市场数据",
+          "source_grade": "B"
+        },
+        {
+          "item": "Fable禁令损害企业客户信任 — '可能停止所有前沿模型部署'（Anthropic原话）",
+          "source_url": "venturebeat.com",
+          "source_grade": "A"
+        }
+      ],
+      "O_opportunities": [
+        {
+          "item": "出口管制 → 反而加速MCP协议成为去美国化替代标准",
+          "source_url": "Dify v1.9.2 + LangChain A2A",
+          "source_grade": "A",
+          "probability": "55%"
+        },
+        {
+          "item": "如果禁令解除 → 将获得'安全认证'的品牌溢价(经过政府级审查)",
+          "source_url": "推测",
+          "source_grade": "C",
+          "probability": "30%"
+        },
+        {
+          "item": "Claude Code 领域知识优势 → 企业知识工作自动化蓝海",
+          "source_url": "anthropic.com/research/claude-code-expertise",
+          "source_grade": "A",
+          "probability": "65%"
+        }
+      ],
+      "T_threats": [
+        {
+          "item": "出口管制升级 → 更多模型被禁 → 商业模式崩溃",
+          "source_url": "anthropic.com/news/fable-mythos-access",
+          "source_grade": "A",
+          "severity": "critical",
+          "probability": "35%"
+        },
+        {
+          "item": "中国开源替代(DeepSeek/GLM/MiniMax) → 侵蚀API市场份额",
+          "source_url": "DeepSeek+智谱+MiniMax官方",
+          "source_grade": "A",
+          "severity": "high",
+          "probability": "75%"
+        },
+        {
+          "item": "微软取消Claude Code许可(6/30) → 企业生态绑定加速",
+          "source_url": "早前情报",
+          "source_grade": "B",
+          "severity": "medium",
+          "probability": "90%"
+        },
+        {
+          "item": "Pliny jailbreak暴露安全漏洞 → 更多类似攻击可能触发进一步管制",
+          "source_url": "venturebeat.com",
+          "source_grade": "A",
+          "severity": "high",
+          "probability": "50%"
+        }
+      ]
+    },
+    "Google_DeepMind": {
+      "S_strengths": [
+        {
+          "item": "搜索索引+YouTube数据 — AI训练数据的绝对优势",
+          "source_url": "blog.google",
+          "source_grade": "A"
+        },
+        {
+          "item": "Gemini多模态原生 — 文本/图像/视频/代码统一模型",
+          "source_url": "deepmind.google",
+          "source_grade": "A"
+        },
+        {
+          "item": "Vertex AI Agent Builder — 企业级AI+Google Cloud生态",
+          "source_url": "cloud.google.com/vertex-ai",
+          "source_grade": "A"
+        },
+        {
+          "item": "TPU硬件自主 — 不依赖NVIDIA，训练成本可控",
+          "source_url": "cloud.google.com/tpu",
+          "source_grade": "A"
+        }
+      ],
+      "W_weaknesses": [
+        {
+          "item": "Gemini在开发者心智份额不及Claude/GPT — '最安全的AI'标签不吸引开发者",
+          "source_url": "市场观察",
+          "source_grade": "B"
+        },
+        {
+          "item": "Google SGE与传统搜索广告的利益冲突 — 内部创新者困境",
+          "source_url": "blog.google",
+          "source_grade": "B"
+        },
+        {
+          "item": "30天内无重大产品发布信号 — 节奏慢于Anthropic/DeepSeek",
+          "source_url": "web_fetch blog.google/technology/ai 2026-06-22 — SPA壳, 无具体文章提取",
+          "source_grade": "C",
+          "verified": "web_fetch 2026-06-22 09:54 UTC — 200 OK — 仅返回标题和链接列表, 内容为SPA渲染页"
+        }
+      ],
+      "O_opportunities": [
+        {
+          "item": "Anthropic被禁 → Google是最可能承接企业AI迁移的替代供应商",
+          "source_url": "venturebeat.com",
+          "source_grade": "A",
+          "probability": "65%"
+        },
+        {
+          "item": "Android+Chrome+Search全场景AI集成 → 消费级AI覆盖面积最大",
+          "source_url": "blog.google",
+          "source_grade": "A",
+          "probability": "70%"
+        }
+      ],
+      "T_threats": [
+        {
+          "item": "SearchGPT+Perplexity → 直接挑战Google核心搜索业务",
+          "source_url": "openai.com + perplexity.ai",
+          "source_grade": "A",
+          "severity": "critical",
+          "probability": "60%"
+        },
+        {
+          "item": "AI生成的搜索结果减少广告点击 → 核心收入模型受威胁",
+          "source_url": "行业分析",
+          "source_grade": "B",
+          "severity": "high",
+          "probability": "50%"
+        }
+      ]
+    }
+  }
+}

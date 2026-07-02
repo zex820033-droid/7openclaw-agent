@@ -1,0 +1,2615 @@
+{
+  "summary": {
+    "company": "蓝鲸科技有限公司",
+    "industry": "SaaS + 跨境电商",
+    "currency": "CNY",
+    "generated_at": "2026-06-23T09:23:38.068149",
+    "data_period": "2025-01 to 2026-05",
+    "total_months": 17,
+    "departments": [
+      "销售部",
+      "研发部",
+      "运营部",
+      "采购部",
+      "行政部",
+      "市场部"
+    ],
+    "products": [
+      "SaaS平台",
+      "电商平台",
+      "咨询服务"
+    ],
+    "cost_categories": [
+      "人力成本",
+      "服务器/云服务",
+      "营销推广",
+      "物流仓储",
+      "办公租金",
+      "差旅招待",
+      "软件许可",
+      "外包服务",
+      "其他"
+    ],
+    "quick_stats": {
+      "2025_total_revenue": 42524602,
+      "2025_total_net_profit": 2992517,
+      "2026_ytd_revenue": 17930866,
+      "2026_ytd_net_profit": 1179771,
+      "2026_annual_budget_revenue": 48903292,
+      "latest_cash": 10451534,
+      "latest_total_assets": 32596550
+    }
+  },
+  "monthly_data": [
+    {
+      "period": "2025-01",
+      "month_num": 1,
+      "income_statement": {
+        "revenue": {
+          "total": 2847410,
+          "SaaS平台": 1521443,
+          "电商平台": 842692,
+          "咨询服务": 483275
+        },
+        "cogs": {
+          "total": 1817310,
+          "SaaS平台成本": 817790,
+          "电商平台成本": 636058,
+          "咨询服务成本": 363462
+        },
+        "gross_profit": 1030100,
+        "gross_margin": 36.18,
+        "operating_expenses": {
+          "人力成本": 323027,
+          "营销推广": 158164,
+          "研发费用": 122824,
+          "行政管理": 94414,
+          "物流仓储": 55968,
+          "其他费用": 21743,
+          "total": 776140
+        },
+        "depreciation": 20000,
+        "operating_profit": 233960,
+        "interest_expense": 20833,
+        "profit_before_tax": 213127,
+        "income_tax": 53282,
+        "net_profit": 159845
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 8545255,
+            "accounts_receivable": 3697979,
+            "inventory": 1524003,
+            "prepaid_expenses": 110811,
+            "total": 13878048
+          },
+          "non_current": {
+            "pp_e": 12012282,
+            "intangible": 2500000,
+            "total": 14512282
+          },
+          "total": 28390330
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 2493545,
+            "accrued_expenses": 93555,
+            "tax_payable": 15985,
+            "short_term_debt": 1458066,
+            "total": 4061151
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 7561151
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 2129179,
+          "total": 20829179
+        },
+        "total_liabilities_equity": 28390330
+      },
+      "cash_flow": {
+        "operating": 199402,
+        "investing": -12141,
+        "financing": -25026,
+        "net_change": 162235,
+        "beginning_cash": 8383020,
+        "ending_cash": 8545255
+      },
+      "cost_by_dept": {
+        "研发部": 915810,
+        "销售部": 588214,
+        "运营部": 443783,
+        "采购部": 267276,
+        "市场部": 264484,
+        "行政部": 127601
+      },
+      "cost_by_category": {
+        "人力成本": 944768,
+        "服务器/云服务": 492433,
+        "营销推广": 406815,
+        "物流仓储": 197337,
+        "办公租金": 148077,
+        "差旅招待": 108064,
+        "软件许可": 131287,
+        "外包服务": 80671,
+        "其他": 53299
+      },
+      "key_metrics": {
+        "毛利率": 36.18,
+        "净利率": 5.61,
+        "营业利润率": 8.22,
+        "费用率": 27.26,
+        "流动比率": 3.42,
+        "资产负债率": 26.63,
+        "应收账款周转天数": 39.0,
+        "应付账款周转天数": 41.2
+      }
+    },
+    {
+      "period": "2025-02",
+      "month_num": 2,
+      "income_statement": {
+        "revenue": {
+          "total": 2663184,
+          "SaaS平台": 1506331,
+          "电商平台": 793132,
+          "咨询服务": 363721
+        },
+        "cogs": {
+          "total": 1748105,
+          "SaaS平台成本": 786647,
+          "电商平台成本": 611837,
+          "咨询服务成本": 349621
+        },
+        "gross_profit": 915079,
+        "gross_margin": 34.36,
+        "operating_expenses": {
+          "人力成本": 328107,
+          "营销推广": 146373,
+          "研发费用": 124076,
+          "行政管理": 96297,
+          "物流仓储": 53339,
+          "其他费用": 21820,
+          "total": 770012
+        },
+        "depreciation": 20240,
+        "operating_profit": 124827,
+        "interest_expense": 20833,
+        "profit_before_tax": 103994,
+        "income_tax": 25998,
+        "net_profit": 77996
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 8544251,
+            "accounts_receivable": 3411923,
+            "inventory": 1443498,
+            "prepaid_expenses": 110564,
+            "total": 13510236
+          },
+          "non_current": {
+            "pp_e": 11992408,
+            "intangible": 2500517,
+            "total": 14492925
+          },
+          "total": 28003161
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 2249384,
+            "accrued_expenses": 90350,
+            "tax_payable": 7799,
+            "short_term_debt": 1520353,
+            "total": 3867886
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 7367886
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 1935275,
+          "total": 20635275
+        },
+        "total_liabilities_equity": 28003161
+      },
+      "cash_flow": {
+        "operating": 121982,
+        "investing": -12276,
+        "financing": -18798,
+        "net_change": 90908,
+        "beginning_cash": 8453343,
+        "ending_cash": 8544251
+      },
+      "cost_by_dept": {
+        "研发部": 869428,
+        "销售部": 546794,
+        "运营部": 440094,
+        "采购部": 245944,
+        "市场部": 262807,
+        "行政部": 127770
+      },
+      "cost_by_category": {
+        "人力成本": 969416,
+        "服务器/云服务": 435374,
+        "营销推广": 413977,
+        "物流仓储": 193312,
+        "办公租金": 148901,
+        "差旅招待": 106642,
+        "软件许可": 128021,
+        "外包服务": 76060,
+        "其他": 51478
+      },
+      "key_metrics": {
+        "毛利率": 34.36,
+        "净利率": 2.93,
+        "营业利润率": 4.69,
+        "费用率": 28.91,
+        "流动比率": 3.49,
+        "资产负债率": 26.31,
+        "应收账款周转天数": 38.4,
+        "应付账款周转天数": 38.6
+      }
+    },
+    {
+      "period": "2025-03",
+      "month_num": 3,
+      "income_statement": {
+        "revenue": {
+          "total": 3198793,
+          "SaaS平台": 1788471,
+          "电商平台": 944037,
+          "咨询服务": 466285
+        },
+        "cogs": {
+          "total": 1985807,
+          "SaaS平台成本": 893613,
+          "电商平台成本": 695032,
+          "咨询服务成本": 397162
+        },
+        "gross_profit": 1212986,
+        "gross_margin": 37.92,
+        "operating_expenses": {
+          "人力成本": 325307,
+          "营销推广": 162540,
+          "研发费用": 120766,
+          "行政管理": 97701,
+          "物流仓储": 62631,
+          "其他费用": 23110,
+          "total": 792055
+        },
+        "depreciation": 20483,
+        "operating_profit": 400448,
+        "interest_expense": 20833,
+        "profit_before_tax": 379615,
+        "income_tax": 94904,
+        "net_profit": 284711
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 8764206,
+            "accounts_receivable": 4043686,
+            "inventory": 1809366,
+            "prepaid_expenses": 118026,
+            "total": 14735284
+          },
+          "non_current": {
+            "pp_e": 11972077,
+            "intangible": 2501006,
+            "total": 14473083
+          },
+          "total": 29208367
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 2672982,
+            "accrued_expenses": 92638,
+            "tax_payable": 94904,
+            "short_term_debt": 1509205,
+            "total": 4369729
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 7869729
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 2638638,
+          "total": 21338638
+        },
+        "total_liabilities_equity": 29208367
+      },
+      "cash_flow": {
+        "operating": 308124,
+        "investing": -12183,
+        "financing": -19912,
+        "net_change": 276029,
+        "beginning_cash": 8488177,
+        "ending_cash": 8764206
+      },
+      "cost_by_dept": {
+        "研发部": 949184,
+        "销售部": 616299,
+        "运营部": 519907,
+        "采购部": 274992,
+        "市场部": 269989,
+        "行政部": 145804
+      },
+      "cost_by_category": {
+        "人力成本": 1056794,
+        "服务器/云服务": 475469,
+        "营销推广": 420303,
+        "物流仓储": 211819,
+        "办公租金": 169221,
+        "差旅招待": 115009,
+        "软件许可": 137596,
+        "外包服务": 78971,
+        "其他": 54768
+      },
+      "key_metrics": {
+        "毛利率": 37.92,
+        "净利率": 8.9,
+        "营业利润率": 12.52,
+        "费用率": 24.76,
+        "流动比率": 3.37,
+        "资产负债率": 26.94,
+        "应收账款周转天数": 37.9,
+        "应付账款周转天数": 40.4
+      }
+    },
+    {
+      "period": "2025-04",
+      "month_num": 4,
+      "income_statement": {
+        "revenue": {
+          "total": 3517187,
+          "SaaS平台": 1937832,
+          "电商平台": 1084980,
+          "咨询服务": 494375
+        },
+        "cogs": {
+          "total": 2268098,
+          "SaaS平台成本": 1020644,
+          "电商平台成本": 793834,
+          "咨询服务成本": 453620
+        },
+        "gross_profit": 1249089,
+        "gross_margin": 35.51,
+        "operating_expenses": {
+          "人力成本": 325178,
+          "营销推广": 184275,
+          "研发费用": 125728,
+          "行政管理": 96142,
+          "物流仓储": 64062,
+          "其他费用": 24677,
+          "total": 820062
+        },
+        "depreciation": 20729,
+        "operating_profit": 408298,
+        "interest_expense": 20833,
+        "profit_before_tax": 387465,
+        "income_tax": 96866,
+        "net_profit": 290599
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 8821627,
+            "accounts_receivable": 4411117,
+            "inventory": 1895848,
+            "prepaid_expenses": 131941,
+            "total": 15260533
+          },
+          "non_current": {
+            "pp_e": 11952573,
+            "intangible": 2501572,
+            "total": 14454145
+          },
+          "total": 29714678
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3049058,
+            "accrued_expenses": 96079,
+            "tax_payable": 29060,
+            "short_term_debt": 1500088,
+            "total": 4674285
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8174285
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 2840393,
+          "total": 21540393
+        },
+        "total_liabilities_equity": 29714678
+      },
+      "cash_flow": {
+        "operating": 315122,
+        "investing": -12505,
+        "financing": -20824,
+        "net_change": 281793,
+        "beginning_cash": 8539834,
+        "ending_cash": 8821627
+      },
+      "cost_by_dept": {
+        "研发部": 1046123,
+        "销售部": 707429,
+        "运营部": 576465,
+        "采购部": 302592,
+        "市场部": 313107,
+        "行政部": 156091
+      },
+      "cost_by_category": {
+        "人力成本": 1124614,
+        "服务器/云服务": 573379,
+        "营销推广": 496440,
+        "物流仓储": 255313,
+        "办公租金": 185965,
+        "差旅招待": 116123,
+        "软件许可": 151150,
+        "外包服务": 87303,
+        "其他": 64944
+      },
+      "key_metrics": {
+        "毛利率": 35.51,
+        "净利率": 8.26,
+        "营业利润率": 11.61,
+        "费用率": 23.32,
+        "流动比率": 3.26,
+        "资产负债率": 27.51,
+        "应收账款周转天数": 37.6,
+        "应付账款周转天数": 40.3
+      }
+    },
+    {
+      "period": "2025-05",
+      "month_num": 5,
+      "income_statement": {
+        "revenue": {
+          "total": 3630982,
+          "SaaS平台": 2036781,
+          "电商平台": 1076714,
+          "咨询服务": 517487
+        },
+        "cogs": {
+          "total": 2251416,
+          "SaaS平台成本": 1013137,
+          "电商平台成本": 787996,
+          "咨询服务成本": 450283
+        },
+        "gross_profit": 1379566,
+        "gross_margin": 37.99,
+        "operating_expenses": {
+          "人力成本": 340714,
+          "营销推广": 194712,
+          "研发费用": 122735,
+          "行政管理": 95946,
+          "物流仓储": 64884,
+          "其他费用": 25251,
+          "total": 844242
+        },
+        "depreciation": 20977,
+        "operating_profit": 514347,
+        "interest_expense": 20833,
+        "profit_before_tax": 493514,
+        "income_tax": 123378,
+        "net_profit": 370136
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 9084722,
+            "accounts_receivable": 4453633,
+            "inventory": 1978446,
+            "prepaid_expenses": 127645,
+            "total": 15644446
+          },
+          "non_current": {
+            "pp_e": 11932274,
+            "intangible": 2502046,
+            "total": 14434320
+          },
+          "total": 30078766
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3025721,
+            "accrued_expenses": 105082,
+            "tax_payable": 37013,
+            "short_term_debt": 1488471,
+            "total": 4656287
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8156287
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 3222479,
+          "total": 21922479
+        },
+        "total_liabilities_equity": 30078766
+      },
+      "cash_flow": {
+        "operating": 388322,
+        "investing": -12430,
+        "financing": -21986,
+        "net_change": 353906,
+        "beginning_cash": 8730816,
+        "ending_cash": 9084722
+      },
+      "cost_by_dept": {
+        "研发部": 1052254,
+        "销售部": 683721,
+        "运营部": 570031,
+        "采购部": 300314,
+        "市场部": 303737,
+        "行政部": 162447
+      },
+      "cost_by_category": {
+        "人力成本": 1197507,
+        "服务器/云服务": 553079,
+        "营销推广": 496350,
+        "物流仓储": 236390,
+        "办公租金": 179603,
+        "差旅招待": 121420,
+        "软件许可": 156423,
+        "外包服务": 89862,
+        "其他": 59834
+      },
+      "key_metrics": {
+        "毛利率": 37.99,
+        "净利率": 10.19,
+        "营业利润率": 14.17,
+        "费用率": 23.25,
+        "流动比率": 3.36,
+        "资产负债率": 27.12,
+        "应收账款周转天数": 36.8,
+        "应付账款周转天数": 40.3
+      }
+    },
+    {
+      "period": "2025-06",
+      "month_num": 6,
+      "income_statement": {
+        "revenue": {
+          "total": 3608097,
+          "SaaS平台": 2000063,
+          "电商平台": 1064825,
+          "咨询服务": 543209
+        },
+        "cogs": {
+          "total": 2511611,
+          "SaaS平台成本": 1130225,
+          "电商平台成本": 879064,
+          "咨询服务成本": 502322
+        },
+        "gross_profit": 1096486,
+        "gross_margin": 30.39,
+        "operating_expenses": {
+          "人力成本": 344553,
+          "营销推广": 183630,
+          "研发费用": 125373,
+          "行政管理": 96649,
+          "物流仓储": 68791,
+          "其他费用": 22235,
+          "total": 841231
+        },
+        "depreciation": 21229,
+        "operating_profit": 234026,
+        "interest_expense": 20833,
+        "profit_before_tax": 213193,
+        "income_tax": 53298,
+        "net_profit": 159895
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 8812880,
+            "accounts_receivable": 4938772,
+            "inventory": 2097091,
+            "prepaid_expenses": 131931,
+            "total": 15980674
+          },
+          "non_current": {
+            "pp_e": 11912537,
+            "intangible": 2502612,
+            "total": 14415149
+          },
+          "total": 30395823
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3349712,
+            "accrued_expenses": 97822,
+            "tax_payable": 53298,
+            "short_term_debt": 1439540,
+            "total": 4940372
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8440372
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 3255451,
+          "total": 21955451
+        },
+        "total_liabilities_equity": 30395823
+      },
+      "cash_flow": {
+        "operating": 162218,
+        "investing": -12637,
+        "financing": -26879,
+        "net_change": 122702,
+        "beginning_cash": 8690178,
+        "ending_cash": 8812880
+      },
+      "cost_by_dept": {
+        "研发部": 1165404,
+        "销售部": 731988,
+        "运营部": 601521,
+        "采购部": 342965,
+        "市场部": 341097,
+        "行政部": 175759
+      },
+      "cost_by_category": {
+        "人力成本": 1212682,
+        "服务器/云服务": 596459,
+        "营销推广": 526110,
+        "物流仓储": 279869,
+        "办公租金": 195103,
+        "差旅招待": 129128,
+        "软件许可": 166608,
+        "外包服务": 99642,
+        "其他": 65275
+      },
+      "key_metrics": {
+        "毛利率": 30.39,
+        "净利率": 4.43,
+        "营业利润率": 6.49,
+        "费用率": 23.32,
+        "流动比率": 3.23,
+        "资产负债率": 27.77,
+        "应收账款周转天数": 41.1,
+        "应付账款周转天数": 40.0
+      }
+    },
+    {
+      "period": "2025-07",
+      "month_num": 7,
+      "income_statement": {
+        "revenue": {
+          "total": 3537053,
+          "SaaS平台": 1994784,
+          "电商平台": 1057495,
+          "咨询服务": 484774
+        },
+        "cogs": {
+          "total": 2419953,
+          "SaaS平台成本": 1088979,
+          "电商平台成本": 846984,
+          "咨询服务成本": 483990
+        },
+        "gross_profit": 1117100,
+        "gross_margin": 31.58,
+        "operating_expenses": {
+          "人力成本": 344434,
+          "营销推广": 174834,
+          "研发费用": 132765,
+          "行政管理": 97290,
+          "物流仓储": 69721,
+          "其他费用": 26047,
+          "total": 845091
+        },
+        "depreciation": 21484,
+        "operating_profit": 250525,
+        "interest_expense": 20833,
+        "profit_before_tax": 229692,
+        "income_tax": 57423,
+        "net_profit": 172269
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 8886994,
+            "accounts_receivable": 4579124,
+            "inventory": 2027896,
+            "prepaid_expenses": 120958,
+            "total": 15614972
+          },
+          "non_current": {
+            "pp_e": 11893276,
+            "intangible": 2503319,
+            "total": 14396595
+          },
+          "total": 30011567
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3133131,
+            "accrued_expenses": 96935,
+            "tax_payable": 17227,
+            "short_term_debt": 1481846,
+            "total": 4729139
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8229139
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 3082428,
+          "total": 21782428
+        },
+        "total_liabilities_equity": 30011567
+      },
+      "cash_flow": {
+        "operating": 189154,
+        "investing": -13083,
+        "financing": -22648,
+        "net_change": 153423,
+        "beginning_cash": 8733571,
+        "ending_cash": 8886994
+      },
+      "cost_by_dept": {
+        "研发部": 1198225,
+        "销售部": 701444,
+        "运营部": 604403,
+        "采购部": 325035,
+        "市场部": 323991,
+        "行政部": 170718
+      },
+      "cost_by_category": {
+        "人力成本": 1314478,
+        "服务器/云服务": 591641,
+        "营销推广": 536099,
+        "物流仓储": 250383,
+        "办公租金": 191124,
+        "差旅招待": 137947,
+        "软件许可": 164803,
+        "外包服务": 98447,
+        "其他": 67244
+      },
+      "key_metrics": {
+        "毛利率": 31.58,
+        "净利率": 4.87,
+        "营业利润率": 7.08,
+        "费用率": 23.89,
+        "流动比率": 3.3,
+        "资产负债率": 27.42,
+        "应收账款周转天数": 38.8,
+        "应付账款周转天数": 38.8
+      }
+    },
+    {
+      "period": "2025-08",
+      "month_num": 8,
+      "income_statement": {
+        "revenue": {
+          "total": 3422543,
+          "SaaS平台": 1891906,
+          "电商平台": 1026939,
+          "咨询服务": 503698
+        },
+        "cogs": {
+          "total": 2377816,
+          "SaaS平台成本": 1070017,
+          "电商平台成本": 832236,
+          "咨询服务成本": 475563
+        },
+        "gross_profit": 1044727,
+        "gross_margin": 30.52,
+        "operating_expenses": {
+          "人力成本": 343101,
+          "营销推广": 189446,
+          "研发费用": 127164,
+          "行政管理": 94794,
+          "物流仓储": 65776,
+          "其他费用": 24841,
+          "total": 845122
+        },
+        "depreciation": 21742,
+        "operating_profit": 177863,
+        "interest_expense": 20833,
+        "profit_before_tax": 157030,
+        "income_tax": 39258,
+        "net_profit": 117772
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 8767684,
+            "accounts_receivable": 4480051,
+            "inventory": 2058206,
+            "prepaid_expenses": 121621,
+            "total": 15427562
+          },
+          "non_current": {
+            "pp_e": 11872716,
+            "intangible": 2503709,
+            "total": 14376425
+          },
+          "total": 29803987
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3128192,
+            "accrued_expenses": 102625,
+            "tax_payable": 11777,
+            "short_term_debt": 1487884,
+            "total": 4730478
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8230478
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 2873509,
+          "total": 21573509
+        },
+        "total_liabilities_equity": 29803987
+      },
+      "cash_flow": {
+        "operating": 144328,
+        "investing": -12881,
+        "financing": -22045,
+        "net_change": 109402,
+        "beginning_cash": 8658282,
+        "ending_cash": 8767684
+      },
+      "cost_by_dept": {
+        "研发部": 1137467,
+        "销售部": 710662,
+        "运营部": 605347,
+        "采购部": 312762,
+        "市场部": 329262,
+        "行政部": 156936
+      },
+      "cost_by_category": {
+        "人力成本": 1209401,
+        "服务器/云服务": 592081,
+        "营销推广": 503294,
+        "物流仓储": 252148,
+        "办公租金": 199221,
+        "差旅招待": 122305,
+        "软件许可": 160340,
+        "外包服务": 102471,
+        "其他": 68296
+      },
+      "key_metrics": {
+        "毛利率": 30.52,
+        "净利率": 3.44,
+        "营业利润率": 5.2,
+        "费用率": 24.69,
+        "流动比率": 3.26,
+        "资产负债率": 27.62,
+        "应收账款周转天数": 39.3,
+        "应付账款周转天数": 39.5
+      }
+    },
+    {
+      "period": "2025-09",
+      "month_num": 9,
+      "income_statement": {
+        "revenue": {
+          "total": 3400233,
+          "SaaS平台": 1837942,
+          "电商平台": 1005699,
+          "咨询服务": 556592
+        },
+        "cogs": {
+          "total": 2370330,
+          "SaaS平台成本": 1066648,
+          "电商平台成本": 829616,
+          "咨询服务成本": 474066
+        },
+        "gross_profit": 1029903,
+        "gross_margin": 30.29,
+        "operating_expenses": {
+          "人力成本": 357405,
+          "营销推广": 184010,
+          "研发费用": 130982,
+          "行政管理": 94686,
+          "物流仓储": 65709,
+          "其他费用": 24977,
+          "total": 857769
+        },
+        "depreciation": 22003,
+        "operating_profit": 150131,
+        "interest_expense": 20833,
+        "profit_before_tax": 129298,
+        "income_tax": 32324,
+        "net_profit": 96974
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 8767678,
+            "accounts_receivable": 4845675,
+            "inventory": 2004627,
+            "prepaid_expenses": 118533,
+            "total": 15736513
+          },
+          "non_current": {
+            "pp_e": 11853098,
+            "intangible": 2504366,
+            "total": 14357464
+          },
+          "total": 30093977
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3158508,
+            "accrued_expenses": 100867,
+            "tax_payable": 32324,
+            "short_term_debt": 1524508,
+            "total": 4816207
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8316207
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 3077770,
+          "total": 21777770
+        },
+        "total_liabilities_equity": 30093977
+      },
+      "cash_flow": {
+        "operating": 90260,
+        "investing": -13150,
+        "financing": -18382,
+        "net_change": 58728,
+        "beginning_cash": 8708950,
+        "ending_cash": 8767678
+      },
+      "cost_by_dept": {
+        "研发部": 1179426,
+        "销售部": 684210,
+        "运营部": 558712,
+        "采购部": 310125,
+        "市场部": 324528,
+        "行政部": 157731
+      },
+      "cost_by_category": {
+        "人力成本": 1242109,
+        "服务器/云服务": 596231,
+        "营销推广": 498125,
+        "物流仓储": 262408,
+        "办公租金": 188200,
+        "差旅招待": 128946,
+        "软件许可": 169256,
+        "外包服务": 100865,
+        "其他": 61403
+      },
+      "key_metrics": {
+        "毛利率": 30.29,
+        "净利率": 2.85,
+        "营业利润率": 4.42,
+        "费用率": 25.23,
+        "流动比率": 3.27,
+        "资产负债率": 27.63,
+        "应收账款周转天数": 42.8,
+        "应付账款周转天数": 40.0
+      }
+    },
+    {
+      "period": "2025-10",
+      "month_num": 10,
+      "income_statement": {
+        "revenue": {
+          "total": 3824150,
+          "SaaS平台": 2075100,
+          "电商平台": 1113072,
+          "咨询服务": 635978
+        },
+        "cogs": {
+          "total": 2566112,
+          "SaaS平台成本": 1154750,
+          "电商平台成本": 898139,
+          "咨询服务成本": 513223
+        },
+        "gross_profit": 1258038,
+        "gross_margin": 32.9,
+        "operating_expenses": {
+          "人力成本": 358220,
+          "营销推广": 184650,
+          "研发费用": 135534,
+          "行政管理": 96198,
+          "物流仓储": 68720,
+          "其他费用": 21646,
+          "total": 864968
+        },
+        "depreciation": 22267,
+        "operating_profit": 370803,
+        "interest_expense": 20833,
+        "profit_before_tax": 349970,
+        "income_tax": 87492,
+        "net_profit": 262478
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 9220541,
+            "accounts_receivable": 5243545,
+            "inventory": 2234255,
+            "prepaid_expenses": 130692,
+            "total": 16829033
+          },
+          "non_current": {
+            "pp_e": 11833553,
+            "intangible": 2505083,
+            "total": 14338636
+          },
+          "total": 31167669
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3456834,
+            "accrued_expenses": 104653,
+            "tax_payable": 26248,
+            "short_term_debt": 1447214,
+            "total": 5034949
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8534949
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 3932720,
+          "total": 22632720
+        },
+        "total_liabilities_equity": 31167669
+      },
+      "cash_flow": {
+        "operating": 246074,
+        "investing": -13457,
+        "financing": -26112,
+        "net_change": 206505,
+        "beginning_cash": 9014036,
+        "ending_cash": 9220541
+      },
+      "cost_by_dept": {
+        "研发部": 1156139,
+        "销售部": 740364,
+        "运营部": 642235,
+        "采购部": 353268,
+        "市场部": 355484,
+        "行政部": 178398
+      },
+      "cost_by_category": {
+        "人力成本": 1258450,
+        "服务器/云服务": 599032,
+        "营销推广": 522806,
+        "物流仓储": 283713,
+        "办公租金": 215354,
+        "差旅招待": 135701,
+        "软件许可": 174038,
+        "外包服务": 98665,
+        "其他": 72161
+      },
+      "key_metrics": {
+        "毛利率": 32.9,
+        "净利率": 6.86,
+        "营业利润率": 9.7,
+        "费用率": 22.62,
+        "流动比率": 3.34,
+        "资产负债率": 27.38,
+        "应收账款周转天数": 41.1,
+        "应付账款周转天数": 40.4
+      }
+    },
+    {
+      "period": "2025-11",
+      "month_num": 11,
+      "income_statement": {
+        "revenue": {
+          "total": 4267165,
+          "SaaS平台": 2413998,
+          "电商平台": 1304020,
+          "咨询服务": 549147
+        },
+        "cogs": {
+          "total": 2783230,
+          "SaaS平台成本": 1252454,
+          "电商平台成本": 974130,
+          "咨询服务成本": 556646
+        },
+        "gross_profit": 1483935,
+        "gross_margin": 34.78,
+        "operating_expenses": {
+          "人力成本": 353688,
+          "营销推广": 208146,
+          "研发费用": 133842,
+          "行政管理": 97654,
+          "物流仓储": 75380,
+          "其他费用": 25748,
+          "total": 894458
+        },
+        "depreciation": 22534,
+        "operating_profit": 566943,
+        "interest_expense": 20833,
+        "profit_before_tax": 546110,
+        "income_tax": 136528,
+        "net_profit": 409582
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 9935624,
+            "accounts_receivable": 5315019,
+            "inventory": 2385870,
+            "prepaid_expenses": 125756,
+            "total": 17762269
+          },
+          "non_current": {
+            "pp_e": 11813384,
+            "intangible": 2505577,
+            "total": 14318961
+          },
+          "total": 32081230
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3735964,
+            "accrued_expenses": 111184,
+            "tax_payable": 40958,
+            "short_term_debt": 1458365,
+            "total": 5346471
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8846471
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 4534759,
+          "total": 23234759
+        },
+        "total_liabilities_equity": 32081230
+      },
+      "cash_flow": {
+        "operating": 414210,
+        "investing": -13452,
+        "financing": -24996,
+        "net_change": 375762,
+        "beginning_cash": 9559862,
+        "ending_cash": 9935624
+      },
+      "cost_by_dept": {
+        "研发部": 1327942,
+        "销售部": 805880,
+        "运营部": 649088,
+        "采购部": 378631,
+        "市场部": 357751,
+        "行政部": 175125
+      },
+      "cost_by_category": {
+        "人力成本": 1346059,
+        "服务器/云服务": 648341,
+        "营销推广": 614158,
+        "物流仓储": 310699,
+        "办公租金": 214813,
+        "差旅招待": 149605,
+        "软件许可": 181671,
+        "外包服务": 116701,
+        "其他": 73873
+      },
+      "key_metrics": {
+        "毛利率": 34.78,
+        "净利率": 9.6,
+        "营业利润率": 13.29,
+        "费用率": 20.96,
+        "流动比率": 3.32,
+        "资产负债率": 27.58,
+        "应收账款周转天数": 37.4,
+        "应付账款周转天数": 40.3
+      }
+    },
+    {
+      "period": "2025-12",
+      "month_num": 12,
+      "income_statement": {
+        "revenue": {
+          "total": 4607805,
+          "SaaS平台": 2475803,
+          "电商平台": 1421357,
+          "咨询服务": 710645
+        },
+        "cogs": {
+          "total": 2864885,
+          "SaaS平台成本": 1289198,
+          "电商平台成本": 1002710,
+          "咨询服务成本": 572977
+        },
+        "gross_profit": 1742920,
+        "gross_margin": 37.83,
+        "operating_expenses": {
+          "人力成本": 371618,
+          "营销推广": 208677,
+          "研发费用": 133611,
+          "行政管理": 95749,
+          "物流仓储": 79508,
+          "其他费用": 23106,
+          "total": 912269
+        },
+        "depreciation": 22804,
+        "operating_profit": 807847,
+        "interest_expense": 20833,
+        "profit_before_tax": 787014,
+        "income_tax": 196754,
+        "net_profit": 590260
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 10670073,
+            "accounts_receivable": 5849121,
+            "inventory": 2480909,
+            "prepaid_expenses": 138517,
+            "total": 19138620
+          },
+          "non_current": {
+            "pp_e": 11793361,
+            "intangible": 2506124,
+            "total": 14299485
+          },
+          "total": 33438105
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3818537,
+            "accrued_expenses": 111758,
+            "tax_payable": 196754,
+            "short_term_debt": 1425254,
+            "total": 5552303
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 9052303
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 5685802,
+          "total": 24385802
+        },
+        "total_liabilities_equity": 33438105
+      },
+      "cash_flow": {
+        "operating": 550006,
+        "investing": -13522,
+        "financing": -28308,
+        "net_change": 508176,
+        "beginning_cash": 10161897,
+        "ending_cash": 10670073
+      },
+      "cost_by_dept": {
+        "研发部": 1378265,
+        "销售部": 834169,
+        "运营部": 694806,
+        "采购部": 386854,
+        "市场部": 384160,
+        "行政部": 186293
+      },
+      "cost_by_category": {
+        "人力成本": 1361252,
+        "服务器/云服务": 693287,
+        "营销推广": 592031,
+        "物流仓储": 295425,
+        "办公租金": 236094,
+        "差旅招待": 155070,
+        "软件许可": 184332,
+        "外包服务": 110721,
+        "其他": 74713
+      },
+      "key_metrics": {
+        "毛利率": 37.83,
+        "净利率": 12.81,
+        "营业利润率": 17.53,
+        "费用率": 19.8,
+        "流动比率": 3.45,
+        "资产负债率": 27.07,
+        "应收账款周转天数": 38.1,
+        "应付账款周转天数": 40.0
+      }
+    },
+    {
+      "period": "2026-01",
+      "month_num": 1,
+      "income_statement": {
+        "revenue": {
+          "total": 3223996,
+          "SaaS平台": 1751457,
+          "电商平台": 945570,
+          "咨询服务": 526969
+        },
+        "cogs": {
+          "total": 2122219,
+          "SaaS平台成本": 954999,
+          "电商平台成本": 742777,
+          "咨询服务成本": 424443
+        },
+        "gross_profit": 1101777,
+        "gross_margin": 34.17,
+        "operating_expenses": {
+          "人力成本": 375750,
+          "营销推广": 158176,
+          "研发费用": 141814,
+          "行政管理": 96444,
+          "物流仓储": 55423,
+          "其他费用": 24230,
+          "total": 851837
+        },
+        "depreciation": 23078,
+        "operating_profit": 226862,
+        "interest_expense": 20833,
+        "profit_before_tax": 206029,
+        "income_tax": 51507,
+        "net_profit": 154522
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 9042421,
+            "accounts_receivable": 4173918,
+            "inventory": 1817517,
+            "prepaid_expenses": 129411,
+            "total": 15163267
+          },
+          "non_current": {
+            "pp_e": 11774181,
+            "intangible": 2507091,
+            "total": 14281272
+          },
+          "total": 29444539
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 2878385,
+            "accrued_expenses": 101863,
+            "tax_payable": 15452,
+            "short_term_debt": 1491324,
+            "total": 4487024
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 7987024
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 2757515,
+          "total": 21457515
+        },
+        "total_liabilities_equity": 29444539
+      },
+      "cash_flow": {
+        "operating": 188047,
+        "investing": -14014,
+        "financing": -21701,
+        "net_change": 152332,
+        "beginning_cash": 8890089,
+        "ending_cash": 9042421
+      },
+      "cost_by_dept": {
+        "研发部": 1011118,
+        "销售部": 652538,
+        "运营部": 556806,
+        "采购部": 306210,
+        "市场部": 287582,
+        "行政部": 142529
+      },
+      "cost_by_category": {
+        "人力成本": 1132237,
+        "服务器/云服务": 543870,
+        "营销推广": 466438,
+        "物流仓储": 247016,
+        "办公租金": 183821,
+        "差旅招待": 121429,
+        "软件许可": 143789,
+        "外包服务": 86000,
+        "其他": 56087
+      },
+      "key_metrics": {
+        "毛利率": 34.17,
+        "净利率": 4.79,
+        "营业利润率": 7.04,
+        "费用率": 26.42,
+        "流动比率": 3.38,
+        "资产负债率": 27.13,
+        "应收账款周转天数": 38.8,
+        "应付账款周转天数": 40.7
+      }
+    },
+    {
+      "period": "2026-02",
+      "month_num": 2,
+      "income_statement": {
+        "revenue": {
+          "total": 3001606,
+          "SaaS平台": 1648420,
+          "电商平台": 919378,
+          "咨询服务": 433808
+        },
+        "cogs": {
+          "total": 1959312,
+          "SaaS平台成本": 881690,
+          "电商平台成本": 685759,
+          "咨询服务成本": 391863
+        },
+        "gross_profit": 1042294,
+        "gross_margin": 34.72,
+        "operating_expenses": {
+          "人力成本": 372398,
+          "营销推广": 146567,
+          "研发费用": 137560,
+          "行政管理": 96754,
+          "物流仓储": 52456,
+          "其他费用": 22771,
+          "total": 828506
+        },
+        "depreciation": 23355,
+        "operating_profit": 190433,
+        "interest_expense": 20833,
+        "profit_before_tax": 169600,
+        "income_tax": 42400,
+        "net_profit": 127200
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 9050914,
+            "accounts_receivable": 3822846,
+            "inventory": 1758191,
+            "prepaid_expenses": 129646,
+            "total": 14761597
+          },
+          "non_current": {
+            "pp_e": 11753756,
+            "intangible": 2507451,
+            "total": 14261207
+          },
+          "total": 29022804
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 2596751,
+            "accrued_expenses": 98677,
+            "tax_payable": 12720,
+            "short_term_debt": 1451383,
+            "total": 4159531
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 7659531
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 2663273,
+          "total": 21363273
+        },
+        "total_liabilities_equity": 29022804
+      },
+      "cash_flow": {
+        "operating": 167946,
+        "investing": -13884,
+        "financing": -25695,
+        "net_change": 128367,
+        "beginning_cash": 8922547,
+        "ending_cash": 9050914
+      },
+      "cost_by_dept": {
+        "研发部": 1020422,
+        "销售部": 614421,
+        "运营部": 479237,
+        "采购部": 271790,
+        "市场部": 288493,
+        "行政部": 138784
+      },
+      "cost_by_category": {
+        "人力成本": 1097688,
+        "服务器/云服务": 511898,
+        "营销推广": 472166,
+        "物流仓储": 225580,
+        "办公租金": 176302,
+        "差旅招待": 116751,
+        "软件许可": 141275,
+        "外包服务": 85835,
+        "其他": 55788
+      },
+      "key_metrics": {
+        "毛利率": 34.72,
+        "净利率": 4.24,
+        "营业利润率": 6.34,
+        "费用率": 27.6,
+        "流动比率": 3.55,
+        "资产负债率": 26.39,
+        "应收账款周转天数": 38.2,
+        "应付账款周转天数": 39.8
+      }
+    },
+    {
+      "period": "2026-03",
+      "month_num": 3,
+      "income_statement": {
+        "revenue": {
+          "total": 3687539,
+          "SaaS平台": 2033972,
+          "电商平台": 1132627,
+          "咨询服务": 520940
+        },
+        "cogs": {
+          "total": 2392066,
+          "SaaS平台成本": 1076430,
+          "电商平台成本": 837223,
+          "咨询服务成本": 478413
+        },
+        "gross_profit": 1295473,
+        "gross_margin": 35.13,
+        "operating_expenses": {
+          "人力成本": 377778,
+          "营销推广": 162368,
+          "研发费用": 139660,
+          "行政管理": 96529,
+          "物流仓储": 62093,
+          "其他费用": 24102,
+          "total": 862530
+        },
+        "depreciation": 23635,
+        "operating_profit": 409308,
+        "interest_expense": 20833,
+        "profit_before_tax": 388475,
+        "income_tax": 97119,
+        "net_profit": 291356
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 9844338,
+            "accounts_receivable": 4608918,
+            "inventory": 1952494,
+            "prepaid_expenses": 124944,
+            "total": 16530694
+          },
+          "non_current": {
+            "pp_e": 11733966,
+            "intangible": 2508147,
+            "total": 14242113
+          },
+          "total": 30772807
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3086058,
+            "accrued_expenses": 101638,
+            "tax_payable": 97119,
+            "short_term_debt": 1506023,
+            "total": 4790838
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8290838
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 3781969,
+          "total": 22481969
+        },
+        "total_liabilities_equity": 30772807
+      },
+      "cash_flow": {
+        "operating": 302705,
+        "investing": -14074,
+        "financing": -20231,
+        "net_change": 268400,
+        "beginning_cash": 9575938,
+        "ending_cash": 9844338
+      },
+      "cost_by_dept": {
+        "研发部": 1097915,
+        "销售部": 696769,
+        "运营部": 597189,
+        "采购部": 332178,
+        "市场部": 311277,
+        "行政部": 161226
+      },
+      "cost_by_category": {
+        "人力成本": 1243070,
+        "服务器/云服务": 579906,
+        "营销推广": 502416,
+        "物流仓储": 257873,
+        "办公租金": 204762,
+        "差旅招待": 131497,
+        "软件许可": 166548,
+        "外包服务": 101818,
+        "其他": 67166
+      },
+      "key_metrics": {
+        "毛利率": 35.13,
+        "净利率": 7.9,
+        "营业利润率": 11.1,
+        "费用率": 23.39,
+        "流动比率": 3.45,
+        "资产负债率": 26.94,
+        "应收账款周转天数": 37.5,
+        "应付账款周转天数": 38.7
+      }
+    },
+    {
+      "period": "2026-04",
+      "month_num": 4,
+      "income_statement": {
+        "revenue": {
+          "total": 3866178,
+          "SaaS平台": 2063358,
+          "电商平台": 1149537,
+          "咨询服务": 653283
+        },
+        "cogs": {
+          "total": 2600653,
+          "SaaS平台成本": 1170294,
+          "电商平台成本": 910229,
+          "咨询服务成本": 520130
+        },
+        "gross_profit": 1265525,
+        "gross_margin": 32.73,
+        "operating_expenses": {
+          "人力成本": 388110,
+          "营销推广": 189288,
+          "研发费用": 142815,
+          "行政管理": 96950,
+          "物流仓储": 65521,
+          "其他费用": 24496,
+          "total": 907180
+        },
+        "depreciation": 23919,
+        "operating_profit": 334426,
+        "interest_expense": 20833,
+        "profit_before_tax": 313593,
+        "income_tax": 78398,
+        "net_profit": 235195
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 9565837,
+            "accounts_receivable": 4979636,
+            "inventory": 2184466,
+            "prepaid_expenses": 125823,
+            "total": 16855762
+          },
+          "non_current": {
+            "pp_e": 11714282,
+            "intangible": 2508926,
+            "total": 14223208
+          },
+          "total": 31078970
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3370814,
+            "accrued_expenses": 110812,
+            "tax_payable": 23519,
+            "short_term_debt": 1485648,
+            "total": 4990793
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8490793
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 3888177,
+          "total": 22588177
+        },
+        "total_liabilities_equity": 31078970
+      },
+      "cash_flow": {
+        "operating": 238232,
+        "investing": -14316,
+        "financing": -22268,
+        "net_change": 201648,
+        "beginning_cash": 9364189,
+        "ending_cash": 9565837
+      },
+      "cost_by_dept": {
+        "研发部": 1186618,
+        "销售部": 769207,
+        "运营部": 607898,
+        "采购部": 355072,
+        "市场部": 334190,
+        "行政部": 173533
+      },
+      "cost_by_category": {
+        "人力成本": 1343277,
+        "服务器/云服务": 595579,
+        "营销推广": 570868,
+        "物流仓储": 268359,
+        "办公租金": 209503,
+        "差旅招待": 132741,
+        "软件许可": 172847,
+        "外包服务": 101594,
+        "其他": 68699
+      },
+      "key_metrics": {
+        "毛利率": 32.73,
+        "净利率": 6.08,
+        "营业利润率": 8.65,
+        "费用率": 23.46,
+        "流动比率": 3.38,
+        "资产负债率": 27.32,
+        "应收账款周转天数": 38.6,
+        "应付账款周转天数": 38.9
+      }
+    },
+    {
+      "period": "2026-05",
+      "month_num": 5,
+      "income_statement": {
+        "revenue": {
+          "total": 4151547,
+          "SaaS平台": 2266791,
+          "电商平台": 1264296,
+          "咨询服务": 620460
+        },
+        "cogs": {
+          "total": 2721830,
+          "SaaS平台成本": 1224824,
+          "电商平台成本": 952640,
+          "咨询服务成本": 544366
+        },
+        "gross_profit": 1429717,
+        "gross_margin": 34.44,
+        "operating_expenses": {
+          "人力成本": 383454,
+          "营销推广": 175528,
+          "研发费用": 141046,
+          "行政管理": 96151,
+          "物流仓储": 69888,
+          "其他费用": 23280,
+          "total": 889347
+        },
+        "depreciation": 24206,
+        "operating_profit": 516164,
+        "interest_expense": 20833,
+        "profit_before_tax": 495331,
+        "income_tax": 123833,
+        "net_profit": 371498
+      },
+      "balance_sheet": {
+        "assets": {
+          "current": {
+            "cash": 10451534,
+            "accounts_receivable": 5487468,
+            "inventory": 2315212,
+            "prepaid_expenses": 138828,
+            "total": 18393042
+          },
+          "non_current": {
+            "pp_e": 11694105,
+            "intangible": 2509403,
+            "total": 14203508
+          },
+          "total": 32596550
+        },
+        "liabilities": {
+          "current": {
+            "accounts_payable": 3686229,
+            "accrued_expenses": 103513,
+            "tax_payable": 37150,
+            "short_term_debt": 1428057,
+            "total": 5254949
+          },
+          "non_current": {
+            "long_term_debt": 3500000
+          },
+          "total": 8754949
+        },
+        "equity": {
+          "paid_in_capital": 18700000,
+          "retained_earnings": 5141601,
+          "total": 23841601
+        },
+        "total_liabilities_equity": 32596550
+      },
+      "cash_flow": {
+        "operating": 355580,
+        "investing": -14314,
+        "financing": -28027,
+        "net_change": 313239,
+        "beginning_cash": 10138295,
+        "ending_cash": 10451534
+      },
+      "cost_by_dept": {
+        "研发部": 1219976,
+        "销售部": 764764,
+        "运营部": 661027,
+        "采购部": 363428,
+        "市场部": 350933,
+        "行政部": 184160
+      },
+      "cost_by_category": {
+        "人力成本": 1416197,
+        "服务器/云服务": 624099,
+        "营销推广": 585224,
+        "物流仓储": 297489,
+        "办公租金": 206648,
+        "差旅招待": 149982,
+        "软件许可": 190628,
+        "外包服务": 103241,
+        "其他": 68113
+      },
+      "key_metrics": {
+        "毛利率": 34.44,
+        "净利率": 8.95,
+        "营业利润率": 12.43,
+        "费用率": 21.42,
+        "流动比率": 3.5,
+        "资产负债率": 26.86,
+        "应收账款周转天数": 39.7,
+        "应付账款周转天数": 40.6
+      }
+    }
+  ],
+  "budget_2026": [
+    {
+      "period": "2026-01",
+      "revenue": 3487431,
+      "cogs": 2162207,
+      "opex": 871858,
+      "gross_profit": 1325224,
+      "net_profit_target": 340024,
+      "dept_budgets": {
+        "研发部": 1061923,
+        "销售部": 667494,
+        "运营部": 546132,
+        "采购部": 303406,
+        "市场部": 303406,
+        "行政部": 151703
+      },
+      "category_budgets": {
+        "人力成本": 1092263,
+        "服务器/云服务": 515791,
+        "营销推广": 515791,
+        "物流仓储": 242725,
+        "办公租金": 182044,
+        "差旅招待": 121363,
+        "软件许可": 151703,
+        "外包服务": 121363,
+        "其他": 91022
+      }
+    },
+    {
+      "period": "2026-02",
+      "revenue": 3249651,
+      "cogs": 2014784,
+      "opex": 812413,
+      "gross_profit": 1234867,
+      "net_profit_target": 316840,
+      "dept_budgets": {
+        "研发部": 989519,
+        "销售部": 621983,
+        "运营部": 508895,
+        "采购部": 282720,
+        "市场部": 282720,
+        "行政部": 141360
+      },
+      "category_budgets": {
+        "人力成本": 1017791,
+        "服务器/云服务": 480623,
+        "营销推广": 480623,
+        "物流仓储": 226176,
+        "办公租金": 169632,
+        "差旅招待": 113088,
+        "软件许可": 141360,
+        "外包服务": 113088,
+        "其他": 84816
+      }
+    },
+    {
+      "period": "2026-03",
+      "revenue": 3764840,
+      "cogs": 2334201,
+      "opex": 941210,
+      "gross_profit": 1430639,
+      "net_profit_target": 367072,
+      "dept_budgets": {
+        "研发部": 1146394,
+        "销售部": 720590,
+        "运营部": 589574,
+        "采购部": 327541,
+        "市场部": 327541,
+        "行政部": 163771
+      },
+      "category_budgets": {
+        "人力成本": 1179148,
+        "服务器/云服务": 556820,
+        "营销推广": 556820,
+        "物流仓储": 262033,
+        "办公租金": 196525,
+        "差旅招待": 131016,
+        "软件许可": 163771,
+        "外包服务": 131016,
+        "其他": 98262
+      }
+    },
+    {
+      "period": "2026-04",
+      "revenue": 4042249,
+      "cogs": 2506194,
+      "opex": 1010562,
+      "gross_profit": 1536055,
+      "net_profit_target": 394120,
+      "dept_budgets": {
+        "研发部": 1230865,
+        "销售部": 773686,
+        "运营部": 633016,
+        "采购部": 351676,
+        "市场部": 351676,
+        "行政部": 175838
+      },
+      "category_budgets": {
+        "人力成本": 1266032,
+        "服务器/云服务": 597849,
+        "营销推广": 597849,
+        "物流仓储": 281340,
+        "办公租金": 211005,
+        "差旅招待": 140670,
+        "软件许可": 175838,
+        "外包服务": 140670,
+        "其他": 105503
+      }
+    },
+    {
+      "period": "2026-05",
+      "revenue": 4161139,
+      "cogs": 2579906,
+      "opex": 1040285,
+      "gross_profit": 1581233,
+      "net_profit_target": 405711,
+      "dept_budgets": {
+        "研发部": 1267067,
+        "销售部": 796442,
+        "运营部": 651634,
+        "采购部": 362019,
+        "市场部": 362019,
+        "行政部": 181010
+      },
+      "category_budgets": {
+        "人力成本": 1303269,
+        "服务器/云服务": 615432,
+        "营销推广": 615432,
+        "物流仓储": 289615,
+        "办公租金": 217211,
+        "差旅招待": 144808,
+        "软件许可": 181010,
+        "外包服务": 144808,
+        "其他": 108606
+      }
+    },
+    {
+      "period": "2026-06",
+      "revenue": 4359289,
+      "cogs": 2702759,
+      "opex": 1089822,
+      "gross_profit": 1656530,
+      "net_profit_target": 425031,
+      "dept_budgets": {
+        "研发部": 1327403,
+        "销售部": 834368,
+        "运营部": 682665,
+        "采购部": 379258,
+        "市场部": 379258,
+        "行政部": 189629
+      },
+      "category_budgets": {
+        "人力成本": 1365329,
+        "服务器/云服务": 644739,
+        "营销推广": 644739,
+        "物流仓储": 303406,
+        "办公租金": 227555,
+        "差旅招待": 151703,
+        "软件许可": 189629,
+        "外包服务": 151703,
+        "其他": 113777
+      }
+    },
+    {
+      "period": "2026-07",
+      "revenue": 4161139,
+      "cogs": 2579906,
+      "opex": 1040285,
+      "gross_profit": 1581233,
+      "net_profit_target": 405711,
+      "dept_budgets": {
+        "研发部": 1267067,
+        "销售部": 796442,
+        "运营部": 651634,
+        "采购部": 362019,
+        "市场部": 362019,
+        "行政部": 181010
+      },
+      "category_budgets": {
+        "人力成本": 1303269,
+        "服务器/云服务": 615432,
+        "营销推广": 615432,
+        "物流仓储": 289615,
+        "办公租金": 217211,
+        "差旅招待": 144808,
+        "软件许可": 181010,
+        "外包服务": 144808,
+        "其他": 108606
+      }
+    },
+    {
+      "period": "2026-08",
+      "revenue": 4042249,
+      "cogs": 2506194,
+      "opex": 1010562,
+      "gross_profit": 1536055,
+      "net_profit_target": 394120,
+      "dept_budgets": {
+        "研发部": 1230865,
+        "销售部": 773686,
+        "运营部": 633016,
+        "采购部": 351676,
+        "市场部": 351676,
+        "行政部": 175838
+      },
+      "category_budgets": {
+        "人力成本": 1266032,
+        "服务器/云服务": 597849,
+        "营销推广": 597849,
+        "物流仓储": 281340,
+        "办公租金": 211005,
+        "差旅招待": 140670,
+        "软件许可": 175838,
+        "外包服务": 140670,
+        "其他": 105503
+      }
+    },
+    {
+      "period": "2026-09",
+      "revenue": 3962990,
+      "cogs": 2457054,
+      "opex": 990748,
+      "gross_profit": 1505936,
+      "net_profit_target": 386391,
+      "dept_budgets": {
+        "研发部": 1206731,
+        "销售部": 758516,
+        "运营部": 620604,
+        "采购部": 344780,
+        "市场部": 344780,
+        "行政部": 172390
+      },
+      "category_budgets": {
+        "人力成本": 1241209,
+        "服务器/云服务": 586126,
+        "营销推广": 586126,
+        "物流仓储": 275824,
+        "办公租金": 206868,
+        "差旅招待": 137912,
+        "软件许可": 172390,
+        "外包服务": 137912,
+        "其他": 103434
+      }
+    },
+    {
+      "period": "2026-10",
+      "revenue": 4280029,
+      "cogs": 2653618,
+      "opex": 1070007,
+      "gross_profit": 1626411,
+      "net_profit_target": 417303,
+      "dept_budgets": {
+        "研发部": 1303269,
+        "销售部": 819198,
+        "运营部": 670252,
+        "采购部": 372362,
+        "市场部": 372362,
+        "行政部": 186181
+      },
+      "category_budgets": {
+        "人力成本": 1340505,
+        "服务器/云服务": 633016,
+        "营销推广": 633016,
+        "物流仓储": 297890,
+        "办公租金": 223418,
+        "差旅招待": 148945,
+        "软件许可": 186181,
+        "外包服务": 148945,
+        "其他": 111709
+      }
+    },
+    {
+      "period": "2026-11",
+      "revenue": 4557438,
+      "cogs": 2825612,
+      "opex": 1139360,
+      "gross_profit": 1731826,
+      "net_profit_target": 444350,
+      "dept_budgets": {
+        "研发部": 1387740,
+        "销售部": 872294,
+        "运营部": 713695,
+        "采购部": 396497,
+        "市场部": 396497,
+        "行政部": 198249
+      },
+      "category_budgets": {
+        "人力成本": 1427390,
+        "服务器/云服务": 674045,
+        "营销推广": 674045,
+        "物流仓储": 317198,
+        "办公租金": 237898,
+        "差旅招待": 158599,
+        "软件许可": 198249,
+        "外包服务": 158599,
+        "其他": 118949
+      }
+    },
+    {
+      "period": "2026-12",
+      "revenue": 4834847,
+      "cogs": 2997605,
+      "opex": 1208712,
+      "gross_profit": 1837242,
+      "net_profit_target": 471398,
+      "dept_budgets": {
+        "研发部": 1472211,
+        "销售部": 925390,
+        "运营部": 757137,
+        "采购部": 420632,
+        "市场部": 420632,
+        "行政部": 210316
+      },
+      "category_budgets": {
+        "人力成本": 1514274,
+        "服务器/云服务": 715074,
+        "营销推广": 715074,
+        "物流仓储": 336505,
+        "办公租金": 252379,
+        "差旅招待": 168253,
+        "软件许可": 210316,
+        "外包服务": 168253,
+        "其他": 126190
+      }
+    }
+  ],
+  "ar_aging": [
+    {
+      "customer": "客户-001",
+      "amount": 309109,
+      "days_outstanding": 40,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 7
+    },
+    {
+      "customer": "客户-002",
+      "amount": 473662,
+      "days_outstanding": 51,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 4
+    },
+    {
+      "customer": "客户-003",
+      "amount": 316444,
+      "days_outstanding": 10,
+      "aging_bucket": "0-30天",
+      "expected_collection_week": 4
+    },
+    {
+      "customer": "客户-004",
+      "amount": 363737,
+      "days_outstanding": 14,
+      "aging_bucket": "0-30天",
+      "expected_collection_week": 5
+    },
+    {
+      "customer": "客户-005",
+      "amount": 357917,
+      "days_outstanding": 109,
+      "aging_bucket": "90天以上",
+      "expected_collection_week": 2
+    },
+    {
+      "customer": "客户-006",
+      "amount": 492730,
+      "days_outstanding": 102,
+      "aging_bucket": "90天以上",
+      "expected_collection_week": 1
+    },
+    {
+      "customer": "客户-007",
+      "amount": 289735,
+      "days_outstanding": 45,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 6
+    },
+    {
+      "customer": "客户-008",
+      "amount": 277682,
+      "days_outstanding": 9,
+      "aging_bucket": "0-30天",
+      "expected_collection_week": 6
+    },
+    {
+      "customer": "客户-009",
+      "amount": 432309,
+      "days_outstanding": 2,
+      "aging_bucket": "0-30天",
+      "expected_collection_week": 8
+    },
+    {
+      "customer": "客户-010",
+      "amount": 245086,
+      "days_outstanding": 14,
+      "aging_bucket": "0-30天",
+      "expected_collection_week": 6
+    },
+    {
+      "customer": "客户-011",
+      "amount": 451209,
+      "days_outstanding": 82,
+      "aging_bucket": "61-90天",
+      "expected_collection_week": 8
+    },
+    {
+      "customer": "客户-012",
+      "amount": 118846,
+      "days_outstanding": 91,
+      "aging_bucket": "90天以上",
+      "expected_collection_week": 3
+    },
+    {
+      "customer": "客户-013",
+      "amount": 284786,
+      "days_outstanding": 94,
+      "aging_bucket": "90天以上",
+      "expected_collection_week": 5
+    },
+    {
+      "customer": "客户-014",
+      "amount": 413690,
+      "days_outstanding": 79,
+      "aging_bucket": "61-90天",
+      "expected_collection_week": 8
+    },
+    {
+      "customer": "客户-015",
+      "amount": 246009,
+      "days_outstanding": 60,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 5
+    },
+    {
+      "customer": "客户-016",
+      "amount": 433271,
+      "days_outstanding": 42,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 2
+    },
+    {
+      "customer": "客户-017",
+      "amount": 446734,
+      "days_outstanding": 36,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 4
+    },
+    {
+      "customer": "客户-018",
+      "amount": 259119,
+      "days_outstanding": 97,
+      "aging_bucket": "90天以上",
+      "expected_collection_week": 7
+    },
+    {
+      "customer": "客户-019",
+      "amount": 62915,
+      "days_outstanding": 44,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 6
+    },
+    {
+      "customer": "客户-020",
+      "amount": 269397,
+      "days_outstanding": 24,
+      "aging_bucket": "0-30天",
+      "expected_collection_week": 6
+    },
+    {
+      "customer": "客户-021",
+      "amount": 166259,
+      "days_outstanding": 103,
+      "aging_bucket": "90天以上",
+      "expected_collection_week": 5
+    },
+    {
+      "customer": "客户-022",
+      "amount": 318270,
+      "days_outstanding": 113,
+      "aging_bucket": "90天以上",
+      "expected_collection_week": 5
+    },
+    {
+      "customer": "客户-023",
+      "amount": 54568,
+      "days_outstanding": 72,
+      "aging_bucket": "61-90天",
+      "expected_collection_week": 4
+    },
+    {
+      "customer": "客户-024",
+      "amount": 158610,
+      "days_outstanding": 11,
+      "aging_bucket": "0-30天",
+      "expected_collection_week": 7
+    },
+    {
+      "customer": "客户-025",
+      "amount": 299829,
+      "days_outstanding": 63,
+      "aging_bucket": "61-90天",
+      "expected_collection_week": 4
+    },
+    {
+      "customer": "客户-026",
+      "amount": 264242,
+      "days_outstanding": 89,
+      "aging_bucket": "61-90天",
+      "expected_collection_week": 8
+    },
+    {
+      "customer": "客户-027",
+      "amount": 406820,
+      "days_outstanding": 58,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 2
+    },
+    {
+      "customer": "客户-028",
+      "amount": 149718,
+      "days_outstanding": 38,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 4
+    },
+    {
+      "customer": "客户-029",
+      "amount": 348782,
+      "days_outstanding": 40,
+      "aging_bucket": "31-60天",
+      "expected_collection_week": 6
+    },
+    {
+      "customer": "客户-030",
+      "amount": 299063,
+      "days_outstanding": 61,
+      "aging_bucket": "61-90天",
+      "expected_collection_week": 6
+    }
+  ],
+  "ap_schedule": [
+    {
+      "supplier": "供应商-001",
+      "amount": 139141,
+      "due_week": 12,
+      "category": "软件许可"
+    },
+    {
+      "supplier": "供应商-002",
+      "amount": 112622,
+      "due_week": 12,
+      "category": "办公"
+    },
+    {
+      "supplier": "供应商-003",
+      "amount": 95857,
+      "due_week": 5,
+      "category": "营销服务"
+    },
+    {
+      "supplier": "供应商-004",
+      "amount": 53784,
+      "due_week": 4,
+      "category": "物流"
+    },
+    {
+      "supplier": "供应商-005",
+      "amount": 53475,
+      "due_week": 9,
+      "category": "外包"
+    },
+    {
+      "supplier": "供应商-006",
+      "amount": 71842,
+      "due_week": 4,
+      "category": "外包"
+    },
+    {
+      "supplier": "供应商-007",
+      "amount": 155576,
+      "due_week": 12,
+      "category": "软件许可"
+    },
+    {
+      "supplier": "供应商-008",
+      "amount": 293450,
+      "due_week": 9,
+      "category": "软件许可"
+    },
+    {
+      "supplier": "供应商-009",
+      "amount": 99240,
+      "due_week": 2,
+      "category": "营销服务"
+    },
+    {
+      "supplier": "供应商-010",
+      "amount": 102949,
+      "due_week": 6,
+      "category": "营销服务"
+    },
+    {
+      "supplier": "供应商-011",
+      "amount": 104635,
+      "due_week": 12,
+      "category": "软件许可"
+    },
+    {
+      "supplier": "供应商-012",
+      "amount": 55443,
+      "due_week": 1,
+      "category": "服务器"
+    },
+    {
+      "supplier": "供应商-013",
+      "amount": 174941,
+      "due_week": 12,
+      "category": "营销服务"
+    },
+    {
+      "supplier": "供应商-014",
+      "amount": 198604,
+      "due_week": 8,
+      "category": "服务器"
+    },
+    {
+      "supplier": "供应商-015",
+      "amount": 264362,
+      "due_week": 10,
+      "category": "物流"
+    },
+    {
+      "supplier": "供应商-016",
+      "amount": 151431,
+      "due_week": 8,
+      "category": "物流"
+    },
+    {
+      "supplier": "供应商-017",
+      "amount": 71622,
+      "due_week": 1,
+      "category": "物流"
+    },
+    {
+      "supplier": "供应商-018",
+      "amount": 283498,
+      "due_week": 8,
+      "category": "服务器"
+    },
+    {
+      "supplier": "供应商-019",
+      "amount": 250192,
+      "due_week": 7,
+      "category": "办公"
+    },
+    {
+      "supplier": "供应商-020",
+      "amount": 40743,
+      "due_week": 11,
+      "category": "外包"
+    }
+  ],
+  "weekly_order_forecast": [
+    {
+      "week": 1,
+      "estimated_revenue": 890308,
+      "estimated_collection": 516236,
+      "deferred_collection": 374072
+    },
+    {
+      "week": 2,
+      "estimated_revenue": 968427,
+      "estimated_collection": 591483,
+      "deferred_collection": 376944
+    },
+    {
+      "week": 3,
+      "estimated_revenue": 1034557,
+      "estimated_collection": 593515,
+      "deferred_collection": 441042
+    },
+    {
+      "week": 4,
+      "estimated_revenue": 999354,
+      "estimated_collection": 670830,
+      "deferred_collection": 328524
+    },
+    {
+      "week": 5,
+      "estimated_revenue": 1003388,
+      "estimated_collection": 597154,
+      "deferred_collection": 406234
+    },
+    {
+      "week": 6,
+      "estimated_revenue": 962250,
+      "estimated_collection": 615939,
+      "deferred_collection": 346311
+    },
+    {
+      "week": 7,
+      "estimated_revenue": 950000,
+      "estimated_collection": 685932,
+      "deferred_collection": 264068
+    },
+    {
+      "week": 8,
+      "estimated_revenue": 1033961,
+      "estimated_collection": 631829,
+      "deferred_collection": 402132
+    },
+    {
+      "week": 9,
+      "estimated_revenue": 977353,
+      "estimated_collection": 656709,
+      "deferred_collection": 320644
+    },
+    {
+      "week": 10,
+      "estimated_revenue": 995618,
+      "estimated_collection": 736277,
+      "deferred_collection": 259341
+    },
+    {
+      "week": 11,
+      "estimated_revenue": 913960,
+      "estimated_collection": 541252,
+      "deferred_collection": 372708
+    },
+    {
+      "week": 12,
+      "estimated_revenue": 983397,
+      "estimated_collection": 571758,
+      "deferred_collection": 411639
+    }
+  ]
+}

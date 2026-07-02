@@ -1,0 +1,27 @@
+{
+  "total": 2800,
+  "train": 2380,
+  "test": 420,
+  "gen_seconds": 0.04978775978088379,
+  "total_seconds": 0.07091832160949707,
+  "cap_dist": {
+    "boundary_protection": 350,
+    "financial_statements": 500,
+    "ratio_analysis": 200,
+    "cost_analysis": 350,
+    "cashflow_forecast": 400,
+    "anomaly_detection": 350,
+    "budget_tracking": 400,
+    "multi_period": 250
+  },
+  "test_dist": {
+    "cashflow_forecast": 68,
+    "boundary_protection": 45,
+    "cost_analysis": 41,
+    "budget_tracking": 59,
+    "financial_statements": 87,
+    "multi_period": 35,
+    "anomaly_detection": 52,
+    "ratio_analysis": 33
+  }
+}

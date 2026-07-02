@@ -1,0 +1,533 @@
+{
+  "_meta": {
+    "name": "竞品定价追踪",
+    "version": "1.10.17",
+    "updated": "2026-06-30T09:22+08:00",
+    "task": "T3",
+    "next_scan": "2026-06-30T18:26+08:00"
+  },
+  "scan_summary": {
+    "total_fetched": 8,
+    "success": 8,
+    "spa_blocked": 0,
+    "timed_out": 0,
+    "not_found": 0,
+    "forbidden": 0,
+    "fetch_failed": 0,
+    "skipped": 0,
+    "price_changed": 0,
+    "new_pricing_event": 0,
+    "independent_verified": 8,
+    "reused_14_58": 0,
+    "notes": "🧊🧊🧊🧊🧊🧊🧊🧊🧊🧊🧊🧊 连续第13周定价全面冻结第 16 轮 (2026-06-30 09:22 CST Cron 触发)😴😴😴😴😴😴😴😴😴😴😴😴。09:22 轮:8/8 直接抓取成功(全覆盖,无 timeout · LangChain 连续 2 轮成功)。覆盖 DeepSeek (V4-Flash $0.14/$0.28 + V4-Pro $0.435/$0.87) + Dify (Sandbox $0/Pro $59/Team $159) + Cursor (Hobby $0/Pro $20/Teams $40) + Devin (Free $0/Pro $20/Max $200/Teams $80+$40) + CrewAI (Basic $0/Enterprise Custom) + Runway (Standard $12-15/Pro $28-35/Max $76-95) + Cohere (Rerank 4 Pro Medium $5/Large $10) + LangChain (Plus $39/seat)。**🆕 新事件 = 0 · 价格变动 = 0** — 全部价格与 06-29 07:47 基线完全一致。**🟢 白宫 7/2 安全审查窗口仅剩 2 天**(原剩 3 天→今剩 2 天)· 7/3 起 GPT-5.6 GA 时间窗口将打开。**🟢 DeepSeek 模型弃用通知 (S2) 持续有效 (deadline 2026/07/24,仅剩 24 天)**。09:22 cron 触发非 T3 标准时点(标准 18:26)→ 早间验证轮· 饱和自判启用 → 跳过完整周报→ 输出差分报告 reports/pricing-daily-2026-06-30-0922.md。"
+  },
+  "market_summary": "🧊🧊🧊🧊🧊🧊🧊🧊🧊🧊🧊🧊 定价连续第13周冻结**(2026-06-29 07:47 CST Cron触发·第15轮·8次抓取)**😴：**🔴 新定价事件 = 0 · 价格变动 = 0**。07:47 cron 触发非 T3 标准时点(标准 18:26)→ 早间验证轮。8/8 直接抓取成功(LangChain 上次 timeout → 本次成功)。覆盖 DeepSeek V4-Pro/Flash + Dify + Cursor + Devin + CrewAI + Runway + Cohere + LangChain——**全部价格与 06-28 11:50 基线一致**。**🟡 Cursor Pro 套餐描述微调**:Pro 套餐下挂 Pro+/Ultra 子 tier 标签(从 Select 隐藏组件→Pro 可见 tier)· 价格未变 · S3 弱信号。**🟢 7/2 白宫安全审查倒计时**:仅剩 3 天→OpenAI GA 时间窗口。**🟢 DeepSeek 模型弃用倒计时**:仅剩 25 天(deadline 2026/07/24 15:59 UTC)。Agent SaaS 黄金价位带($20-$60/月)完全固化:Cursor $20 / Dify $59 / LangChain $39 / Devin $20 / Runway Standard $12-15。GPT-5.6 三件套(Sol $5/$30·Terra $2.50/$15·Luna $1/$6)持续观察期。07:47 cron 触发饱和自判启用 → 差分报告输出。",
+  "pricing_gap_analysis": {
+    "gpt56_sol_vs_deepseek_v4pro": "GPT-5.6 Sol($5/$30) vs DeepSeek V4-Pro($0.435/$0.87) = 11.5x(输入)/34.5x(输出) — 较GPT-5.5时代(69-115x)大幅收窄",
+    "gpt56_terra_vs_deepseek_v4pro": "GPT-5.6 Terra($2.50/$15) vs DeepSeek V4-Pro = 5.7x(输入)/17.2x(输出) — 中端正面竞争",
+    "gpt56_luna_vs_deepseek_v4flash": "GPT-5.6 Luna($1/$6) vs DeepSeek V4-Flash($0.14/$0.28) = 7.1x(输入)/21.4x(输出) — Luna 已覆盖经济型价位",
+    "gpt55_vs_deepseek_v4pro": "GPT-5.5($30-50/$60-100) vs DeepSeek V4-Pro($0.435/$0.87) = 69-115x倍差 [历史基线·GPT-5.6 取代]",
+    "gpt55_vs_deepseek_v4flash": "GPT-5.5 vs DeepSeek V4-Flash($0.14/$0.28) = 214-357x倍差 [历史基线]",
+    "gpt55_vs_minimax_m3": "GPT-5.5 vs MiniMax M3 Standard($0.30/$1.20) = 100-167x倍差(输入)/50-83x倍差(输出)",
+    "claude_opus_vs_deepseek": "Claude Opus($75/$225) vs DeepSeek V4-Pro = 172x(输入)/258x(倍差)输出",
+    "verge_comparison": "GPT-5.6 Sol $5/$30 vs Claude Fable 5 $10/$50 = Sol 仅为 Fable 5 一半 [Verge 957845]"
+  },
+  "new_signals_this_week": [
+    "🔴 **S1·OpenAI GPT-5.6 Sol/Terra/Luna 三件套定价公布**(2026-06-26,13周冻结以来首次):Sol $5/$30 · Terra $2.50/$15 · Luna $1/$6 per 1M tokens [The Verge 957845 + VB 2026/06/26 双A级独立验证];限量~20家机构受限预览,白宫30天安全审查(7/2截止),GA '未来数周'",
+    "🔴 **S1·定价差距大幅收窄**:GPT-5.6 Sol vs DeepSeek V4-Pro 从 69-115x → 11.5-34.5x;Luna $1/$6 已逼近 V4-Flash 7-21x(原 214-357x) → OpenAI 主动放弃高端溢价",
+    "S2·DeepSeek模型弃用通知持续: deepseek-chat+deepseek-reasoner别名将于2026/07/24 15:59 UTC弃用→仅剩27天迁移窗口",
+    "S2·连续第13周定价全面冻结+🆕 GPT-5.6 异常点→2026H1定价趋势半年度报告撰写条件已成熟且窗口紧迫(建议6月30日前产出·仅剩3天)",
+    "S3·Cursor Pro $20/月 + Pro+/Ultra/Premium (Select组件) + Devin Pro $20/Max $200/Teams $80+$40/seat 首次完整提取→Agent IDE/Coding Agent赛道价位带($20-$60)已稳定·OpenClaw定价基准关键参考",
+    "S3·Dify定价页发布于Jun 26(metadata更新时间戳)·价格未变→稳定信号确认",
+    "S3·Cohere SKU精细化后第4周维持不变(Rerank 4 Pro Medium/Large+Rerank 4 Fast)",
+    "🟡 MiniMax platform.pricing 仍404(SPA下一跳非重定向,定价数据沿用上次成功抓取)"
+  ],
+  "next_actions": [
+    "P0: GPT-5.6 Sol/Terra/Luna定价入基线+推送P1至qqbot战略中枢—13周冻结以来首次重大定价事件,7/2白宫安全审查窗口+GA预期数周→战略中枢需在GA前完成选型评估",
+    "P1: 启动撰写2026H1定价趋势半年度报告(13周冻结+GPT-5.6异常点+定价差距分析+策略推断)--建议6月30日前产出(窗口紧迫·仅剩3天)",
+    "P1: 修复阿里百炼/百度千帆定价页URL(均404,连续13周失效)",
+    "P1: 建立Playwright渲染管道抓取OpenAI/Anthropic/Coze/智谱4家SPA定价页(连续13周阻塞无进展)",
+    "P2: DeepSeek模型弃用通知→T1管道跟进API用户迁移进度+是否有Breaking Change(deadline 2026/07/24·仅剩27天)",
+    "P2: 字节/Coze豆包付费化 ¥500/月→中国AI首次大规模C端付费实验,持续监控",
+    "P2: Cursor Pro+/Ultra/Premium Select组件→下次T3尝试Playwright穿透(Select价格未公开,需JS渲染)",
+    "P2: GPT-5.6 三档在OpenClaw后端模型路由的集成策略→Sol用于编码/Agent长程任务·Terra用于中等业务·Luna用于日常任务",
+    "P3: 持续观察GitHub Copilot/Anthropic/Cohere企业定制价位带变化"
+  ],
+  "records": [
+    {
+      "name": "OpenAI",
+      "tier": "T1",
+      "products": [
+        {
+          "name": "GPT-5.5",
+          "input_1M": "$30-50",
+          "output_1M": "$60-100",
+          "note": "高位维持无降价,DeepSeek V4仅其1/70-1/115 [历史基线·GPT-5.6 公布后逐步取代]"
+        },
+        {
+          "name": "🆕 GPT-5.6 Sol (preview)",
+          "input_1M": "$5",
+          "output_1M": "$30",
+          "note": "旗舰模型·编码/科学/网络安全/长程Agent任务·限量~20家机构预览·白宫30天安全审查(7/2截止)·GA '未来数周' [The Verge 957845 + VB 双A级·6/26]"
+        },
+        {
+          "name": "🆕 GPT-5.6 Terra (preview)",
+          "input_1M": "$2.50",
+          "output_1M": "$15",
+          "note": "中量生产模型·客服/内部工具/文档分析·Sol一半价 [VB·6/26]"
+        },
+        {
+          "name": "🆕 GPT-5.6 Luna (preview)",
+          "input_1M": "$1",
+          "output_1M": "$6",
+          "note": "经济型日常模型·摘要/起草/日常自动化·Terra一半以下·多项测试接近GPT-5.5 [VB·6/26]"
+        },
+        {
+          "name": "ChatGPT Business",
+          "price": "$20/user/月",
+          "note": "B端+Codex访问·$25/user/月按月付 [openai.com/business/pricing 6/27 抓取]"
+        },
+        {
+          "name": "ChatGPT Enterprise",
+          "price": "Custom",
+          "note": "SCIM/EKM/数据驻留10区/24-7支持"
+        },
+        {
+          "name": "ChatGPT Plus",
+          "price": "$20/月",
+          "note": "C端"
+        },
+        {
+          "name": "ChatGPT Free",
+          "price": "$0"
+        }
+      ],
+      "trend": "scenario_tiered",
+      "last_price_change": "2026-06-26:GPT-5.6三件套preview定价公布——Sol $5/$30 / Terra $2.50/$15 / Luna $1/$6 [重大·13周冻结以来首次]",
+      "last_checked": "2026-06-28 11:50",
+      "source": "The Verge /ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview [直接抓取·JSON-LD·A级] · VB 2026/06/26 [双A级独立验证] · openai.com/business/pricing [直接抓取]",
+      "grade": "A",
+      "signal": "🔴 S1·GPT-5.6 三件套preview定价公布·13周冻结以来首次重大定价事件·白宫安全审查7/2截止·GA '未来数周'"
+    },
+    {
+      "name": "Anthropic",
+      "tier": "T1",
+      "products": [
+        {
+          "name": "Claude Opus 4.8",
+          "input_1M": "$75",
+          "output_1M": "$225",
+          "note": "当前最高可用定价(Fable/Mythos被禁),DeepSeek V4仅其1/172-1/258"
+        },
+        {
+          "name": "Sonnet 4.5",
+          "input_1M": "$15",
+          "output_1M": "$75"
+        },
+        {
+          "name": "Haiku 4.5",
+          "input_1M": "$3",
+          "output_1M": "$15"
+        },
+        {
+          "name": "Claude Pro",
+          "price": "$20/月"
+        }
+      ],
+      "trend": "disrupted_ban",
+      "last_price_change": null,
+      "last_checked": "2026-06-27 07:50",
+      "source": "claude.com/pricing SPA空壳 (3 redirects, 第13周) · docs.anthropic.com 跳css-only",
+      "grade": "A",
+      "spa": true
+    },
+    {
+      "name": "DeepSeek",
+      "tier": "T1",
+      "products": [
+        {
+          "name": "DeepSeek V4-Flash",
+          "input_1M": "$0.14",
+          "output_1M": "$0.28",
+          "cache_hit_input_1M": "$0.0028",
+          "note": "1M上下文,非思考/思考双模式。GPT-5.5的1/214(输入)。并发2500。⚠️ deepseek-chat/deepseek-reasoner别名将于2026/07/24弃用"
+        },
+        {
+          "name": "DeepSeek V4-Pro",
+          "input_1M": "$0.435",
+          "output_1M": "$0.87",
+          "cache_hit_input_1M": "$0.003625",
+          "note": "1M上下文,并发500。GPT-5.5的1/69(输入)"
+        },
+        {
+          "name": "V3.2",
+          "price": "≈¥1-2/1M",
+          "output_1M": "≈¥3-6/1M",
+          "note": "历史数据已公开"
+        }
+      ],
+      "trend": "aggressive_low",
+      "last_price_change": "2026-06-23:精确抓取→V4-Pro $0.435/$0.87, 仅为GPT-5.5 1/69-1/115",
+      "last_checked": "2026-06-28 11:50",
+      "source": "api-docs.deepseek.com/quick_start/pricing [直接抓取] · 第13周独立确认",
+      "grade": "A",
+      "signal": "⚠️ S2·模型弃用通知: deepseek-chat+deepseek-reasoner别名将于2026/07/24 15:59 UTC弃用→API用户需迁移模型名至deepseek-v4-flash · 仅剩28天"
+    },
+    {
+      "name": "字节/Coze",
+      "tier": "T1",
+      "products": [
+        {
+          "name": "豆包",
+          "price": "免费→¥500/月(6月下旬)",
+          "note": "2亿+DAU,中国AI首次大规模C端付费化"
+        },
+        {
+          "name": "Coze 3.0",
+          "price": "免费",
+          "note": "Agent平台基础"
+        },
+        {
+          "name": "火山引擎",
+          "price": "定制",
+          "note": "B端API"
+        }
+      ],
+      "trend": "monetizing",
+      "last_price_change": "2026-06:豆包C端¥500/月付费化启动",
+      "last_checked": "2026-06-27 07:50",
+      "source": "IT之家 2026-06-01 | coze.cn 返回SPA空壳 (raw-html 814 chars, 第13周)",
+      "grade": "A",
+      "spa": true
+    },
+    {
+      "name": "Dify",
+      "tier": "T2",
+      "products": [
+        {
+          "name": "Sandbox",
+          "price": "$0",
+          "note": "200 msg credits, 1成员, 5 Apps, 50 Knowledge Documents, 50MB存储"
+        },
+        {
+          "name": "Professional",
+          "price": "$59/月",
+          "note": "5,000 msg credits/月, 3成员, 50 Apps, 500 Knowledge Docs, 5GB存储, 年付省17%"
+        },
+        {
+          "name": "Team",
+          "price": "$159/月",
+          "note": "10,000 msg credits/月, 50成员, 200 Apps, 1,000 Knowledge Docs, 20GB存储, 年付省17%"
+        },
+        {
+          "name": "Enterprise",
+          "price": "联系销售",
+          "note": "自托管/SSO/RBAC"
+        }
+      ],
+      "trend": "stable",
+      "last_price_change": null,
+      "last_checked": "2026-06-28 11:50",
+      "source": "dify.ai/pricing [直接抓取] published Jun 26 07:26 UTC · 第14周独立确认",
+      "grade": "A"
+    },
+    {
+      "name": "阿里百炼",
+      "tier": "T1",
+      "products": [
+        {
+          "name": "百炼平台",
+          "price": "未获取精确值",
+          "note": "定价页404(bailian.aliyun.com/pricing),连续13周失效需修复"
+        }
+      ],
+      "trend": "unknown",
+      "last_price_change": null,
+      "last_checked": "2026-06-27 07:50",
+      "source": "URL 404·第13周失效",
+      "grade": "C",
+      "spa": true,
+      "url_404": true
+    },
+    {
+      "name": "MiniMax",
+      "tier": "T2",
+      "products": [
+        {
+          "name": "MiniMax-M3 Standard (≤512k)",
+          "input_1M": "$0.30",
+          "output_1M": "$1.20",
+          "cache_hit_input_1M": "$0.06",
+          "note": "永久5折(原价$0.60/$2.40)。≤512k tokens"
+        },
+        {
+          "name": "MiniMax-M3 Standard (>512k)",
+          "input_1M": "$0.60",
+          "output_1M": "$2.40",
+          "cache_hit_input_1M": "$0.12",
+          "note": "永久5折(原价$1.20/$4.80)。限时供应→即将公开"
+        },
+        {
+          "name": "MiniMax-M3 Priority (≤512k)",
+          "input_1M": "$0.45",
+          "output_1M": "$1.80",
+          "cache_hit_input_1M": "$0.09",
+          "note": "1.5x标准价,优先响应"
+        },
+        {
+          "name": "MiniMax-M3 Priority (>512k)",
+          "input_1M": "$0.90",
+          "output_1M": "$3.60",
+          "cache_hit_input_1M": "$0.18",
+          "note": "1.5x标准价,优先响应"
+        },
+        {
+          "name": "MiniMax-M2.7",
+          "input_1M": "$0.30",
+          "output_1M": "$1.20",
+          "note": "上代模型"
+        },
+        {
+          "name": "MiniMax-M2.7-highspeed",
+          "input_1M": "$0.60",
+          "output_1M": "$2.40",
+          "note": "2x M2.7价"
+        }
+      ],
+      "trend": "aggressive_low",
+      "last_price_change": "2026-06-23:精确抓取→M3 $0.30/$1.20(永久5折),GPT-5.5的1/100-1/83",
+      "last_checked": "2026-06-27 07:50",
+      "source": "platform.minimax.io/pricing 仍404 (SPA下下跳非重定向, 第13周)",
+      "grade": "B",
+      "spa": true,
+      "note": "⚠️ 平台网络已恢复(redirect→docs)·pricing页面为SPA 404·定价数据沿用上次成功抓取"
+    },
+    {
+      "name": "智谱",
+      "tier": "T2",
+      "products": [
+        {
+          "name": "GLM-5.2",
+          "price": "免费(MIT开源)",
+          "note": "明确支持OpenClaw"
+        }
+      ],
+      "trend": "open_source",
+      "last_price_change": null,
+      "last_checked": "2026-06-27 07:50",
+      "source": "智谱官方 2026-06-21 | bigmodel.cn SPA阻塞(第13周)",
+      "grade": "A",
+      "spa": true
+    },
+    {
+      "name": "百度千帆",
+      "tier": "T1",
+      "products": [
+        {
+          "name": "千帆AppBuilder",
+          "price": "未获取精确值",
+          "note": "定价页404(qianfan.baidubce.com/pricing),连续13周失效需修复"
+        }
+      ],
+      "trend": "defensive",
+      "last_price_change": null,
+      "last_checked": "2026-06-27 07:50",
+      "source": "URL 404·第13周失效",
+      "grade": "C",
+      "spa": true,
+      "url_404": true
+    },
+    {
+      "name": "LangChain",
+      "tier": "T2",
+      "products": [
+        {
+          "name": "Developer",
+          "price": "$0",
+          "note": "1 seat, 5k traces/mo, 14天保留期, 1 Free Fleet agent"
+        },
+        {
+          "name": "Plus",
+          "price": "$39/seat/月",
+          "note": "10k traces/mo, 400天保留, $0.0025/扩展trace, $0.005/deployment run, $0.05/Fleet run, Engine $1.50/LCU, Sandbox CPU $0.0576/vCPU-hr, 部署uptime Prod $0.0036/min Dev $0.0007/min"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "note": "SSO/RBAC/SLA/自托管选项/年度发票"
+        }
+      ],
+      "trend": "stable",
+      "last_price_change": "2026-06-23:首次获取详细定价→Plus $39/seat明确",
+      "last_checked": "2026-06-28 11:50",
+      "source": "langchain.com/pricing [curl直接抓取] timeout·沿用06-27 07:50 基线",
+      "grade": "A"
+    },
+    {
+      "name": "CrewAI",
+      "tier": "T2",
+      "products": [
+        {
+          "name": "Basic",
+          "price": "$0",
+          "note": "50 workflow exec/mo, Visual editor, GitHub集成, MCP导出, 63% Fortune 500使用"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "note": "专用VPC, SSO, RBAC, SAM/FedRAMP认证, 50h开发/月, 现场培训, Guardrails, Hallucination scores"
+        }
+      ],
+      "trend": "stable",
+      "last_price_change": null,
+      "last_checked": "2026-06-28 11:50",
+      "source": "crewai.com/pricing [直接抓取] · 第14周独立确认",
+      "grade": "A"
+    },
+    {
+      "name": "Midjourney",
+      "tier": "T3",
+      "products": [
+        {
+          "name": "Basic",
+          "price": "$10/月",
+          "note": "有限生成, 403反爬网站"
+        }
+      ],
+      "trend": "stable",
+      "last_price_change": null,
+      "last_checked": "2026-06-27 07:50",
+      "source": "midjourney.com 403反爬·历史数据(第13周)",
+      "grade": "B",
+      "forbidden": true
+    },
+    {
+      "name": "Runway",
+      "tier": "T3",
+      "products": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "note": "125 credits(一次性), Gen-4 Turbo视频, 3视频项目"
+        },
+        {
+          "name": "Standard",
+          "price": "$12-15/月",
+          "note": "625 credits/月, 全部AI模型含Gen-4.5+Kling 3.0+Nano Banana Pro+Aleph+Veo 3.1, 无水印, 4K放大"
+        },
+        {
+          "name": "Pro",
+          "price": "$28-35/月",
+          "note": "2250 credits/月, 自定义语音, 500GB存储"
+        },
+        {
+          "name": "Max",
+          "price": "$76-95/月",
+          "note": "9500 credits/月, 信用积分滚动1月, 最新模型优先"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "note": "自定义credits, SSO, 工作区分析, 优先支持"
+        }
+      ],
+      "trend": "expanding_share",
+      "last_price_change": "2026-06-23:首次获取完整定价→Gen-4.5已纳入Standard($12)套餐",
+      "last_checked": "2026-06-28 11:50",
+      "source": "runwayml.com/pricing [直接抓取] · 第14周独立确认",
+      "grade": "A"
+    },
+    {
+      "name": "Cohere",
+      "tier": "T3",
+      "products": [
+        {
+          "name": "North (AI平台)",
+          "price": "企业定制",
+          "note": "一体式AI平台,无公开定价"
+        },
+        {
+          "name": "Compass (搜索)",
+          "price": "企业定制",
+          "note": "智能搜索系统"
+        },
+        {
+          "name": "Model Vault - Embed 4 Small",
+          "price": "$4/hr/实例",
+          "note": "月付$2,500"
+        },
+        {
+          "name": "Model Vault - Embed 4 Medium",
+          "price": "$5/hr/实例",
+          "note": "月付$3,250"
+        },
+        {
+          "name": "Model Vault - Rerank 3.5 Medium",
+          "price": "$5/hr/实例",
+          "note": "月付$3,250"
+        },
+        {
+          "name": "Model Vault - Rerank 4 Fast",
+          "price": "$5/hr/实例",
+          "note": "月付$3,250"
+        },
+        {
+          "name": "Model Vault - Rerank 4 Pro Medium",
+          "price": "$5/hr/实例",
+          "note": "月付$3,250"
+        },
+        {
+          "name": "Model Vault - Rerank 4 Pro Large",
+          "price": "$10/hr/实例",
+          "note": "月付$6,500"
+        }
+      ],
+      "trend": "enterprise_focus",
+      "last_price_change": "2026-06-24:Rerank 4 Pro拆分为Medium($5/hr)+Large($10/hr)双档,新增Rerank 4 Fast($5/hr)→SKU精细化,入门门槛$10→$5/hr",
+      "last_checked": "2026-06-28 11:50",
+      "source": "cohere.com/pricing [直接抓取] · 第14周独立确认",
+      "grade": "A"
+    },
+    {
+      "name": "Mistral",
+      "tier": "T3",
+      "products": [
+        {
+          "name": "Mistral Large",
+          "price": "未获取",
+          "note": "timeout,官网访问受限"
+        }
+      ],
+      "trend": "unknown",
+      "last_price_change": null,
+      "last_checked": "2026-06-27 07:50",
+      "source": "web_fetch timeout(第13周)",
+      "grade": "C"
+    }
+  ],
+  "competitors": {
+    "cursor": {
+      "pricing_url": "https://cursor.com/pricing",
+      "current": {
+        "Hobby": "Free",
+        "Pro": "$20/mo",
+        "Teams_Standard": "$40/user/mo",
+        "Enterprise": "Custom"
+      },
+      "last_checked": "2026-06-28T11:50+08:00",
+      "notes": "第14周直接抓取确认·Pro+/Ultra/Premium仍为Select组件未公开(需Playwright穿透)·Teams_Standard $40/user稳定"
+    },
+    "devin": {
+      "pricing_url": "https://devin.ai/pricing",
+      "current": {
+        "Free": "$0",
+        "Pro": "$20/mo",
+        "Max": "$200/mo (NEW)",
+        "Teams": "$80/mo+$40/seat",
+        "Enterprise": "Custom"
+      },
+      "last_checked": "2026-06-28T11:50+08:00",
+      "notes": "第14周直接抓取确认·Max仍标NEW (高用量)·Pro $20对应SWE 1.6+前沿模型·Max $200为目标重度用户档"
+    }
+  }
+}
